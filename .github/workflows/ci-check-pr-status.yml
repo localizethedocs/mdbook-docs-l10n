@@ -133,7 +133,7 @@ jobs:
       LANGUAGE: 'zh_TW'
       MODE_OF_UPDATE: 'COMPARE'
       BASEURL_HREF: ${{ vars.BASEURL_HREF }}
-      SPHINX_BUILDER: 'html'
+      MDBOOK_RENDERER: 'html'
       DEPLOY_PAGES: false
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
