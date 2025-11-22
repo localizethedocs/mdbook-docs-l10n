@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-22T06:24:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/cli/completions.md:1
+msgid "The completions command"
+msgstr ""
+
+#: src/cli/completions.md:3
+msgid ""
+"The completions command is used to generate auto-completions for some common "
+"shells. This means when you type `mdbook` in your shell, you can then press "
+"your shell's auto-complete key (usually the Tab key) and it may display what "
+"the valid options are, or finish partial input."
+msgstr ""
+
+#: src/cli/completions.md:6
+msgid "The completions first need to be installed for your shell:"
+msgstr ""
+
+#: src/cli/completions.md:9
+msgid "# bash\n"
+msgstr ""
+
+#: src/cli/completions.md:10
+msgid "# oh-my-zsh\n"
+msgstr ""
+
+#: src/cli/completions.md:16
+msgid ""
+"The command prints a completion script for the given shell. Run `mdbook "
+"completions --help` for a list of supported shells."
+msgstr ""
+
+#: src/cli/completions.md:19
+msgid ""
+"Where to place the completions depend on which shell you are using and your "
+"operating system. Consult your shell's documentation for more information "
+"one where to place the script."
+msgstr ""
