@@ -1,0 +1,18 @@
+{
+  "dev" : [
+    {
+      "VERSION" : "master",
+      "VERSION_COMPENDIUM" : ""
+    }
+  ],
+  "rel" : [
+    {
+      "VERSION" : "0.5",
+      "VERSION_COMPENDIUM" : "master"
+    },
+    {
+      "VERSION" : "0.4",
+      "VERSION_COMPENDIUM" : "master"
+    }
+  ]
+}
