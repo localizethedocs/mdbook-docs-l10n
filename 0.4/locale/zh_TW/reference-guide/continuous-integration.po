@@ -5,10 +5,10 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/continuous-integration.md:1
@@ -32,7 +32,7 @@ msgstr ""
 
 #: src/continuous-integration.md:12
 msgid "Installing mdBook"
-msgstr ""
+msgstr "安裝 mdBook"
 
 #: src/continuous-integration.md:14
 msgid ""
@@ -80,7 +80,7 @@ msgstr ""
 
 #: src/continuous-integration.md:39
 msgid "Building from source"
-msgstr ""
+msgstr "從來源碼建置"
 
 #: src/continuous-integration.md:41
 msgid ""
@@ -142,7 +142,7 @@ msgstr ""
 
 #: src/continuous-integration.md:67
 msgid "Running tests"
-msgstr ""
+msgstr "執行測試"
 
 #: src/continuous-integration.md:69
 msgid ""
