@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-22T06:24:10Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/cli/index.md:1
+msgid "Command-line tool"
+msgstr ""
+
+#: src/cli/index.md:3
+msgid ""
+"The `mdbook` command-line tool is used to create and build books. After you "
+"have [installed](../guide/installation.md) `mdbook`, you can run the `mdbook "
+"help` command in your terminal to view the available commands."
+msgstr ""
+
+#: src/cli/index.md:6
+msgid ""
+"This following sections provide in-depth information on the different "
+"commands available."
+msgstr ""
+
+#: src/cli/index.md:8
+msgid ""
+"[`mdbook init <directory>`](init.md) --- Creates a new book with minimal "
+"boilerplate to start with."
+msgstr ""
+
+#: src/cli/index.md:9
+msgid "[`mdbook build`](build.md) --- Renders the book."
+msgstr ""
+
+#: src/cli/index.md:10
+msgid ""
+"[`mdbook watch`](watch.md) --- Rebuilds the book any time a source file "
+"changes."
+msgstr ""
+
+#: src/cli/index.md:11
+msgid ""
+"[`mdbook serve`](serve.md) --- Runs a web server to view the book, and "
+"rebuilds on changes."
+msgstr ""
+
+#: src/cli/index.md:12
+msgid "[`mdbook test`](test.md) --- Tests Rust code samples."
+msgstr ""
+
+#: src/cli/index.md:13
+msgid "[`mdbook clean`](clean.md) --- Deletes the rendered output."
+msgstr ""
+
+#: src/cli/index.md:14
+msgid ""
+"[`mdbook completions`](completions.md) --- Support for shell auto-completion."
+msgstr ""

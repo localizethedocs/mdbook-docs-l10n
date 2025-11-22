@@ -1,0 +1,256 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-22T06:24:11Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/format/theme/index-hbs.md:1
+msgid "index.hbs"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:3
+msgid ""
+"`index.hbs` is the handlebars template that is used to render the book. The "
+"markdown files are processed to html and then injected in that template."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:6
+msgid ""
+"If you want to change the layout or style of your book, chances are that you "
+"will have to modify this template a little bit. Here is what you need to "
+"know."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:9
+msgid "Data"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:11
+msgid ""
+"A lot of data is exposed to the handlebars template with the \"context\". In "
+"the handlebars template you can access this information by using"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:18
+msgid "Here is a list of the properties that are exposed:"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:20
+msgid ""
+"_**language**_ Language of the book in the form `en`, as specified in `book."
+"toml` (if not specified, defaults to `en`). To use in <code\n"
+"class=\"language-html\">\\<html lang=\"{{ language }}\"></code> for example."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:22
+msgid ""
+"_**title**_ Title used for the current page. This is identical to "
+"`{{ chapter_title }} - {{ book_title }}` unless `book_title` is not set in "
+"which case it just defaults to the `chapter_title`."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:23
+msgid "_**book_title**_ Title of the book, as specified in `book.toml`"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:24
+msgid ""
+"_**chapter_title**_ Title of the current chapter, as listed in `SUMMARY.md`"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:26
+msgid ""
+"_**path**_ Relative path to the original markdown file from the source "
+"directory"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:28
+msgid "_**content**_ This is the rendered markdown."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:29
+msgid ""
+"_**path_to_root**_ This is a path containing exclusively `../`'s that points "
+"to the root of the book from the current file. Since the original directory "
+"structure is maintained, it is useful to prepend relative links with this "
+"`path_to_root`."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:33
+msgid ""
+"_**previous**_ and _**next**_ These are objects used for linking to the "
+"previous and next chapter. They contain the properties `title` and `link` of "
+"the corresponding chapter."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:34
+msgid "_**chapters**_ Is an array of dictionaries of the form"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:36 src/format/theme/index-hbs.md:61
+msgid "\"section\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:36
+msgid "\"1.2.1\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:36
+msgid "\"name\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:36
+msgid "\"name of this chapter\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:36
+msgid "\"path\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:36
+msgid "\"dir/markdown.md\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:38
+msgid ""
+"containing all the chapters of the book. It is used for example to construct "
+"the table of contents (sidebar)."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:41
+msgid "Handlebars helpers"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:43
+msgid ""
+"In addition to the properties you can access, there are some handlebars "
+"helpers at your disposal."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:46
+msgid "toc"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:48
+msgid "The toc helper is used like this"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:54
+msgid ""
+"and outputs something that looks like this, depending on the structure of "
+"your book"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:58
+msgid "\"chapter\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:59
+msgid "\"link/to/file.html\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:62
+msgid "\"link/to/other_file.html\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:68
+msgid ""
+"If you would like to make a toc with another structure, you have access to "
+"the chapters property containing all the data. The only limitation at the "
+"moment is that you would have to do it with JavaScript instead of with a "
+"handlebars helper."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:75
+msgid "// Processing here"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:80
+msgid "resource"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:82
+msgid ""
+"The path to a static file. It implicitly includes `path_to_root`, and "
+"accounts for files that are renamed with a hash in their filename."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:86
+msgid ""
+"```handlebars\n"
+"<link rel=\"stylesheet\" href=\"{{ resource \"css/chrome.css\" }}\">\n"
+"```"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:90
+msgid "fa"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:92
+msgid ""
+"mdBook includes a copy of [Font Awesome Free's](https://fontawesome.com) MIT-"
+"licensed SVG files. It accepts three positional arguments:"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:95
+msgid ""
+"Type: one of \"solid\", \"regular\", and \"brands\" (light and duotone are "
+"not currently supported)"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:97
+msgid ""
+"Icon: anything chosen from the [free icon set](https://fontawesome.com/v6/"
+"search)"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:99
+msgid ""
+"ID (optional): if included, an HTML ID attribute will be added to the icon's "
+"wrapping `<span>` tag"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:102
+msgid "For example, this handlebars syntax will become this HTML:"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:104
+msgid ""
+"```handlebars\n"
+"{{fa \"solid\" \"print\" \"print-button\"}}\n"
+"```"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:109
+msgid "fa-svg"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:109
+msgid "\"print-button\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:109
+msgid "\"http://www.w3.org/2000/svg\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:109
+msgid "\"0 0 512 512\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:109
+msgid ""
+"\"M448 192V77.25c0-8.49-3.37-16.62-9.37-22.63L393.37 "
+"9.37c-6-6-14.14-9.37-22.63-9.37H96C78.33 0 64 14.33 64 32v160c-35.35 0-64 "
+"28.65-64 64v112c0 8.84 7.16 16 16 16h48v96c0 17.67 14.33 32 32 32h320c17.67 "
+"0 32-14.33 32-32v-96h48c8.84 0 16-7.16 16-16V256c0-35.35-28.65-64-64-64zm-64 "
+"256H128v-96h256v96zm0-224H128V64h192v48c0 8.84 7.16 16 16 16h48v96zm48 "
+"72c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 "
+"13.25-10.75 24-24 24z\""
+msgstr ""

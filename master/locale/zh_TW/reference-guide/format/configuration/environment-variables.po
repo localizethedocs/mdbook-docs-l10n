@@ -1,0 +1,88 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-22T06:24:11Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/format/configuration/environment-variables.md:1
+msgid "Environment variables"
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:3
+msgid ""
+"All configuration values can be overridden from the command line by setting "
+"the corresponding environment variable. Because many operating systems "
+"restrict environment variables to be alphanumeric characters or `_`, the "
+"configuration key needs to be formatted slightly differently to the normal "
+"`foo.bar.baz` form."
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:8
+msgid ""
+"Variables starting with `MDBOOK_` are used for configuration. The key is "
+"created by removing the `MDBOOK_` prefix and turning the resulting string "
+"into `kebab-case`. Double underscores (`__`) separate nested keys, while a "
+"single underscore (`_`) is replaced with a dash (`-`)."
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:13
+msgid "For example:"
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:15
+msgid "`MDBOOK_book` -> `book`"
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:16
+msgid "`MDBOOK_BOOK` -> `book`"
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:17
+msgid "`MDBOOK_BOOK__TITLE` -> `book.title`"
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:18
+msgid "`MDBOOK_BOOK__TEXT_DIRECTION` -> `book.text-direction`"
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:20
+msgid ""
+"So by setting the `MDBOOK_BOOK__TITLE` environment variable you can override "
+"the book's title without needing to touch your `book.toml`."
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:23
+msgid ""
+"**Note:** To facilitate setting more complex config items, the value of an "
+"environment variable is first parsed as JSON, falling back to a string if "
+"the parse fails."
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:27
+msgid ""
+"This means, if you so desired, you could override all book metadata when "
+"building the book with something like"
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:30
+msgid ""
+"```shell\n"
+"$ export MDBOOK_BOOK='{\"title\": \"My Awesome Book\", \"authors\": "
+"[\"Michael-F-Bryan\"]}'\n"
+"$ mdbook build\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:35
+msgid ""
+"The latter case may be useful in situations where `mdbook` is invoked from a "
+"script or CI, where it sometimes isn't possible to update the `book.toml` "
+"before building."
+msgstr ""

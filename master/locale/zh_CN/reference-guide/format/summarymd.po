@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-22T06:24:10Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/format/summary.md:1
+msgid "SUMMARY.md"
+msgstr ""
+
+#: src/format/summary.md:3
+msgid ""
+"The summary file is used by mdBook to know what chapters to include, in what "
+"order they should appear, what their hierarchy is and where the source files "
+"are. Without this file, there is no book."
+msgstr ""
+
+#: src/format/summary.md:7
+msgid ""
+"This markdown file must be named `SUMMARY.md`. Its formatting is very strict "
+"and must follow the structure outlined below to allow for easy parsing. Any "
+"element not specified below, be it formatting or textual, is likely to be "
+"ignored at best, or may cause an error when attempting to build the book."
+msgstr ""
+
+#: src/format/summary.md:12
+msgid "Structure"
+msgstr ""
+
+#: src/format/summary.md:14
+msgid ""
+"_**Title**_ - While optional, it's common practice to begin with a title, "
+"generally <code\n"
+"class=\"language-markdown\">\\# Summary</code>. This is ignored by the "
+"parser however, and can be omitted."
+msgstr ""
+
+#: src/format/summary.md:21
+msgid ""
+"_**Prefix Chapter**_ - Before the main numbered chapters, prefix chapters "
+"can be added that will not be numbered. This is useful for forewords, "
+"introductions, etc. There are, however, some constraints. Prefix chapters "
+"cannot be nested; they should all be on the root level. And you cannot add "
+"prefix chapters once you have added numbered chapters."
+msgstr ""
+
+#: src/format/summary.md:32
+msgid ""
+"_**Part Title**_ - Level 1 headers can be used as a title for the following "
+"numbered chapters. This can be used to logically separate different sections "
+"of the book. The title is rendered as unclickable text. Titles are optional, "
+"and the numbered chapters can be broken into as many parts as desired. Part "
+"titles must be h1 headers (one `#`), other heading levels are ignored."
+msgstr ""
+
+#: src/format/summary.md:44
+msgid ""
+"_**Numbered Chapter**_ - Numbered chapters outline the main content of the "
+"book and can be nested, resulting in a nice hierarchy (chapters, sub-"
+"chapters, etc.)."
+msgstr ""
+
+#: src/format/summary.md:52
+msgid ""
+"   - [Sub Chapter](relative/path/to/markdown3.md)\n"
+"\n"
+msgstr ""
+
+#: src/format/summary.md:58
+msgid ""
+"Numbered chapters can be denoted with either `-` or `*` (do not mix "
+"delimiters)."
+msgstr ""
+
+#: src/format/summary.md:60
+msgid ""
+"_**Suffix Chapter**_ - Like prefix chapters, suffix chapters are unnumbered, "
+"but they come after numbered chapters."
+msgstr ""
+
+#: src/format/summary.md:68
+msgid ""
+"_**Draft chapters**_ - Draft chapters are chapters without a file and thus "
+"content. The purpose of a draft chapter is to signal future chapters still "
+"to be written. Or when still laying out the structure of the book to avoid "
+"creating the files while you are still changing the structure of the book a "
+"lot. Draft chapters will be rendered in the HTML renderer as disabled links "
+"in the table of contents, as you can see for the next chapter in the table "
+"of contents on the left. Draft chapters are written like normal chapters but "
+"without writing the path to the file."
+msgstr ""
+
+#: src/format/summary.md:79
+msgid ""
+"_**Separators**_ - Separators can be added before, in between, and after any "
+"other element. They result in an HTML rendered line in the built table of "
+"contents.  A separator is a line containing exclusively dashes and at least "
+"three of them: `---`."
+msgstr ""
+
+#: src/format/summary.md:93
+msgid "Example"
+msgstr ""
+
+#: src/format/summary.md:95
+msgid ""
+"Below is the markdown source for the `SUMMARY.md` for this guide, with the "
+"resulting table of contents as rendered to the left."
+msgstr ""
