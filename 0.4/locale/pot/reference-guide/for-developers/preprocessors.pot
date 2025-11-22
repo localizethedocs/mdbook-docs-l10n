@@ -1,0 +1,360 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-22T06:24:19Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/for_developers/preprocessors.md:1
+msgid "Preprocessors"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:3
+msgid ""
+"A _preprocessor_ is simply a bit of code which gets run immediately after "
+"the book is loaded and before it gets rendered, allowing you to update and "
+"mutate the book. Possible use cases are:"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:7
+msgid "Creating custom helpers like `{{#include /path/to/file.md}}`"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:8
+msgid ""
+"Substituting in latex-style expressions (`$$ \\frac{1}{3} $$`) with their "
+"mathjax equivalents"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:11
+msgid ""
+"See [Configuring Preprocessors](../format/configuration/preprocessors.md) "
+"for more information about using preprocessors."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:13
+msgid "Hooking Into MDBook"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:15
+msgid ""
+"MDBook uses a fairly simple mechanism for discovering third party plugins. A "
+"new table is added to `book.toml` (e.g. `[preprocessor.foo]` for the `foo` "
+"preprocessor) and then `mdbook` will try to invoke the `mdbook-foo` program "
+"as part of the build process."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:20
+msgid ""
+"Once the preprocessor has been defined and the build process starts, mdBook "
+"executes the command defined in the `preprocessor.foo.command` key twice. "
+"The first time it runs the preprocessor to determine if it supports the "
+"given renderer. mdBook passes two arguments to the process: the first "
+"argument is the string `supports` and the second argument is the renderer "
+"name. The preprocessor should exit with a status code 0 if it supports the "
+"given renderer, or return a non-zero exit code if it does not."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:25
+msgid ""
+"If the preprocessor supports the renderer, then mdbook runs it a second "
+"time, passing JSON data into stdin. The JSON consists of an array of "
+"`[context, book]` where `context` is the serialized object "
+"[`PreprocessorContext`](https://docs.rs/mdbook/latest/mdbook/preprocess/"
+"struct.PreprocessorContext.html) and `book` is a [`Book`](https://docs.rs/"
+"mdbook/latest/mdbook/book/struct.Book.html) object containing the content of "
+"the book."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:28
+msgid ""
+"The preprocessor should return the JSON format of the [`Book`](https://docs."
+"rs/mdbook/latest/mdbook/book/struct.Book.html) object to stdout, with any "
+"modifications it wishes to perform."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:30
+msgid ""
+"The easiest way to get started is by creating your own implementation of the "
+"`Preprocessor` trait (e.g. in `lib.rs`) and then creating a shell binary "
+"which translates inputs to the correct `Preprocessor` method. For "
+"convenience, there is [an example no-op preprocessor](https://github.com/"
+"rust-lang/mdBook/blob/master/examples/nop-preprocessor.rs) in the `examples/"
+"` directory which can easily be adapted for other preprocessors."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:40
+msgid "// nop-preprocessors.rs\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:52
+#: src/for_developers/preprocessors.md:127
+msgid "\"nop-preprocessor\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:53
+msgid "\"A mdbook preprocessor which does precisely nothing\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:55
+#: src/for_developers/preprocessors.md:67
+#: src/for_developers/preprocessors.md:243
+#: src/for_developers/preprocessors.md:327
+msgid "\"supports\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:56
+#: src/for_developers/preprocessors.md:99
+msgid "\"renderer\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:57
+msgid "\"Check whether a renderer is supported by this preprocessor\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:64
+msgid "// Users will want to construct their own preprocessor here\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:70
+msgid "\"{e:?}\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:83
+msgid ""
+"\"Warning: The {} plugin was built against version {} of mdbook, \\\n"
+"             but we're being called from version {}\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:100
+msgid "\"Required argument\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:103
+msgid "// Signal whether the renderer is supported by exiting with 1 or 0.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:110
+msgid ""
+"/// The actual implementation of the `Nop` preprocessor. This would usually "
+"go\n"
+"/// in your main `lib.rs` file.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:116
+msgid "/// A no-op preprocessor.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:131
+msgid ""
+"// In testing we want to tell the preprocessor to blow up by setting a\n"
+"            // particular config value\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:134
+msgid "\"blow-up\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:135
+msgid "\"Boom!!1!\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:139
+msgid "// we *are* a no-op preprocessor after all\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:144
+msgid "\"not-supported\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:154
+msgid ""
+"r##\"[\n"
+"                {\n"
+"                    \"root\": \"/path/to/book\",\n"
+"                    \"config\": {\n"
+"                        \"book\": {\n"
+"                            \"authors\": [\"AUTHOR\"],\n"
+"                            \"language\": \"en\",\n"
+"                            \"multilingual\": false,\n"
+"                            \"src\": \"src\",\n"
+"                            \"title\": \"TITLE\"\n"
+"                        },\n"
+"                        \"preprocessor\": {\n"
+"                            \"nop\": {}\n"
+"                        }\n"
+"                    },\n"
+"                    \"renderer\": \"html\",\n"
+"                    \"mdbook_version\": \"0.4.21\"\n"
+"                },\n"
+"                {\n"
+"                    \"sections\": [\n"
+"                        {\n"
+"                            \"Chapter\": {\n"
+"                                \"name\": \"Chapter 1\",\n"
+"                                \"content\": \"# Chapter 1\\n\",\n"
+"                                \"number\": [1],\n"
+"                                \"sub_items\": [],\n"
+"                                \"path\": \"chapter_1.md\",\n"
+"                                \"source_path\": \"chapter_1.md\",\n"
+"                                \"parent_names\": []\n"
+"                            }\n"
+"                        }\n"
+"                    ],\n"
+"                    \"__non_exhaustive\": null\n"
+"                }\n"
+"            ]\"##"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:196
+msgid ""
+"// The nop-preprocessor should not have made any changes to the book "
+"content.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:205
+msgid "Hints For Implementing A Preprocessor"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:207
+msgid ""
+"By pulling in `mdbook` as a library, preprocessors can have access to the "
+"existing infrastructure for dealing with books."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:210
+msgid ""
+"For example, a custom preprocessor could use the [`CmdPreprocessor::"
+"parse_input()`](https://docs.rs/mdbook/latest/mdbook/preprocess/trait."
+"Preprocessor.html#method.parse_input) function to deserialize the JSON "
+"written to `stdin`. Then each chapter of the `Book` can be mutated in-place "
+"via [`Book::for_each_mut()`](https://docs.rs/mdbook/latest/mdbook/book/"
+"struct.Book.html#method.for_each_mut), and then written to `stdout` with the "
+"`serde_json` crate."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:216
+msgid ""
+"Chapters can be accessed either directly (by recursively iterating over "
+"chapters) or via the `Book::for_each_mut()` convenience method."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:219
+msgid ""
+"The `chapter.content` is just a string which happens to be markdown. While "
+"it's entirely possible to use regular expressions or do a manual find & "
+"replace, you'll probably want to process the input into something more "
+"computer-friendly. The [`pulldown-cmark`](https://crates.io/crates/pulldown-"
+"cmark) crate implements a production-quality event-based Markdown parser, "
+"with the [`pulldown-cmark-to-cmark`](https://crates.io/crates/pulldown-cmark-"
+"to-cmark) crate allowing you to translate events back into markdown text."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:226
+msgid ""
+"The following code block shows how to remove all emphasis from markdown, "
+"without accidentally breaking the document."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:230
+msgid ""
+"//! This is a demonstration of an mdBook preprocessor which parses markdown\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:231
+msgid "//! and removes any instances of emphasis.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:244
+msgid "// Supports all renderers.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:248
+msgid "\"unknown argument: {arg}\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:255
+msgid "\"{e}\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:264
+msgid "\"remove-emphasis\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:278
+msgid "\"failed to process chapter: {e:?}\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:281
+msgid "\"removed {total} emphasis\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:312
+msgid ""
+"Take a look at the [full example source](https://github.com/rust-lang/mdBook/"
+"tree/master/examples/remove-emphasis/) for more details."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:314
+msgid "Implementing a preprocessor with a different language"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:316
+msgid ""
+"The fact that mdBook utilizes stdin and stdout to communicate with the "
+"preprocessors makes it easy to implement them in a language other than Rust. "
+"The following code shows how to implement a simple preprocessor in Python, "
+"which will modify the content of the first chapter. The example below "
+"follows the configuration shown above with `preprocessor.foo.command` "
+"actually pointing to a Python script."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:325
+msgid "'__main__'"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:326
+msgid "# we check if we received any argument\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:328
+msgid ""
+"# then we are good to return an exit status code of 0, since the other "
+"argument will just be the renderer's name\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:331
+msgid "# load both the context and the book representations from stdin\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:333
+msgid "# and now, we can just modify the content of the first chapter\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:334
+msgid "'sections'"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:334
+msgid "'Chapter'"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:334
+msgid "'content'"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:334
+msgid "'# Hello'"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:335
+msgid ""
+"# we are done with the book's modification, we can just print it to "
+"stdout, \n"
+msgstr ""
