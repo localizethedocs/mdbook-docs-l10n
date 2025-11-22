@@ -5,15 +5,15 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/cli/index.md:1
 msgid "Command-line tool"
-msgstr ""
+msgstr "命令行工具"
 
 #: src/cli/index.md:3
 msgid ""
@@ -36,7 +36,7 @@ msgstr ""
 
 #: src/cli/index.md:9
 msgid "[`mdbook build`](build.md) --- Renders the book."
-msgstr ""
+msgstr "[`mdbook build`](build.md) --- 算繪手冊。"
 
 #: src/cli/index.md:10
 msgid ""

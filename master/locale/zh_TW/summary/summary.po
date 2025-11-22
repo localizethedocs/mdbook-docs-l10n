@@ -5,79 +5,79 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/SUMMARY.md:1
 msgid "Summary"
-msgstr ""
+msgstr "摘要"
 
 #: src/SUMMARY.md:3
 msgid "Introduction"
-msgstr ""
+msgstr "簡介"
 
 #: src/SUMMARY.md:5
 msgid "User guide"
-msgstr ""
+msgstr "使用者指南"
 
 #: src/SUMMARY.md:7
 msgid "Installation"
-msgstr ""
+msgstr "安裝"
 
 #: src/SUMMARY.md:8
 msgid "Reading books"
-msgstr ""
+msgstr "閱讀手冊"
 
 #: src/SUMMARY.md:9
 msgid "Creating a book"
-msgstr ""
+msgstr "建立手冊"
 
 #: src/SUMMARY.md:11
 msgid "Reference guide"
-msgstr ""
+msgstr "參考指南"
 
 #: src/SUMMARY.md:13
 msgid "Command-line tool"
-msgstr ""
+msgstr "命令行工具"
 
 #: src/SUMMARY.md:14
 msgid "init"
-msgstr ""
+msgstr "init"
 
 #: src/SUMMARY.md:15
 msgid "build"
-msgstr ""
+msgstr "build"
 
 #: src/SUMMARY.md:16
 msgid "watch"
-msgstr ""
+msgstr "watch"
 
 #: src/SUMMARY.md:17
 msgid "serve"
-msgstr ""
+msgstr "serve"
 
 #: src/SUMMARY.md:18
 msgid "test"
-msgstr ""
+msgstr "test"
 
 #: src/SUMMARY.md:19
 msgid "clean"
-msgstr ""
+msgstr "clean"
 
 #: src/SUMMARY.md:20
 msgid "completions"
-msgstr ""
+msgstr "completions"
 
 #: src/SUMMARY.md:21
 msgid "Format"
-msgstr ""
+msgstr "格式"
 
 #: src/SUMMARY.md:22
 msgid "SUMMARY.md"
-msgstr ""
+msgstr "SUMMARY.md"
 
 #: src/SUMMARY.md:23
 msgid "Draft chapter"
@@ -85,43 +85,43 @@ msgstr ""
 
 #: src/SUMMARY.md:24
 msgid "Configuration"
-msgstr ""
+msgstr "組態"
 
 #: src/SUMMARY.md:25
 msgid "General"
-msgstr ""
+msgstr "一般"
 
 #: src/SUMMARY.md:26 src/SUMMARY.md:38
 msgid "Preprocessors"
-msgstr ""
+msgstr "預處理器"
 
 #: src/SUMMARY.md:27
 msgid "Renderers"
-msgstr ""
+msgstr "算繪器"
 
 #: src/SUMMARY.md:28
 msgid "Environment variables"
-msgstr ""
+msgstr "環境變數"
 
 #: src/SUMMARY.md:29
 msgid "Theme"
-msgstr ""
+msgstr "主題"
 
 #: src/SUMMARY.md:30
 msgid "index.hbs"
-msgstr ""
+msgstr "index.hbs"
 
 #: src/SUMMARY.md:31
 msgid "Syntax highlighting"
-msgstr ""
+msgstr "語法標明"
 
 #: src/SUMMARY.md:32
 msgid "Editor"
-msgstr ""
+msgstr "編輯器"
 
 #: src/SUMMARY.md:33
 msgid "MathJax support"
-msgstr ""
+msgstr "MathJax 支援"
 
 #: src/SUMMARY.md:34
 msgid "mdBook-specific features"
@@ -129,11 +129,11 @@ msgstr ""
 
 #: src/SUMMARY.md:35
 msgid "Markdown"
-msgstr ""
+msgstr "Markdown"
 
 #: src/SUMMARY.md:36
 msgid "Continuous integration"
-msgstr ""
+msgstr "持續整合"
 
 #: src/SUMMARY.md:37
 msgid "For developers"
