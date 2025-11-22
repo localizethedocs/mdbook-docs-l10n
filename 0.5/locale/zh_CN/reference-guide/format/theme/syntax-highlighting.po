@@ -1,0 +1,270 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-22T06:24:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/format/theme/syntax-highlighting.md:1
+msgid "Syntax highlighting"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:3
+msgid ""
+"mdBook uses [Highlight.js](https://highlightjs.org) with a custom theme for "
+"syntax highlighting."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:6
+msgid ""
+"Automatic language detection has been turned off, so you will probably want "
+"to specify the programming language you use like this:"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:17
+msgid "Supported languages"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:19
+msgid ""
+"These languages are supported by default, but you can add more by supplying "
+"your own `highlight.js` file:"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:22
+msgid "apache"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:23
+msgid "armasm"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:24
+msgid "bash"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:25
+msgid "c"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:26
+msgid "coffeescript"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:27
+msgid "cpp"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:28
+msgid "csharp"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:29
+msgid "css"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:30
+msgid "d"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:31
+msgid "diff"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:32
+msgid "go"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:33
+msgid "handlebars"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:34
+msgid "haskell"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:35
+msgid "http"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:36
+msgid "ini"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:37
+msgid "java"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:38
+msgid "javascript"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:39
+msgid "json"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:40
+msgid "julia"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:41
+msgid "kotlin"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:42
+msgid "less"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:43
+msgid "lua"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:44
+msgid "makefile"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:45
+msgid "markdown"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:46
+msgid "nginx"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:47
+msgid "nim"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:48
+msgid "nix"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:49
+msgid "objectivec"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:50
+msgid "perl"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:51
+msgid "php"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:52
+msgid "plaintext"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:53
+msgid "properties"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:54
+msgid "python"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:55
+msgid "r"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:56
+msgid "ruby"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:57
+msgid "rust"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:58
+msgid "scala"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:59
+msgid "scss"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:60
+msgid "shell"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:61
+msgid "sql"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:62
+msgid "swift"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:63
+msgid "typescript"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:64
+msgid "x86asm"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:65
+msgid "xml"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:66
+msgid "yaml"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:68
+msgid "Custom theme"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:69
+msgid ""
+"Like the rest of the theme, the files used for syntax highlighting can be "
+"overridden with your own."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:72
+msgid ""
+"_**highlight.js**_ normally you shouldn't have to overwrite this file, "
+"unless you want to use a more recent version."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:74
+msgid "_**highlight.css**_ theme used by highlight.js for syntax highlighting."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:76
+msgid ""
+"If you want to use another theme for `highlight.js` download it from their "
+"website, or make it yourself, rename it to `highlight.css` and put it in the "
+"`theme` folder of your book."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:80
+msgid "Now your theme will be used instead of the default theme."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:82
+msgid "Improve default theme"
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:84
+msgid ""
+"If you think the default theme doesn't look quite right for a specific "
+"language, or could be improved, feel free to [submit a new issue](https://"
+"github.com/rust-lang/mdBook/issues) explaining what you have in mind and I "
+"will take a look at it."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:89
+msgid "You could also create a pull-request with the proposed improvements."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:91
+msgid ""
+"Overall the theme should be light and sober, without too many flashy colors."
+msgstr ""

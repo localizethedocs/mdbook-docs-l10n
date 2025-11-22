@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-22T06:24:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/format/mathjax.md:1
+msgid "MathJax support"
+msgstr ""
+
+#: src/format/mathjax.md:3
+msgid ""
+"mdBook has optional support for math equations through [MathJax](https://www."
+"mathjax.org/)."
+msgstr ""
+
+#: src/format/mathjax.md:6
+msgid ""
+"To enable MathJax, you need to add the `mathjax-support` key to your `book."
+"toml` under the `output.html` section."
+msgstr ""
+
+#: src/format/mathjax.md:14
+msgid ""
+"**Note:** The usual delimiters MathJax uses are not yet supported. You can't "
+"currently use `$$ ... $$` as delimiters and the `\\[ ... \\]` delimiters "
+"need an extra backslash to work. Hopefully this limitation will be lifted "
+"soon."
+msgstr ""
+
+#: src/format/mathjax.md:18
+msgid ""
+"**Note:** When you use double backslashes in MathJax blocks (for example in "
+"commands such as `\\begin{cases} \\frac 1 2 \\\\ \\frac 3 4 \\end{cases}`) "
+"you need to add _two extra_ backslashes (e.g., `\\begin{cases} \\frac 1 2 \\"
+"\\\\\\ \\frac 3 4 \\end{cases}`)."
+msgstr ""
+
+#: src/format/mathjax.md:24
+msgid "Inline equations"
+msgstr ""
+
+#: src/format/mathjax.md:25
+msgid ""
+"Inline equations are delimited by `\\\\(` and `\\\\)`. So for example, to "
+"render the following inline equation \\\\( \\int x dx = \\frac{x^2}{2} + C \\"
+"\\) you would write the following:"
+msgstr ""
+
+#: src/format/mathjax.md:32
+msgid "Block equations"
+msgstr ""
+
+#: src/format/mathjax.md:33
+msgid ""
+"Block equations are delimited by `\\\\[` and `\\\\]`. To render the "
+"following equation"
+msgstr ""
+
+#: src/format/mathjax.md:36
+msgid "\\\\\\[ \\mu = \\frac{1}{N} \\sum\\_{i=0} x_i \\\\\\]"
+msgstr ""
+
+#: src/format/mathjax.md:39
+msgid "you would write:"
+msgstr ""

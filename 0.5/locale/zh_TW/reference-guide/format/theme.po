@@ -1,0 +1,127 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-22T06:24:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/format/theme/index.md:1
+msgid "Theme"
+msgstr ""
+
+#: src/format/theme/index.md:3
+msgid ""
+"The default renderer uses a [handlebars](https://handlebarsjs.com) template "
+"to render your markdown files and comes with a default theme included in the "
+"mdBook binary."
+msgstr ""
+
+#: src/format/theme/index.md:7
+msgid ""
+"The theme is totally customizable, you can selectively replace every file "
+"from the theme by your own by adding a `theme` directory next to `src` "
+"folder in your project root. Create a new file with the name of the file you "
+"want to override and now that file will be used instead of the default file."
+msgstr ""
+
+#: src/format/theme/index.md:12
+msgid "Here are the files you can override:"
+msgstr ""
+
+#: src/format/theme/index.md:14
+msgid "**_index.hbs_** is the handlebars template."
+msgstr ""
+
+#: src/format/theme/index.md:15
+msgid "**_head.hbs_** is appended to the HTML `<head>` section."
+msgstr ""
+
+#: src/format/theme/index.md:16
+msgid "**_header.hbs_** content is appended on top of every book page."
+msgstr ""
+
+#: src/format/theme/index.md:17
+msgid "**_css/_** contains the CSS files for styling the book."
+msgstr ""
+
+#: src/format/theme/index.md:18
+msgid "**_css/chrome.css_** is for UI elements."
+msgstr ""
+
+#: src/format/theme/index.md:19
+msgid "**_css/general.css_** is the base styles."
+msgstr ""
+
+#: src/format/theme/index.md:20
+msgid "**_css/print.css_** is the style for printer output."
+msgstr ""
+
+#: src/format/theme/index.md:21
+msgid "**_css/variables.css_** contains variables used in other CSS files."
+msgstr ""
+
+#: src/format/theme/index.md:22
+msgid ""
+"**_book.js_** is mostly used to add client side functionality, like hiding / "
+"un-hiding the sidebar, changing the theme, ..."
+msgstr ""
+
+#: src/format/theme/index.md:24
+msgid ""
+"**_highlight.js_** is the JavaScript that is used to highlight code "
+"snippets, you should not need to modify this."
+msgstr ""
+
+#: src/format/theme/index.md:26
+msgid "**_highlight.css_** is the theme used for the code highlighting."
+msgstr ""
+
+#: src/format/theme/index.md:27
+msgid ""
+"**_favicon.svg_** and **_favicon.png_** the favicon that will be used. The "
+"SVG version is used by [newer browsers](https://caniuse.com/#feat=link-icon-"
+"svg)."
+msgstr ""
+
+#: src/format/theme/index.md:29
+msgid ""
+"**fonts/fonts.css** contains the definition of which fonts to load. Custom "
+"fonts can be included in the `fonts` directory."
+msgstr ""
+
+#: src/format/theme/index.md:32
+msgid ""
+"Generally, when you want to tweak the theme, you don't need to override all "
+"the files. If you only need changes in the stylesheet, there is no point in "
+"overriding all the other files. Because custom files take precedence over "
+"built-in ones, they will not get updated with new fixes / features."
+msgstr ""
+
+#: src/format/theme/index.md:37
+msgid ""
+"**Note:** When you override a file, it is possible that you break some "
+"functionality. Therefore I recommend to use the file from the default theme "
+"as template and only add / modify what you need. You can copy the default "
+"theme into your source directory automatically by using `mdbook init --"
+"theme` and just remove the files you don't want to override."
+msgstr ""
+
+#: src/format/theme/index.md:43
+msgid ""
+"`mdbook init --theme` will not create every file listed above. Some files, "
+"such as `head.hbs`, do not have built-in equivalents. Just create the file "
+"if you need it."
+msgstr ""
+
+#: src/format/theme/index.md:47
+msgid ""
+"If you completely replace all built-in themes, be sure to also set [`output."
+"html.preferred-dark-theme`](../configuration/renderers.md#html-renderer-"
+"options) in the config, which defaults to the built-in `navy` theme."
+msgstr ""

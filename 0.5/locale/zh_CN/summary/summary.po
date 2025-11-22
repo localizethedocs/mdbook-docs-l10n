@@ -1,0 +1,148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-22T06:24:29Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/SUMMARY.md:1
+msgid "Summary"
+msgstr ""
+
+#: src/SUMMARY.md:3
+msgid "Introduction"
+msgstr ""
+
+#: src/SUMMARY.md:5
+msgid "User guide"
+msgstr ""
+
+#: src/SUMMARY.md:7
+msgid "Installation"
+msgstr ""
+
+#: src/SUMMARY.md:8
+msgid "Reading books"
+msgstr ""
+
+#: src/SUMMARY.md:9
+msgid "Creating a book"
+msgstr ""
+
+#: src/SUMMARY.md:11
+msgid "Reference guide"
+msgstr ""
+
+#: src/SUMMARY.md:13
+msgid "Command-line tool"
+msgstr ""
+
+#: src/SUMMARY.md:14
+msgid "init"
+msgstr ""
+
+#: src/SUMMARY.md:15
+msgid "build"
+msgstr ""
+
+#: src/SUMMARY.md:16
+msgid "watch"
+msgstr ""
+
+#: src/SUMMARY.md:17
+msgid "serve"
+msgstr ""
+
+#: src/SUMMARY.md:18
+msgid "test"
+msgstr ""
+
+#: src/SUMMARY.md:19
+msgid "clean"
+msgstr ""
+
+#: src/SUMMARY.md:20
+msgid "completions"
+msgstr ""
+
+#: src/SUMMARY.md:21
+msgid "Format"
+msgstr ""
+
+#: src/SUMMARY.md:22
+msgid "SUMMARY.md"
+msgstr ""
+
+#: src/SUMMARY.md:23
+msgid "Draft chapter"
+msgstr ""
+
+#: src/SUMMARY.md:24
+msgid "Configuration"
+msgstr ""
+
+#: src/SUMMARY.md:25
+msgid "General"
+msgstr ""
+
+#: src/SUMMARY.md:26 src/SUMMARY.md:38
+msgid "Preprocessors"
+msgstr ""
+
+#: src/SUMMARY.md:27
+msgid "Renderers"
+msgstr ""
+
+#: src/SUMMARY.md:28
+msgid "Environment variables"
+msgstr ""
+
+#: src/SUMMARY.md:29
+msgid "Theme"
+msgstr ""
+
+#: src/SUMMARY.md:30
+msgid "index.hbs"
+msgstr ""
+
+#: src/SUMMARY.md:31
+msgid "Syntax highlighting"
+msgstr ""
+
+#: src/SUMMARY.md:32
+msgid "Editor"
+msgstr ""
+
+#: src/SUMMARY.md:33
+msgid "MathJax support"
+msgstr ""
+
+#: src/SUMMARY.md:34
+msgid "mdBook-specific features"
+msgstr ""
+
+#: src/SUMMARY.md:35
+msgid "Markdown"
+msgstr ""
+
+#: src/SUMMARY.md:36
+msgid "Continuous integration"
+msgstr ""
+
+#: src/SUMMARY.md:37
+msgid "For developers"
+msgstr ""
+
+#: src/SUMMARY.md:39
+msgid "Alternative backends"
+msgstr ""
+
+#: src/SUMMARY.md:43
+msgid "Contributors"
+msgstr ""

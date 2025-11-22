@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-22T06:24:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/cli/clean.md:1
+msgid "The clean command"
+msgstr ""
+
+#: src/cli/clean.md:3
+msgid ""
+"The clean command is used to delete the generated book and any other build "
+"artifacts."
+msgstr ""
+
+#: src/cli/clean.md:10
+msgid "Specify a directory"
+msgstr ""
+
+#: src/cli/clean.md:12
+msgid ""
+"The `clean` command can take a directory as an argument to use as the book's "
+"root instead of the current working directory."
+msgstr ""
+
+#: src/cli/clean.md:19
+msgid "`--dest-dir`"
+msgstr ""
+
+#: src/cli/clean.md:21
+msgid ""
+"The `--dest-dir` (`-d`) option allows you to override the book's output "
+"directory, which will be deleted by this command. Relative paths are "
+"interpreted relative to the current directory. If not specified it will "
+"default to the value of the `build.build-dir` key in `book.toml`, or to `./"
+"book`."
+msgstr ""
+
+#: src/cli/clean.md:30
+msgid "`path/to/book` could be absolute or relative."
+msgstr ""
