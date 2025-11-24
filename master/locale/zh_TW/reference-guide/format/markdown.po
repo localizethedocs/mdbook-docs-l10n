@@ -328,7 +328,7 @@ msgstr ""
 
 #: src/format/markdown.md:213
 msgid "ASCII sequence"
-msgstr ""
+msgstr "ASCII 序列"
 
 #: src/format/markdown.md:213
 msgid "Unicode"

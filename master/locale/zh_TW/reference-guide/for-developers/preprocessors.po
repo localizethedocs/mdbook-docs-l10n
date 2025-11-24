@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/for_developers/preprocessors.md:1
 msgid "Preprocessors"
-msgstr ""
+msgstr "預處理器"
 
 #: src/for_developers/preprocessors.md:3
 msgid ""

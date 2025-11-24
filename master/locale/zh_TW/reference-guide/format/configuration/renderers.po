@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:1
 msgid "Configuring Renderers"
-msgstr ""
+msgstr "組態渲染器"
 
 #: src/format/configuration/renderers.md:3
 msgid ""
@@ -600,7 +600,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:325
 msgid "Markdown renderer"
-msgstr ""
+msgstr "Markdown 算繪器"
 
 #: src/format/configuration/renderers.md:327
 msgid ""
