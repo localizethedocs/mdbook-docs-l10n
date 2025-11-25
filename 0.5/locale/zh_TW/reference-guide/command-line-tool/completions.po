@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/cli/completions.md:1
 msgid "The completions command"
-msgstr ""
+msgstr "completions 命令"
 
 #: src/cli/completions.md:3
 msgid ""

@@ -13,11 +13,11 @@ msgstr ""
 
 #: src/cli/build.md:1
 msgid "The build command"
-msgstr ""
+msgstr "build 命令"
 
 #: src/cli/build.md:3
 msgid "The build command is used to render your book:"
-msgstr ""
+msgstr "build 命令用於算繪您的手冊："
 
 #: src/cli/build.md:9
 msgid ""
@@ -34,7 +34,7 @@ msgstr ""
 
 #: src/cli/build.md:16
 msgid "Specify a directory"
-msgstr ""
+msgstr "指定目錄"
 
 #: src/cli/build.md:18
 msgid ""

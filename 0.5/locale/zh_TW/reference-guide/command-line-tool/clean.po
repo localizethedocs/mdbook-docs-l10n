@@ -13,17 +13,17 @@ msgstr ""
 
 #: src/cli/clean.md:1
 msgid "The clean command"
-msgstr ""
+msgstr "clean 命令"
 
 #: src/cli/clean.md:3
 msgid ""
 "The clean command is used to delete the generated book and any other build "
 "artifacts."
-msgstr ""
+msgstr "clean 命令用於刪除生成的手冊和任何其他建置製品。"
 
 #: src/cli/clean.md:10
 msgid "Specify a directory"
-msgstr ""
+msgstr "指定目錄"
 
 #: src/cli/clean.md:12
 msgid ""

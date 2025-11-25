@@ -125,7 +125,7 @@ msgstr ""
 
 #: src/format/configuration/general.md:64
 msgid "Rust options"
-msgstr ""
+msgstr "Rust 選項"
 
 #: src/format/configuration/general.md:66
 msgid ""
