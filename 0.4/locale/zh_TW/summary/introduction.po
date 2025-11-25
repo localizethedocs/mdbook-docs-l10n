@@ -43,7 +43,7 @@ msgstr ""
 msgid ""
 "[Theme](format/theme/index.html) files allow customizing the formatting of "
 "the output"
-msgstr ""
+msgstr "[主題](format/theme/index.html)檔案允許客製化輸出的格式"
 
 #: src/index.md:11
 msgid ""
@@ -55,7 +55,7 @@ msgstr ""
 msgid ""
 "[Backends](format/configuration/renderers.md) can render the output to "
 "multiple formats"
-msgstr ""
+msgstr "[後端](format/configuration/renderers.md)可以將輸出算繪成多種格式"
 
 #: src/index.md:13
 msgid ""

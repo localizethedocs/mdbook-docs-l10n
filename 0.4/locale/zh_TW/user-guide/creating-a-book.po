@@ -23,7 +23,7 @@ msgstr ""
 
 #: src/guide/creating.md:5
 msgid "Initializing a book"
-msgstr ""
+msgstr "初始化手冊"
 
 #: src/guide/creating.md:7
 msgid ""
@@ -163,7 +163,7 @@ msgstr ""
 
 #: src/guide/creating.md:96
 msgid "Publishing a book"
-msgstr ""
+msgstr "發布手冊"
 
 #: src/guide/creating.md:98
 msgid ""

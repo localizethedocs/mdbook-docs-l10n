@@ -29,7 +29,7 @@ msgstr ""
 
 #: src/format/theme/syntax-highlighting.md:17
 msgid "Supported languages"
-msgstr ""
+msgstr "支援的語言"
 
 #: src/format/theme/syntax-highlighting.md:19
 msgid ""
@@ -250,7 +250,7 @@ msgstr ""
 
 #: src/format/theme/syntax-highlighting.md:82
 msgid "Improve default theme"
-msgstr ""
+msgstr "改善預設主題"
 
 #: src/format/theme/syntax-highlighting.md:84
 msgid ""

@@ -41,7 +41,7 @@ msgstr ""
 
 #: src/guide/installation.md:19
 msgid "Build from source using Rust"
-msgstr ""
+msgstr "使用 Rust 從來源碼建置"
 
 #: src/guide/installation.md:21
 msgid ""

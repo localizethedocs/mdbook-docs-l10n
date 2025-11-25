@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/cli/init.md:1
 msgid "The init command"
-msgstr ""
+msgstr "init 命令"
 
 #: src/cli/init.md:3
 msgid ""

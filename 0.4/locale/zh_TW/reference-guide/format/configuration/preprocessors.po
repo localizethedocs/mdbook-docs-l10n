@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/format/configuration/preprocessors.md:1
 msgid "Configuring Preprocessors"
-msgstr ""
+msgstr "組態預處理器"
 
 #: src/format/configuration/preprocessors.md:3
 msgid ""
@@ -140,10 +140,14 @@ msgid ""
 "after = [ \"links\" ]\n"
 "```"
 msgstr ""
+"```toml\n"
+"[preprocessor.linenos]\n"
+"after = [ \"links\" ]\n"
+"```"
 
 #: src/format/configuration/preprocessors.md:77
 msgid "or"
-msgstr ""
+msgstr "或者"
 
 #: src/format/configuration/preprocessors.md:79
 msgid ""
@@ -152,6 +156,10 @@ msgid ""
 "before = [ \"linenos\" ]\n"
 "```"
 msgstr ""
+"```toml\n"
+"[preprocessor.links]\n"
+"before = [ \"linenos\" ]\n"
+"```"
 
 #: src/format/configuration/preprocessors.md:84
 msgid ""

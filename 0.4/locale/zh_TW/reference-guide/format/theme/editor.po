@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/format/theme/editor.md:1
 msgid "Editor"
-msgstr ""
+msgstr "編輯器"
 
 #: src/format/theme/editor.md:3
 msgid ""
