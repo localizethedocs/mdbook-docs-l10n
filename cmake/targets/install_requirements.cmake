@@ -197,124 +197,57 @@ restore_cmake_message_indent()
 find_package(Rust       MODULE REQUIRED COMPONENTS Cargo)
 
 
-if (  ( VERSION MATCHES "^(master)$" ) OR
-      ( VERSION MATCHES "^([0-9]+)\\.([0-9]+)$" AND
-        VERSION VERSION_LESS_EQUAL    "0.5"     AND
-        VERSION VERSION_GREATER_EQUAL "0.5" )   )
-    # TODO: Remove the following lines once the mdbook-i18n-helpers is compatible with mdbook@^0.5
-    #
-    # Currently, the "mdbook@^0.5" is incompatible with the latest "mdbook-i18n-helpers".
-    # Therfore, the workaround is to use "mdbook@^0.4" to build the book of the master or 0.5 version.
-    #
-    # See the following issues for more details:
-    # - https://github.com/rust-lang/mdBook/issues/2835
-    # - https://github.com/google/mdbook-i18n-helpers/issues/278
-    message(STATUS "Running 'cargo install' command to install 'mdbook' package...")
-    if (CMAKE_HOST_LINUX)
-        set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
-        set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
-        set(ENV_CARGO_INSTALL_ROOT  "${PROJ_CONDA_DIR}")
-        set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
-                                    LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH}
-                                    CARGO_INSTALL_ROOT=${ENV_CARGO_INSTALL_ROOT})
-    elseif (CMAKE_HOST_WIN32)
-        set(ENV_PATH                "${PROJ_CONDA_DIR}/bin"
-                                    "${PROJ_CONDA_DIR}/Scripts"
-                                    "${PROJ_CONDA_DIR}/Library/bin"
-                                    "${PROJ_CONDA_DIR}"
-                                    "$ENV{PATH}")
-        set(ENV_CARGO_INSTALL_ROOT  "${PROJ_CONDA_DIR}/Library")
-        string(REPLACE ";" "\\\\;" ENV_PATH "${ENV_PATH}")
-        set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
-                                    CARGO_INSTALL_ROOT=${ENV_CARGO_INSTALL_ROOT})
-    else()
-        message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
-    endif()
-    set(CRATE_OF_MDBOOK             "mdbook@^0.4")
-    remove_cmake_message_indent()
-    message("")
-    message("CRATE_OF_MDBOOK  = ${CRATE_OF_MDBOOK}")
-    message("")
-    execute_process(
-        COMMAND ${CMAKE_COMMAND} -E env
-                ${ENV_VARS_OF_SYSTEM}
-                ${Rust_CARGO_EXECUTABLE} install
-                ${CRATE_OF_MDBOOK}
-        ECHO_OUTPUT_VARIABLE
-        ECHO_ERROR_VARIABLE
-        RESULT_VARIABLE RES_VAR
-        OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
-        ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-    if (RES_VAR EQUAL 0)
-        if (ERR_VAR)
-            string(APPEND WARNING_REASON
-            "The command succeeded with warnings.\n\n"
-            "    result:\n\n${RES_VAR}\n\n"
-            "    stderr:\n\n${ERR_VAR}")
-            message("${WARNING_REASON}")
-        endif()
-    else()
-        string(APPEND FAILURE_REASON
-        "The command failed with fatal errors.\n"
-        "    result:\n${RES_VAR}\n"
-        "    stderr:\n${ERR_VAR}")
-        message(FATAL_ERROR "${FAILURE_REASON}")
-    endif()
-    message("")
-    restore_cmake_message_indent()
+message(STATUS "Running 'cargo install' command to install the 'mdbook' package from sources...")
+if (CMAKE_HOST_LINUX)
+    set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
+    set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
+    set(ENV_CARGO_INSTALL_ROOT  "${PROJ_CONDA_DIR}")
+    set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
+                                LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH}
+                                CARGO_INSTALL_ROOT=${ENV_CARGO_INSTALL_ROOT})
+elseif (CMAKE_HOST_WIN32)
+    set(ENV_PATH                "${PROJ_CONDA_DIR}/bin"
+                                "${PROJ_CONDA_DIR}/Scripts"
+                                "${PROJ_CONDA_DIR}/Library/bin"
+                                "${PROJ_CONDA_DIR}"
+                                "$ENV{PATH}")
+    set(ENV_CARGO_INSTALL_ROOT  "${PROJ_CONDA_DIR}/Library")
+    string(REPLACE ";" "\\\\;" ENV_PATH "${ENV_PATH}")
+    set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
+                                CARGO_INSTALL_ROOT=${ENV_CARGO_INSTALL_ROOT})
 else()
-    message(STATUS "Running 'cargo install' command to install the 'mdbook' package from sources...")
-    if (CMAKE_HOST_LINUX)
-        set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
-        set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
-        set(ENV_CARGO_INSTALL_ROOT  "${PROJ_CONDA_DIR}")
-        set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
-                                    LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH}
-                                    CARGO_INSTALL_ROOT=${ENV_CARGO_INSTALL_ROOT})
-    elseif (CMAKE_HOST_WIN32)
-        set(ENV_PATH                "${PROJ_CONDA_DIR}/bin"
-                                    "${PROJ_CONDA_DIR}/Scripts"
-                                    "${PROJ_CONDA_DIR}/Library/bin"
-                                    "${PROJ_CONDA_DIR}"
-                                    "$ENV{PATH}")
-        set(ENV_CARGO_INSTALL_ROOT  "${PROJ_CONDA_DIR}/Library")
-        string(REPLACE ";" "\\\\;" ENV_PATH "${ENV_PATH}")
-        set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
-                                    CARGO_INSTALL_ROOT=${ENV_CARGO_INSTALL_ROOT})
-    else()
-        message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
-    endif()
-    remove_cmake_message_indent()
-    message("")
-    execute_process(
-        COMMAND ${CMAKE_COMMAND} -E env
-                ${ENV_VARS_OF_SYSTEM}
-                ${Rust_CARGO_EXECUTABLE} install
-                --path ${PROJ_OUT_REPO_DIR}
-                --locked
-        ECHO_OUTPUT_VARIABLE
-        ECHO_ERROR_VARIABLE
-        RESULT_VARIABLE RES_VAR
-        OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
-        ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-    if (RES_VAR EQUAL 0)
-        if (ERR_VAR)
-            string(APPEND WARNING_REASON
-            "The command succeeded with warnings.\n\n"
-            "    result:\n\n${RES_VAR}\n\n"
-            "    stderr:\n\n${ERR_VAR}")
-            message("${WARNING_REASON}")
-        endif()
-    else()
-        string(APPEND FAILURE_REASON
-        "The command failed with fatal errors.\n"
-        "    result:\n${RES_VAR}\n"
-        "    stderr:\n${ERR_VAR}")
-        message(FATAL_ERROR "${FAILURE_REASON}")
-    endif()
-    message("")
-    restore_cmake_message_indent()
+    message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
 endif()
+remove_cmake_message_indent()
+message("")
+execute_process(
+    COMMAND ${CMAKE_COMMAND} -E env
+            ${ENV_VARS_OF_SYSTEM}
+            ${Rust_CARGO_EXECUTABLE} install
+            --path ${PROJ_OUT_REPO_DIR}
+            --locked
+    ECHO_OUTPUT_VARIABLE
+    ECHO_ERROR_VARIABLE
+    RESULT_VARIABLE RES_VAR
+    OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
+    ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
+if (RES_VAR EQUAL 0)
+    if (ERR_VAR)
+        string(APPEND WARNING_REASON
+        "The command succeeded with warnings.\n\n"
+        "    result:\n\n${RES_VAR}\n\n"
+        "    stderr:\n\n${ERR_VAR}")
+        message("${WARNING_REASON}")
+    endif()
+else()
+    string(APPEND FAILURE_REASON
+    "The command failed with fatal errors.\n"
+    "    result:\n${RES_VAR}\n"
+    "    stderr:\n${ERR_VAR}")
+    message(FATAL_ERROR "${FAILURE_REASON}")
+endif()
+message("")
+restore_cmake_message_indent()
 
 
 find_package(mdBook     MODULE REQUIRED COMPONENTS mdBook)
