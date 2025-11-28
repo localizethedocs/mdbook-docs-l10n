@@ -16,9 +16,9 @@
       "branch" : "master",
       "commit" : 
       {
-        "date" : "2025-11-20 01:44:03 +0000",
-        "hash" : "d63aeb6526356464f627b2d7de413b5b6bbb87c2",
-        "title" : "Merge pull request #2955 from ehuss/bump-version"
+        "date" : "2025-11-25 10:47:21 +0000",
+        "hash" : "de8202a67fa2bbdb6f173e40aa80de427202ed7c",
+        "title" : "Merge pull request #2965 from Kobzol/publish-environment"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "master",
       "commit" : 
       {
-        "date" : "2025-11-20 01:44:03 +0000",
-        "hash" : "d63aeb6526356464f627b2d7de413b5b6bbb87c2",
-        "title" : "Merge pull request #2955 from ehuss/bump-version"
+        "date" : "2025-11-25 10:47:21 +0000",
+        "hash" : "de8202a67fa2bbdb6f173e40aa80de427202ed7c",
+        "title" : "Merge pull request #2965 from Kobzol/publish-environment"
       }
     }
   },
