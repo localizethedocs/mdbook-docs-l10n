@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-22T06:24:11Z\n"
+"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/misc/contributors.md:1
 msgid "Contributors"
-msgstr ""
+msgstr "貢獻者"
 
 #: src/misc/contributors.md:3
 msgid ""

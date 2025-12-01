@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-22T06:24:11Z\n"
+"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -38,25 +38,27 @@ msgstr "例如："
 
 #: src/format/configuration/environment-variables.md:15
 msgid "`MDBOOK_book` -> `book`"
-msgstr ""
+msgstr "`MDBOOK_book` -> `book`"
 
 #: src/format/configuration/environment-variables.md:16
 msgid "`MDBOOK_BOOK` -> `book`"
-msgstr ""
+msgstr "`MDBOOK_BOOK` -> `book`"
 
 #: src/format/configuration/environment-variables.md:17
 msgid "`MDBOOK_BOOK__TITLE` -> `book.title`"
-msgstr ""
+msgstr "`MDBOOK_BOOK__TITLE` -> `book.title`"
 
 #: src/format/configuration/environment-variables.md:18
 msgid "`MDBOOK_BOOK__TEXT_DIRECTION` -> `book.text-direction`"
-msgstr ""
+msgstr "`MDBOOK_BOOK__TEXT_DIRECTION` -> `book.text-direction`"
 
 #: src/format/configuration/environment-variables.md:20
 msgid ""
 "So by setting the `MDBOOK_BOOK__TITLE` environment variable you can override "
 "the book's title without needing to touch your `book.toml`."
 msgstr ""
+"因此，透過設定 `MDBOOK_BOOK__TITLE` 環境變數而無需修改您的 `book.toml`，就可"
+"以覆蓋手冊的題名。"
 
 #: src/format/configuration/environment-variables.md:23
 msgid ""
@@ -79,6 +81,11 @@ msgid ""
 "$ mdbook build\n"
 "```"
 msgstr ""
+"```shell\n"
+"$ export MDBOOK_BOOK='{\"title\": \"My Awesome Book\", \"authors\": "
+"[\"Michael-F-Bryan\"]}'\n"
+"$ mdbook build\n"
+"```"
 
 #: src/format/configuration/environment-variables.md:35
 msgid ""

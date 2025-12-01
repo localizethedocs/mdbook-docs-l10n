@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-22T06:24:11Z\n"
+"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -53,7 +53,7 @@ msgstr ""
 
 #: src/format/configuration/general.md:31
 msgid "Supported configuration options"
-msgstr ""
+msgstr "支援的組態選項"
 
 #: src/format/configuration/general.md:33
 msgid ""
@@ -72,11 +72,11 @@ msgstr ""
 
 #: src/format/configuration/general.md:41
 msgid "**title:** The title of the book"
-msgstr ""
+msgstr "**title:** 手冊的題名"
 
 #: src/format/configuration/general.md:42
 msgid "**authors:** The author(s) of the book"
-msgstr ""
+msgstr "**authors:** 手冊的作者"
 
 #: src/format/configuration/general.md:43
 msgid ""
@@ -107,7 +107,7 @@ msgstr ""
 
 #: src/format/configuration/general.md:53
 msgid "**book.toml**"
-msgstr ""
+msgstr "**book.toml**"
 
 #: src/format/configuration/general.md:54
 msgid ""

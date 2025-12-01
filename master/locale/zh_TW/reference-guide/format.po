@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-22T06:24:10Z\n"
+"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/format/index.md:1
 msgid "Format"
-msgstr ""
+msgstr "格式化"
 
 #: src/format/index.md:3
 msgid "In this section you will learn how to:"
@@ -25,12 +25,12 @@ msgstr ""
 
 #: src/format/index.md:6
 msgid "Format your `SUMMARY.md` file"
-msgstr ""
+msgstr "格式化您的 `SUMMARY.md` 檔案"
 
 #: src/format/index.md:7
 msgid "Configure your book using `book.toml`"
-msgstr ""
+msgstr "使用 `book.toml` 組態您的手冊"
 
 #: src/format/index.md:8
 msgid "Customize your theme"
-msgstr ""
+msgstr "自訂您的主題"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-22T06:24:11Z\n"
+"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/format/theme/index-hbs.md:1
 msgid "index.hbs"
-msgstr ""
+msgstr "index.hbs"
 
 #: src/format/theme/index-hbs.md:3
 msgid ""
@@ -100,23 +100,23 @@ msgstr ""
 
 #: src/format/theme/index-hbs.md:36
 msgid "\"1.2.1\""
-msgstr ""
+msgstr "\"1.2.1\""
 
 #: src/format/theme/index-hbs.md:36
 msgid "\"name\""
-msgstr ""
+msgstr "\"name\""
 
 #: src/format/theme/index-hbs.md:36
 msgid "\"name of this chapter\""
-msgstr ""
+msgstr "\"name of this chapter\""
 
 #: src/format/theme/index-hbs.md:36
 msgid "\"path\""
-msgstr ""
+msgstr "\"path\""
 
 #: src/format/theme/index-hbs.md:36
 msgid "\"dir/markdown.md\""
-msgstr ""
+msgstr "\"dir/markdown.md\""
 
 #: src/format/theme/index-hbs.md:38
 msgid ""
@@ -136,7 +136,7 @@ msgstr ""
 
 #: src/format/theme/index-hbs.md:46
 msgid "toc"
-msgstr ""
+msgstr "toc"
 
 #: src/format/theme/index-hbs.md:48
 msgid "The toc helper is used like this"
@@ -150,15 +150,15 @@ msgstr ""
 
 #: src/format/theme/index-hbs.md:58
 msgid "\"chapter\""
-msgstr ""
+msgstr "\"chapter\""
 
 #: src/format/theme/index-hbs.md:59
 msgid "\"link/to/file.html\""
-msgstr ""
+msgstr "\"link/to/file.html\""
 
 #: src/format/theme/index-hbs.md:62
 msgid "\"link/to/other_file.html\""
-msgstr ""
+msgstr "\"link/to/other_file.html\""
 
 #: src/format/theme/index-hbs.md:68
 msgid ""
@@ -174,7 +174,7 @@ msgstr ""
 
 #: src/format/theme/index-hbs.md:80
 msgid "resource"
-msgstr ""
+msgstr "resource"
 
 #: src/format/theme/index-hbs.md:82
 msgid ""
@@ -188,10 +188,13 @@ msgid ""
 "<link rel=\"stylesheet\" href=\"{{ resource \"css/chrome.css\" }}\">\n"
 "```"
 msgstr ""
+"```handlebars\n"
+"<link rel=\"stylesheet\" href=\"{{ resource \"css/chrome.css\" }}\">\n"
+"```"
 
 #: src/format/theme/index-hbs.md:90
 msgid "fa"
-msgstr ""
+msgstr "fa"
 
 #: src/format/theme/index-hbs.md:92
 msgid ""
@@ -227,10 +230,13 @@ msgid ""
 "{{fa \"solid\" \"print\" \"print-button\"}}\n"
 "```"
 msgstr ""
+"```handlebars\n"
+"{{fa \"solid\" \"print\" \"print-button\"}}\n"
+"```"
 
 #: src/format/theme/index-hbs.md:109
 msgid "fa-svg"
-msgstr ""
+msgstr "fa-svg"
 
 #: src/format/theme/index-hbs.md:109
 msgid "\"print-button\""
@@ -238,7 +244,7 @@ msgstr ""
 
 #: src/format/theme/index-hbs.md:109
 msgid "\"http://www.w3.org/2000/svg\""
-msgstr ""
+msgstr "\"http://www.w3.org/2000/svg\""
 
 #: src/format/theme/index-hbs.md:109
 msgid "\"0 0 512 512\""
