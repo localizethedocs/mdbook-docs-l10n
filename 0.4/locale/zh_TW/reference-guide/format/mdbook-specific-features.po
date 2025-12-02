@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-22T06:24:19Z\n"
+"POT-Creation-Date: 2025-11-28T05:49:34Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -315,7 +315,7 @@ msgstr ""
 
 #: src/format/mdbook.md:279
 msgid "Inserting runnable Rust files"
-msgstr ""
+msgstr "插入可執行的 Rust 檔案"
 
 #: src/format/mdbook.md:281
 msgid ""

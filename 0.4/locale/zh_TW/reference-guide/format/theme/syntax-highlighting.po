@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-22T06:24:19Z\n"
+"POT-Creation-Date: 2025-11-28T05:49:34Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,12 +20,14 @@ msgid ""
 "mdBook uses [Highlight.js](https://highlightjs.org) with a custom theme for "
 "syntax highlighting."
 msgstr ""
+"mdBook 使用帶有自訂主題的 [Highlight.js](https://highlightjs.org) 進行語法標"
+"明。"
 
 #: src/format/theme/syntax-highlighting.md:6
 msgid ""
 "Automatic language detection has been turned off, so you will probably want "
 "to specify the programming language you use like this:"
-msgstr ""
+msgstr "已關閉自動語言偵測，因此您可能會想像這樣指定您使用的程式語言："
 
 #: src/format/theme/syntax-highlighting.md:17
 msgid "Supported languages"
@@ -39,187 +41,187 @@ msgstr ""
 
 #: src/format/theme/syntax-highlighting.md:22
 msgid "apache"
-msgstr ""
+msgstr "apache"
 
 #: src/format/theme/syntax-highlighting.md:23
 msgid "armasm"
-msgstr ""
+msgstr "armasm"
 
 #: src/format/theme/syntax-highlighting.md:24
 msgid "bash"
-msgstr ""
+msgstr "bash"
 
 #: src/format/theme/syntax-highlighting.md:25
 msgid "c"
-msgstr ""
+msgstr "c"
 
 #: src/format/theme/syntax-highlighting.md:26
 msgid "coffeescript"
-msgstr ""
+msgstr "coffeescript"
 
 #: src/format/theme/syntax-highlighting.md:27
 msgid "cpp"
-msgstr ""
+msgstr "cpp"
 
 #: src/format/theme/syntax-highlighting.md:28
 msgid "csharp"
-msgstr ""
+msgstr "csharp"
 
 #: src/format/theme/syntax-highlighting.md:29
 msgid "css"
-msgstr ""
+msgstr "css"
 
 #: src/format/theme/syntax-highlighting.md:30
 msgid "d"
-msgstr ""
+msgstr "d"
 
 #: src/format/theme/syntax-highlighting.md:31
 msgid "diff"
-msgstr ""
+msgstr "diff"
 
 #: src/format/theme/syntax-highlighting.md:32
 msgid "go"
-msgstr ""
+msgstr "go"
 
 #: src/format/theme/syntax-highlighting.md:33
 msgid "handlebars"
-msgstr ""
+msgstr "handlebars"
 
 #: src/format/theme/syntax-highlighting.md:34
 msgid "haskell"
-msgstr ""
+msgstr "haskell"
 
 #: src/format/theme/syntax-highlighting.md:35
 msgid "http"
-msgstr ""
+msgstr "http"
 
 #: src/format/theme/syntax-highlighting.md:36
 msgid "ini"
-msgstr ""
+msgstr "ini"
 
 #: src/format/theme/syntax-highlighting.md:37
 msgid "java"
-msgstr ""
+msgstr "java"
 
 #: src/format/theme/syntax-highlighting.md:38
 msgid "javascript"
-msgstr ""
+msgstr "javascript"
 
 #: src/format/theme/syntax-highlighting.md:39
 msgid "json"
-msgstr ""
+msgstr "json"
 
 #: src/format/theme/syntax-highlighting.md:40
 msgid "julia"
-msgstr ""
+msgstr "julia"
 
 #: src/format/theme/syntax-highlighting.md:41
 msgid "kotlin"
-msgstr ""
+msgstr "kotlin"
 
 #: src/format/theme/syntax-highlighting.md:42
 msgid "less"
-msgstr ""
+msgstr "less"
 
 #: src/format/theme/syntax-highlighting.md:43
 msgid "lua"
-msgstr ""
+msgstr "lua"
 
 #: src/format/theme/syntax-highlighting.md:44
 msgid "makefile"
-msgstr ""
+msgstr "makefile"
 
 #: src/format/theme/syntax-highlighting.md:45
 msgid "markdown"
-msgstr ""
+msgstr "markdown"
 
 #: src/format/theme/syntax-highlighting.md:46
 msgid "nginx"
-msgstr ""
+msgstr "nginx"
 
 #: src/format/theme/syntax-highlighting.md:47
 msgid "nim"
-msgstr ""
+msgstr "nim"
 
 #: src/format/theme/syntax-highlighting.md:48
 msgid "nix"
-msgstr ""
+msgstr "nix"
 
 #: src/format/theme/syntax-highlighting.md:49
 msgid "objectivec"
-msgstr ""
+msgstr "objectivec"
 
 #: src/format/theme/syntax-highlighting.md:50
 msgid "perl"
-msgstr ""
+msgstr "perl"
 
 #: src/format/theme/syntax-highlighting.md:51
 msgid "php"
-msgstr ""
+msgstr "php"
 
 #: src/format/theme/syntax-highlighting.md:52
 msgid "plaintext"
-msgstr ""
+msgstr "plaintext"
 
 #: src/format/theme/syntax-highlighting.md:53
 msgid "properties"
-msgstr ""
+msgstr "properties"
 
 #: src/format/theme/syntax-highlighting.md:54
 msgid "python"
-msgstr ""
+msgstr "python"
 
 #: src/format/theme/syntax-highlighting.md:55
 msgid "r"
-msgstr ""
+msgstr "r"
 
 #: src/format/theme/syntax-highlighting.md:56
 msgid "ruby"
-msgstr ""
+msgstr "ruby"
 
 #: src/format/theme/syntax-highlighting.md:57
 msgid "rust"
-msgstr ""
+msgstr "rust"
 
 #: src/format/theme/syntax-highlighting.md:58
 msgid "scala"
-msgstr ""
+msgstr "scala"
 
 #: src/format/theme/syntax-highlighting.md:59
 msgid "scss"
-msgstr ""
+msgstr "scss"
 
 #: src/format/theme/syntax-highlighting.md:60
 msgid "shell"
-msgstr ""
+msgstr "shell"
 
 #: src/format/theme/syntax-highlighting.md:61
 msgid "sql"
-msgstr ""
+msgstr "sql"
 
 #: src/format/theme/syntax-highlighting.md:62
 msgid "swift"
-msgstr ""
+msgstr "swift"
 
 #: src/format/theme/syntax-highlighting.md:63
 msgid "typescript"
-msgstr ""
+msgstr "typescript"
 
 #: src/format/theme/syntax-highlighting.md:64
 msgid "x86asm"
-msgstr ""
+msgstr "x86asm"
 
 #: src/format/theme/syntax-highlighting.md:65
 msgid "xml"
-msgstr ""
+msgstr "xml"
 
 #: src/format/theme/syntax-highlighting.md:66
 msgid "yaml"
-msgstr ""
+msgstr "yaml"
 
 #: src/format/theme/syntax-highlighting.md:68
 msgid "Custom theme"
-msgstr ""
+msgstr "自訂主題"
 
 #: src/format/theme/syntax-highlighting.md:69
 msgid ""

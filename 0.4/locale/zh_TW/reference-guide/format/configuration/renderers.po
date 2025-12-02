@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-22T06:24:19Z\n"
+"POT-Creation-Date: 2025-11-28T05:49:34Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -52,7 +52,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:20
 msgid "Output tables"
-msgstr ""
+msgstr "輸出表格"
 
 #: src/format/configuration/renderers.md:22
 msgid ""
@@ -63,7 +63,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:29
 msgid "With this table, mdBook will execute the `mdbook-wordcount` backend."
-msgstr ""
+msgstr "使用此表格，mdBook 將會執行 `mdbook-wordcount` 後端。"
 
 #: src/format/configuration/renderers.md:31
 msgid ""
@@ -79,6 +79,10 @@ msgid ""
 "ignores = [\"Example Chapter\"]\n"
 "```"
 msgstr ""
+"```toml\n"
+"[output.wordcount]\n"
+"ignores = [\"Example Chapter\"]\n"
+"```"
 
 #: src/format/configuration/renderers.md:39
 msgid ""
@@ -98,6 +102,14 @@ msgid ""
 "[output.html]\n"
 "```"
 msgstr ""
+"```toml\n"
+"[book]\n"
+"title = \"My Awesome Book\"\n"
+"\n"
+"[output.wordcount]\n"
+"\n"
+"[output.html]\n"
+"```"
 
 #: src/format/configuration/renderers.md:52
 msgid ""
@@ -112,7 +124,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:59
 msgid "Custom backend commands"
-msgstr ""
+msgstr "自訂後端命令"
 
 #: src/format/configuration/renderers.md:61
 msgid ""
@@ -129,10 +141,14 @@ msgid ""
 "command = \"python random.py\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"[output.random]\n"
+"command = \"python random.py\"\n"
+"```"
 
 #: src/format/configuration/renderers.md:71
 msgid "Optional backends"
-msgstr ""
+msgstr "選用的後端"
 
 #: src/format/configuration/renderers.md:73
 msgid ""
@@ -147,7 +163,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:84
 msgid "HTML renderer options"
-msgstr ""
+msgstr "HTML 算繪器選項"
 
 #: src/format/configuration/renderers.md:86
 msgid ""
@@ -327,7 +343,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:180
 msgid "`[output.html.print]`"
-msgstr ""
+msgstr "`[output.html.print]`"
 
 #: src/format/configuration/renderers.md:182
 msgid ""
@@ -350,7 +366,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:195
 msgid "`[output.html.fold]`"
-msgstr ""
+msgstr "`[output.html.fold]`"
 
 #: src/format/configuration/renderers.md:197
 msgid ""
@@ -372,7 +388,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:210
 msgid "`[output.html.playground]`"
-msgstr ""
+msgstr "`[output.html.playground]`"
 
 #: src/format/configuration/renderers.md:212
 msgid ""
@@ -438,7 +454,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:248
 msgid "`[output.html.search]`"
-msgstr ""
+msgstr "`[output.html.search]`"
 
 #: src/format/configuration/renderers.md:250
 msgid ""
@@ -509,7 +525,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:290
 msgid "`[output.html.search.chapter]`"
-msgstr ""
+msgstr "`[output.html.search.chapter]`"
 
 #: src/format/configuration/renderers.md:292
 msgid ""
