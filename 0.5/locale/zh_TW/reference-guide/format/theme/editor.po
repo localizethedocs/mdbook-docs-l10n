@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-22T06:24:30Z\n"
+"POT-Creation-Date: 2025-11-28T05:48:51Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: src/format/theme/editor.md:35
 msgid "Customizing the editor"
-msgstr ""
+msgstr "訂製編輯器"
 
 #: src/format/theme/editor.md:37
 msgid ""
@@ -58,6 +58,11 @@ msgid ""
 "editor = \"/path/to/editor\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"[output.html.playground]\n"
+"editable = true\n"
+"editor = \"/path/to/editor\"\n"
+"```"
 
 #: src/format/theme/editor.md:46
 msgid ""

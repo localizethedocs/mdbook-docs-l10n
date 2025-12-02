@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-22T06:24:30Z\n"
+"POT-Creation-Date: 2025-11-28T05:48:51Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/format/mathjax.md:1
 msgid "MathJax support"
-msgstr ""
+msgstr "MathJax 支援"
 
 #: src/format/mathjax.md:3
 msgid ""
