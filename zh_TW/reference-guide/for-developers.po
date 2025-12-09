@@ -1,0 +1,105 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:48:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/for_developers/index.md:1
+msgid "For developers"
+msgstr ""
+
+#: src/for_developers/index.md:3
+msgid ""
+"While `mdbook` is mainly used as a command line tool, you can also import "
+"the underlying libraries directly and use those to manage a book. It also "
+"has a fairly flexible plugin mechanism, allowing you to create your own "
+"custom tooling and consumers (often referred to as _backends_) if you need "
+"to do some analysis of the book or render it in a different format."
+msgstr ""
+
+#: src/for_developers/index.md:9
+msgid ""
+"The _For Developers_ chapters are here to show you the more advanced usage "
+"of `mdbook`."
+msgstr ""
+
+#: src/for_developers/index.md:12
+msgid ""
+"The two main ways a developer can hook into the book's build process is via,"
+msgstr ""
+
+#: src/for_developers/index.md:14
+msgid "[Preprocessors](preprocessors.md)"
+msgstr ""
+
+#: src/for_developers/index.md:15
+msgid "[Alternative Backends](backends.md)"
+msgstr ""
+
+#: src/for_developers/index.md:17
+msgid "The build process"
+msgstr ""
+
+#: src/for_developers/index.md:19
+msgid "The process of rendering a book project goes through several steps."
+msgstr ""
+
+#: src/for_developers/index.md:21
+msgid "Load the book"
+msgstr ""
+
+#: src/for_developers/index.md:22
+msgid ""
+"Parse the `book.toml`, falling back to the default `Config` if it doesn't "
+"exist"
+msgstr ""
+
+#: src/for_developers/index.md:24
+msgid "Load the book chapters into memory"
+msgstr ""
+
+#: src/for_developers/index.md:25
+msgid "Discover which preprocessors/backends should be used"
+msgstr ""
+
+#: src/for_developers/index.md:26
+msgid "For each backend:"
+msgstr ""
+
+#: src/for_developers/index.md:27
+msgid "Run all the preprocessors."
+msgstr ""
+
+#: src/for_developers/index.md:28
+msgid "Call the backend to render the processed result."
+msgstr ""
+
+#: src/for_developers/index.md:30
+msgid "Using `mdbook` as a library"
+msgstr ""
+
+#: src/for_developers/index.md:32
+msgid ""
+"The `mdbook` binary is just a wrapper around the underlying mdBook crates, "
+"exposing their functionality as a command-line program. If you want to "
+"programmatically drive mdBook, you can use the \\[`mdbook-driver`\\] crate. "
+"This can be used to add your own functionality or tweak the build process."
+msgstr ""
+
+#: src/for_developers/index.md:37
+msgid ""
+"The easiest way to find out how to use the `mdbook-driver` crate is by "
+"looking at the [API Docs](https://docs.rs/mdbook-driver/latest/"
+"mdbook_driver/). The top level documentation explains how one would use the "
+"[`MDBook`](https://docs.rs/mdbook-driver/latest/mdbook_driver/struct.MDBook."
+"html) type to load and build a book, while the [config](https://docs.rs/"
+"mdbook-driver/latest/mdbook_driver/config/index.html) module gives a good "
+"explanation on the configuration system."
+msgstr ""
