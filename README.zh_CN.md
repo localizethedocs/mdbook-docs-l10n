@@ -1,5 +1,13 @@
 <div align="center">
-<h1 id="localization-of-mdbook-documentation">mdBook 文档的本地化</h1>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/localizethedocs/static/mark/mdbook-white.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/localizethedocs/static/mark/mdbook-black.svg">
+  <img height="100" src="https://cdn.jsdelivr.net/gh/localizethedocs/static/mark/mdbook-black.svg">
+</picture>
+</div>
+
+<div align="center">
+<h1 id="localization-of-mdbook-documentation">Localization of mdBook Documentation</h1>
 </div>
 
 <details><summary><strong>切换语言</strong></summary>
