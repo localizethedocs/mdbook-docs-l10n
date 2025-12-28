@@ -177,7 +177,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     message("ENV_MDBOOK_PREPROCESSOR    = ${ENV_MDBOOK_PREPROCESSOR}")
     message("")
     message("mdbook build:")
-    message("  ${PROJ_OUT_REPO_DOCS_DIR}")
+    message("  ${PROJ_OUT_REPO_DOCS_BOOK_DIR}")
     message("  --dest-dir ${PROJ_OUT_RENDERER_DIR}/${_LANGTAG}/${VERSION}")
     message("  [work-dir] ${PROJ_OUT_REPO_DOCS_DIR}")
     message("")
@@ -186,7 +186,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                 ${ENV_VARS_OF_SYSTEM}
                 ${ENV_VARS_OF_COMMON}
                 ${mdBook_EXECUTABLE} build
-                ${PROJ_OUT_REPO_DOCS_DIR}
+                ${PROJ_OUT_REPO_DOCS_BOOK_DIR}
                 --dest-dir ${PROJ_OUT_RENDERER_DIR}/${_LANGTAG}/${VERSION}
         WORKING_DIRECTORY ${PROJ_OUT_REPO_DOCS_DIR}
         ECHO_OUTPUT_VARIABLE
