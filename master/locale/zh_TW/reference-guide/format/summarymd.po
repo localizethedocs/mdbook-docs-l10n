@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/format/summary.md:1
 msgid "SUMMARY.md"
-msgstr ""
+msgstr "SUMMARY.md"
 
 #: src/format/summary.md:3
 msgid ""

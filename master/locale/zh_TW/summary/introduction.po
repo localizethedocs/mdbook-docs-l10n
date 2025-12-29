@@ -91,7 +91,7 @@ msgstr ""
 
 #: src/index.md:55
 msgid "License"
-msgstr ""
+msgstr "授權條款"
 
 #: src/index.md:57
 msgid ""

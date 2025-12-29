@@ -26,7 +26,7 @@ msgstr ""
 
 #: src/cli/watch.md:9
 msgid "Specify a directory"
-msgstr ""
+msgstr "指定目錄"
 
 #: src/cli/watch.md:11
 msgid ""

@@ -37,7 +37,7 @@ msgstr ""
 
 #: src/cli/serve.md:18
 msgid "Specify a directory"
-msgstr ""
+msgstr "指定目錄"
 
 #: src/cli/serve.md:20
 msgid ""
