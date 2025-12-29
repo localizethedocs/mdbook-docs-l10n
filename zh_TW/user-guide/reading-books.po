@@ -1,0 +1,227 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/guide/reading.md:1
+msgid "Reading books"
+msgstr "閱讀手冊"
+
+#: src/guide/reading.md:3
+msgid ""
+"This chapter gives an introduction on how to interact with a book produced "
+"by mdBook. This assumes you are reading an HTML book. The options and "
+"formatting will be different for other output formats such as PDF."
+msgstr ""
+
+#: src/guide/reading.md:7
+msgid ""
+"A book is organized into _chapters_. Each chapter is a separate page. "
+"Chapters can be nested into a hierarchy of sub-chapters. Typically, each "
+"chapter will be organized into a series of _headings_ to subdivide a chapter."
+msgstr ""
+
+#: src/guide/reading.md:12
+msgid "Navigation"
+msgstr ""
+
+#: src/guide/reading.md:14
+msgid ""
+"There are several methods for navigating through the chapters of a book."
+msgstr ""
+
+#: src/guide/reading.md:16
+msgid ""
+"The **sidebar** on the left provides a list of all chapters. Clicking on any "
+"of the chapter titles will load that page."
+msgstr ""
+
+#: src/guide/reading.md:19
+msgid ""
+"The sidebar may not automatically appear if the window is too narrow, "
+"particularly on mobile displays. In that situation, the menu icon (three "
+"horizontal bars) at the top-left of the page can be pressed to open and "
+"close the sidebar."
+msgstr ""
+
+#: src/guide/reading.md:22
+msgid ""
+"The **arrow buttons** at the bottom of the page can be used to navigate to "
+"the previous or the next chapter."
+msgstr ""
+
+#: src/guide/reading.md:24
+msgid ""
+"The **left and right arrow keys** on the keyboard can be used to navigate to "
+"the previous or the next chapter."
+msgstr ""
+
+#: src/guide/reading.md:26
+msgid "Top menu bar"
+msgstr ""
+
+#: src/guide/reading.md:28
+msgid ""
+"The menu bar at the top of the page provides some icons for interacting with "
+"the book. The icons displayed will depend on the settings of how the book "
+"was generated."
+msgstr ""
+
+#: src/guide/reading.md:31 src/guide/reading.md:59
+msgid "Icon"
+msgstr ""
+
+#: src/guide/reading.md:31 src/guide/reading.md:59
+msgid "Description"
+msgstr "描述"
+
+#: src/guide/reading.md:33
+msgid "<i class=\"fas fa-bars\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:33
+msgid "Opens and closes the chapter listing sidebar."
+msgstr ""
+
+#: src/guide/reading.md:34
+msgid "<i class=\"fas fa-paintbrush\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:34
+msgid "Opens a picker to choose a different color theme."
+msgstr ""
+
+#: src/guide/reading.md:35
+msgid "<i class=\"fas fa-magnifying-glass\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:35
+msgid "Opens a search bar for searching within the book."
+msgstr ""
+
+#: src/guide/reading.md:36
+msgid "<i class=\"fas fa-print\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:36
+msgid "Instructs the web browser to print the entire book."
+msgstr ""
+
+#: src/guide/reading.md:37
+msgid "<i class=\"fab fa-github\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:37
+msgid "Opens a link to the website that hosts the source code of the book."
+msgstr ""
+
+#: src/guide/reading.md:38
+msgid "<i class=\"fas fa-pencil\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:38
+msgid ""
+"Opens a page to directly edit the source of the page you are currently "
+"reading."
+msgstr ""
+
+#: src/guide/reading.md:40
+msgid "Tapping the menu bar will scroll the page to the top."
+msgstr ""
+
+#: src/guide/reading.md:42
+msgid "Search"
+msgstr "搜尋"
+
+#: src/guide/reading.md:44
+msgid ""
+"Each book has a built-in search system. Pressing the search icon <i "
+"class=\"fas fa-magnifying-glass\"></i> in the menu bar, or pressing the "
+"<kbd>/</kbd> or <kbd>S</kbd> key on the keyboard will open an input box for "
+"entering search terms. Typing some terms will show matching chapters and "
+"sections in real time."
+msgstr ""
+
+#: src/guide/reading.md:48
+msgid ""
+"Clicking any of the results will jump to that section. The up and down arrow "
+"keys can be used to navigate the results, and enter will open the "
+"highlighted section."
+msgstr ""
+
+#: src/guide/reading.md:51
+msgid ""
+"After loading a search result, the matching search terms will be highlighted "
+"in the text. Clicking a highlighted word or pressing the <kbd>Escape</kbd> "
+"key will remove the highlighting."
+msgstr ""
+
+#: src/guide/reading.md:54
+msgid "Code blocks"
+msgstr ""
+
+#: src/guide/reading.md:56
+msgid ""
+"mdBook books are often used for programming projects, and thus support "
+"highlighting code blocks and samples. Code blocks may contain several "
+"different icons for interacting with them:"
+msgstr ""
+
+#: src/guide/reading.md:61
+msgid "<i class=\"fa fa-copy\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:61
+msgid ""
+"Copies the code block into your local clipboard, to allow pasting into "
+"another application."
+msgstr ""
+
+#: src/guide/reading.md:62
+msgid "<i class=\"fas fa-play\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:62
+msgid ""
+"For Rust code examples, this will execute the sample code and display the "
+"compiler output just below the example (see [playground](../format/mdbook."
+"md#rust-playground))."
+msgstr ""
+
+#: src/guide/reading.md:63
+msgid "<i class=\"fa fa-eye\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:63
+msgid ""
+"For Rust code examples, this will toggle visibility of \"hidden\" lines. "
+"Sometimes, larger examples will hide lines which are not particularly "
+"relevant to what is being illustrated (see [hiding code lines](../format/"
+"mdbook.md#hiding-code-lines))."
+msgstr ""
+
+#: src/guide/reading.md:64
+msgid "<i class=\"fas fa-clock-rotate-left\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:64
+msgid ""
+"For [editable code examples](../format/theme/editor.md), this will undo any "
+"changes you have made."
+msgstr ""
+
+#: src/guide/reading.md:66
+msgid "Here's an example:"
+msgstr ""
+
+#: src/guide/reading.md:69
+msgid "\"Hello, World!\""
+msgstr ""
