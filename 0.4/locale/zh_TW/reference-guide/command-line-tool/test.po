@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/cli/test.md:1
 msgid "The test command"
-msgstr ""
+msgstr "test 命令"
 
 #: src/cli/test.md:3
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/cli/test.md:31
 msgid "Specify a directory"
-msgstr ""
+msgstr "指定目錄"
 
 #: src/cli/test.md:33
 msgid ""
