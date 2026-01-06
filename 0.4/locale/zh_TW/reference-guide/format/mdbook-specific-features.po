@@ -145,7 +145,7 @@ msgstr ""
 
 #: src/format/mdbook.md:116
 msgid "`editable` --- Enables the [editor](theme/editor.md)."
-msgstr ""
+msgstr "`editable` --- 啟用[編輯器](theme/editor.md)。"
 
 #: src/format/mdbook.md:117
 msgid "`noplayground` --- Removes the play button, but will still be tested."
