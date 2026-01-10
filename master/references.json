@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2025-12-11 19:47:18 +0000",
-      "hash" : "7b29f8a7174fa4b7b31536b84ee62e50a786658b",
-      "title" : "Merge pull request #2985 from ehuss/bump-version"
+      "date" : "2026-01-01 16:11:10 +0000",
+      "hash" : "cc78fb4ff18b129099ce9daec49613f0a6b513e0",
+      "title" : "Merge pull request #2998 from rust-lang/renovate/pulldown-cmark-to-cmark-22.x"
     }
   },
   "type" : "branch",
