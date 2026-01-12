@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/cli/serve.md:1
 msgid "The serve command"
-msgstr ""
+msgstr "serve 命令"
 
 #: src/cli/serve.md:3
 msgid ""

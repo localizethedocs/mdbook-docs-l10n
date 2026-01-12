@@ -31,6 +31,8 @@ msgid ""
 "book for you to get started. Give it the name of the directory that you want "
 "to create:"
 msgstr ""
+"`mdbook init` 命令會建立一個包含空白手冊的新目錄，讓您可以開始使用。請提供您"
+"想要建立的目錄名稱："
 
 #: src/guide/creating.md:14
 msgid ""
@@ -71,7 +73,7 @@ msgstr ""
 
 #: src/guide/creating.md:36
 msgid "`book.toml`"
-msgstr ""
+msgstr "`book.toml`"
 
 #: src/guide/creating.md:38
 msgid ""
@@ -94,10 +96,14 @@ msgid ""
 "title = \"My First Book\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"[book]\n"
+"title = \"My First Book\"\n"
+"```"
 
 #: src/guide/creating.md:50
 msgid "`SUMMARY.md`"
-msgstr ""
+msgstr "`SUMMARY.md`"
 
 #: src/guide/creating.md:52
 msgid ""
@@ -125,7 +131,7 @@ msgstr ""
 
 #: src/guide/creating.md:73
 msgid "Source files"
-msgstr ""
+msgstr "來源檔"
 
 #: src/guide/creating.md:75
 msgid ""
