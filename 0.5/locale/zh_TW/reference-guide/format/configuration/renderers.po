@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:1
 msgid "Configuring Renderers"
-msgstr "組態渲染器"
+msgstr "組態算繪器"
 
 #: src/format/configuration/renderers.md:3
 msgid ""
@@ -429,7 +429,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:230
 msgid "`[output.html.code]`"
-msgstr ""
+msgstr "`[output.html.code]`"
 
 #: src/format/configuration/renderers.md:232
 msgid ""
@@ -467,7 +467,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:265
 msgid "**enable:** Enables the search feature. Defaults to `true`."
-msgstr ""
+msgstr "**enable：**啟用搜尋功能。預設值為 `true`。"
 
 #: src/format/configuration/renderers.md:266
 msgid ""
