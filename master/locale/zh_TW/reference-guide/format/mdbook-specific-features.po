@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/format/mdbook.md:1
 msgid "mdBook-specific features"
-msgstr ""
+msgstr "mdBook 特定功能"
 
 #: src/format/mdbook.md:3
 msgid "Hiding code lines"

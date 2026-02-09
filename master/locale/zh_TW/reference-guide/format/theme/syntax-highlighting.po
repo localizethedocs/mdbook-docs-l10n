@@ -20,7 +20,7 @@ msgid ""
 "mdBook uses [Highlight.js](https://highlightjs.org) with a custom theme for "
 "syntax highlighting."
 msgstr ""
-"mdBook 使用帶有自訂主題的 [Highlight.js](https://highlightjs.org) 進行語法標"
+"mdBook 使用 [Highlight.js](https://highlightjs.org) 搭配自訂主題來進行語法標"
 "明。"
 
 #: src/format/theme/syntax-highlighting.md:6
@@ -38,6 +38,8 @@ msgid ""
 "These languages are supported by default, but you can add more by supplying "
 "your own `highlight.js` file:"
 msgstr ""
+"這些語言預設皆有支援，但您也可以透過提供自訂的 `highlight.js` 檔案來增加更多"
+"語言："
 
 #: src/format/theme/syntax-highlighting.md:22
 msgid "apache"
@@ -227,7 +229,7 @@ msgstr "自訂主題"
 msgid ""
 "Like the rest of the theme, the files used for syntax highlighting can be "
 "overridden with your own."
-msgstr ""
+msgstr "與主題的其他部分相同，用於語法標明的檔案也可以替換為您自己的檔案。"
 
 #: src/format/theme/syntax-highlighting.md:72
 msgid ""
@@ -237,7 +239,7 @@ msgstr ""
 
 #: src/format/theme/syntax-highlighting.md:74
 msgid "_**highlight.css**_ theme used by highlight.js for syntax highlighting."
-msgstr ""
+msgstr "_**highlight.css**_ 是 highlight.js 用於語法標明的主題。"
 
 #: src/format/theme/syntax-highlighting.md:76
 msgid ""
