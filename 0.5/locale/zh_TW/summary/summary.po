@@ -125,7 +125,7 @@ msgstr "MathJax 支援"
 
 #: src/SUMMARY.md:34
 msgid "mdBook-specific features"
-msgstr ""
+msgstr "mdBook 特定功能"
 
 #: src/SUMMARY.md:35
 msgid "Markdown"
