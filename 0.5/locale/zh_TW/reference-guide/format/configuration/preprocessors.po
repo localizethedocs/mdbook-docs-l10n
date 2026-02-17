@@ -133,7 +133,7 @@ msgstr ""
 
 #: src/format/configuration/preprocessors.md:77
 msgid "This demotes the error to a warning."
-msgstr ""
+msgstr "這會將錯誤降級為警告。"
 
 #: src/format/configuration/preprocessors.md:79
 msgid "Require a certain order"
