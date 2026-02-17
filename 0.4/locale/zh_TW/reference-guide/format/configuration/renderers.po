@@ -159,7 +159,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:81
 msgid "This demotes the error to a warning."
-msgstr ""
+msgstr "這會將錯誤降級為警告。"
 
 #: src/format/configuration/renderers.md:84
 msgid "HTML renderer options"
@@ -202,7 +202,7 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:114
 msgid "The following configuration options are available:"
-msgstr ""
+msgstr "可使用以下組態選項："
 
 #: src/format/configuration/renderers.md:116
 msgid ""
@@ -399,12 +399,12 @@ msgstr ""
 
 #: src/format/configuration/renderers.md:225
 msgid "**editable:** Allow editing the source code. Defaults to `false`."
-msgstr ""
+msgstr "**editable：** 允許編輯來源碼。預設值為 `false`。"
 
 #: src/format/configuration/renderers.md:226
 msgid ""
 "**copyable:** Display the copy button on code snippets. Defaults to `true`."
-msgstr ""
+msgstr "**copyable:** 在程式碼片段上顯示複製按鈕。預設值為 `true`。"
 
 #: src/format/configuration/renderers.md:227
 msgid ""

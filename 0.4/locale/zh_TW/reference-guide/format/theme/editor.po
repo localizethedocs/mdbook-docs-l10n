@@ -34,7 +34,7 @@ msgstr ""
 
 #: src/format/theme/editor.md:29
 msgid "\"{}\""
-msgstr ""
+msgstr "\"{}\""
 
 #: src/format/theme/editor.md:33
 msgid "Note the new `Undo Changes` button in the editable playgrounds."

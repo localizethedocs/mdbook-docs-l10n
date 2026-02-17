@@ -38,15 +38,15 @@ msgstr ""
 
 #: src/format/mdbook.md:13
 msgid "# fn main() {\n"
-msgstr ""
+msgstr "# fn main() {\n"
 
 #: src/format/mdbook.md:17 src/format/mdbook.md:28
 msgid "\"{}\""
-msgstr ""
+msgstr "\"{}\""
 
 #: src/format/mdbook.md:17
 msgid "# }\n"
-msgstr ""
+msgstr "# }\n"
 
 #: src/format/mdbook.md:21
 msgid "Will render as"
@@ -74,6 +74,10 @@ msgid ""
 "python = \"~\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"[output.html.code.hidelines]\n"
+"python = \"~\"\n"
+"```"
 
 #: src/format/mdbook.md:42
 msgid ""
@@ -149,7 +153,7 @@ msgstr "`editable` --- 啟用[編輯器](theme/editor.md)。"
 
 #: src/format/mdbook.md:117
 msgid "`noplayground` --- Removes the play button, but will still be tested."
-msgstr ""
+msgstr "`noplayground` --- 移除播放按鈕，但仍會進行測試。"
 
 #: src/format/mdbook.md:118
 msgid ""
@@ -162,7 +166,7 @@ msgstr ""
 msgid ""
 "`ignore` --- Will not be tested and no play button is shown, but it is still "
 "highlighted as Rust syntax."
-msgstr ""
+msgstr "`ignore` --- 不會進行測試且不顯示播放按鈕，但仍會以 Rust 語法標明。"
 
 #: src/format/mdbook.md:121
 msgid "`should_panic` --- When executed, it should produce a panic."

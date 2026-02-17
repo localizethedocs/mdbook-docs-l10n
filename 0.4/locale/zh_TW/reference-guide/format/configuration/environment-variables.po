@@ -23,6 +23,9 @@ msgid ""
 "configuration key needs to be formatted slightly differently to the normal "
 "`foo.bar.baz` form."
 msgstr ""
+"所有組態值都可以從命令行透過設定對應的環境變數來覆蓋。由於許多作業系統限制環"
+"境變數僅能包含英數字元或底線（`_`），因此需將組態鍵稍微格式化為不同於普通的 "
+"`foo.bar.baz` 形式。"
 
 #: src/format/configuration/environment-variables.md:8
 msgid ""
@@ -31,6 +34,9 @@ msgid ""
 "into `kebab-case`. Double underscores (`__`) separate nested keys, while a "
 "single underscore (`_`) is replaced with a dash (`-`)."
 msgstr ""
+"使用以 `MDBOOK_` 開頭的變數進行組態。鍵（key）的建立方式是移除 `MDBOOK_` 前"
+"綴，並將剩餘的字串轉換為 `kebab-case`。雙底線（`__`）用於分隔嵌套的鍵，而單底"
+"線（`_`）則會被替換為短橫線 (`-`)。"
 
 #: src/format/configuration/environment-variables.md:13
 msgid "For example:"
@@ -76,6 +82,7 @@ msgid ""
 "This means, if you so desired, you could override all book metadata when "
 "building the book with something like"
 msgstr ""
+"這代表如果您有需要，可以在建置手冊時透過類似以下的方式覆蓋所有手冊的元資料"
 
 #: src/format/configuration/environment-variables.md:31
 msgid ""
