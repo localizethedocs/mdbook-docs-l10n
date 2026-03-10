@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2025-12-11 19:47:18 +0000",
-      "hash" : "7b29f8a7174fa4b7b31536b84ee62e50a786658b",
-      "title" : "Merge pull request #2985 from ehuss/bump-version"
+      "date" : "2026-03-09 15:34:21 +0000",
+      "hash" : "30e0e1d1021d406899c783447994de0a916643c3",
+      "title" : "Merge pull request #3048 from rust-lang/renovate/cargo-semver-checks-0.x"
     }
   },
   "type" : "branch",
