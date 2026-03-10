@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:49:34Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/index.md:1
+msgid "Introduction"
+msgstr "简介"
+
+#: src/index.md:3
+msgid ""
+"**mdBook** is a command line tool to create books with Markdown. It is ideal "
+"for creating product or API documentation, tutorials, course materials or "
+"anything that requires a clean, easily navigable and customizable "
+"presentation."
+msgstr ""
+
+#: src/index.md:7
+msgid ""
+"Lightweight [Markdown](format/markdown.md) syntax helps you focus more on "
+"your content"
+msgstr ""
+
+#: src/index.md:8
+msgid "Integrated [search](guide/reading.md#search) support"
+msgstr ""
+
+#: src/index.md:9
+msgid ""
+"Color [syntax highlighting](format/theme/syntax-highlighting.md) for code "
+"blocks for many different languages"
+msgstr ""
+
+#: src/index.md:10
+msgid ""
+"[Theme](format/theme/index.html) files allow customizing the formatting of "
+"the output"
+msgstr ""
+
+#: src/index.md:11
+msgid ""
+"[Preprocessors](format/configuration/preprocessors.md) can provide "
+"extensions for custom syntax and modifying content"
+msgstr ""
+
+#: src/index.md:12
+msgid ""
+"[Backends](format/configuration/renderers.md) can render the output to "
+"multiple formats"
+msgstr ""
+
+#: src/index.md:13
+msgid ""
+"Written in [Rust](https://www.rust-lang.org/) for speed, safety, and "
+"simplicity"
+msgstr ""
+
+#: src/index.md:14
+msgid "Automated testing of [Rust code samples](cli/test.md)"
+msgstr ""
+
+#: src/index.md:16
+msgid ""
+"This guide is an example of what mdBook produces. mdBook is used by the Rust "
+"programming language project, and [The Rust Programming Language](https://"
+"doc.rust-lang.org/book/) book is another fine example of mdBook in action."
+msgstr ""
+
+#: src/index.md:29
+msgid "Contributing"
+msgstr ""
+
+#: src/index.md:31
+msgid ""
+"mdBook is free and open source. You can find the source code on [GitHub]"
+"(https://github.com/rust-lang/mdBook) and issues and feature requests can be "
+"posted on the [GitHub issue tracker](https://github.com/rust-lang/mdBook/"
+"issues). mdBook relies on the community to fix bugs and add features: if "
+"you'd like to contribute, please read the [CONTRIBUTING](https://github.com/"
+"rust-lang/mdBook/blob/master/CONTRIBUTING.md) guide and consider opening a "
+"[pull request](https://github.com/rust-lang/mdBook/pulls)."
+msgstr ""
+
+#: src/index.md:38
+msgid "License"
+msgstr ""
+
+#: src/index.md:40
+msgid ""
+"The mdBook source and documentation are released under the [Mozilla Public "
+"License v2.0](https://www.mozilla.org/MPL/2.0/)."
+msgstr ""
