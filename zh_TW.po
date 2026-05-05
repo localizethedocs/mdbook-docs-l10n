@@ -1,0 +1,5229 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/cli/index.md:1
+msgid "Command-line tool"
+msgstr "命令行工具"
+
+#: src/cli/index.md:3
+msgid ""
+"The `mdbook` command-line tool is used to create and build books. After you "
+"have [installed](../guide/installation.md) `mdbook`, you can run the `mdbook "
+"help` command in your terminal to view the available commands."
+msgstr ""
+
+#: src/cli/index.md:6
+msgid ""
+"This following sections provide in-depth information on the different "
+"commands available."
+msgstr ""
+
+#: src/cli/index.md:8
+msgid ""
+"[`mdbook init <directory>`](init.md) --- Creates a new book with minimal "
+"boilerplate to start with."
+msgstr ""
+
+#: src/cli/index.md:9
+msgid "[`mdbook build`](build.md) --- Renders the book."
+msgstr "[`mdbook build`](build.md) --- 算繪手冊。"
+
+#: src/cli/index.md:10
+msgid ""
+"[`mdbook watch`](watch.md) --- Rebuilds the book any time a source file "
+"changes."
+msgstr ""
+
+#: src/cli/index.md:11
+msgid ""
+"[`mdbook serve`](serve.md) --- Runs a web server to view the book, and "
+"rebuilds on changes."
+msgstr ""
+
+#: src/cli/index.md:12
+msgid "[`mdbook test`](test.md) --- Tests Rust code samples."
+msgstr ""
+
+#: src/cli/index.md:13
+msgid "[`mdbook clean`](clean.md) --- Deletes the rendered output."
+msgstr ""
+
+#: src/cli/index.md:14
+msgid ""
+"[`mdbook completions`](completions.md) --- Support for shell auto-completion."
+msgstr ""
+
+#: src/cli/build.md:1
+msgid "The build command"
+msgstr "build 命令"
+
+#: src/cli/build.md:3
+msgid "The build command is used to render your book:"
+msgstr "build 命令用於算繪您的手冊："
+
+#: src/cli/build.md:9
+msgid ""
+"It will try to parse your `SUMMARY.md` file to understand the structure of "
+"your book and fetch the corresponding files. Note that this will also create "
+"files mentioned in `SUMMARY.md` which are not yet present."
+msgstr ""
+
+#: src/cli/build.md:13
+msgid ""
+"The rendered output will maintain the same directory structure as the source "
+"for convenience. Large books will therefore remain structured when rendered."
+msgstr ""
+
+#: src/cli/build.md:16
+msgid "Specify a directory"
+msgstr "指定目錄"
+
+#: src/cli/build.md:18
+msgid ""
+"The `build` command can take a directory as an argument to use as the book's "
+"root instead of the current working directory."
+msgstr ""
+
+#: src/cli/build.md:25
+msgid "`--open`"
+msgstr ""
+
+#: src/cli/build.md:27
+msgid ""
+"When you use the `--open` (`-o`) flag, mdbook will open the rendered book in "
+"your default web browser after building it."
+msgstr ""
+
+#: src/cli/build.md:30
+msgid "`--dest-dir`"
+msgstr ""
+
+#: src/cli/build.md:32
+msgid ""
+"The `--dest-dir` (`-d`) option allows you to change the output directory for "
+"the book. Relative paths are interpreted relative to the current directory. "
+"If not specified it will default to the value of the `build.build-dir` key "
+"in `book.toml`, or to `./book`."
+msgstr ""
+
+#: src/cli/build.md:39
+msgid ""
+"_**Note:**_ _The build command copies all files (excluding files with `.md` "
+"extension) from the source directory into the build directory._"
+msgstr ""
+
+#: src/cli/clean.md:1
+msgid "The clean command"
+msgstr "clean 命令"
+
+#: src/cli/clean.md:3
+msgid ""
+"The clean command is used to delete the generated book and any other build "
+"artifacts."
+msgstr "clean 命令用於刪除生成的手冊和任何其他建置製品。"
+
+#: src/cli/clean.md:12
+msgid ""
+"The `clean` command can take a directory as an argument to use as the book's "
+"root instead of the current working directory."
+msgstr ""
+
+#: src/cli/clean.md:21
+msgid ""
+"The `--dest-dir` (`-d`) option allows you to override the book's output "
+"directory, which will be deleted by this command. Relative paths are "
+"interpreted relative to the current directory. If not specified it will "
+"default to the value of the `build.build-dir` key in `book.toml`, or to `./"
+"book`."
+msgstr ""
+
+#: src/cli/clean.md:30
+msgid "`path/to/book` could be absolute or relative."
+msgstr ""
+
+#: src/cli/completions.md:1
+msgid "The completions command"
+msgstr "completions 命令"
+
+#: src/cli/completions.md:3
+msgid ""
+"The completions command is used to generate auto-completions for some common "
+"shells. This means when you type `mdbook` in your shell, you can then press "
+"your shell's auto-complete key (usually the Tab key) and it may display what "
+"the valid options are, or finish partial input."
+msgstr ""
+
+#: src/cli/completions.md:6
+msgid "The completions first need to be installed for your shell:"
+msgstr ""
+
+#: src/cli/completions.md:9
+msgid "# bash\n"
+msgstr ""
+
+#: src/cli/completions.md:10
+msgid "# oh-my-zsh\n"
+msgstr ""
+
+#: src/cli/completions.md:16
+msgid ""
+"The command prints a completion script for the given shell. Run `mdbook "
+"completions --help` for a list of supported shells."
+msgstr ""
+
+#: src/cli/completions.md:19
+msgid ""
+"Where to place the completions depend on which shell you are using and your "
+"operating system. Consult your shell's documentation for more information "
+"one where to place the script."
+msgstr ""
+
+#: src/cli/init.md:1
+msgid "The init command"
+msgstr "init 命令"
+
+#: src/cli/init.md:3
+msgid ""
+"There is some minimal boilerplate that is the same for every new book. It's "
+"for this purpose that mdBook includes an `init` command."
+msgstr ""
+
+#: src/cli/init.md:6
+msgid "The `init` command is used like this:"
+msgstr ""
+
+#: src/cli/init.md:12
+msgid ""
+"When using the `init` command for the first time, a couple of files will be "
+"set up for you:"
+msgstr ""
+
+#: src/cli/init.md:22
+msgid ""
+"The `src` directory is where you write your book in markdown. It contains "
+"all the source files, configuration files, etc."
+msgstr ""
+
+#: src/cli/init.md:25
+msgid ""
+"The `book` directory is where your book is rendered. All the output is ready "
+"to be uploaded to a server to be seen by your audience."
+msgstr ""
+
+#: src/cli/init.md:28
+msgid ""
+"The `SUMMARY.md` is the skeleton of your book, and is discussed in more "
+"detail [in another chapter](../format/summary.md)."
+msgstr ""
+
+#: src/cli/init.md:32
+msgid "Tip: Generate chapters from SUMMARY.md"
+msgstr ""
+
+#: src/cli/init.md:34
+msgid ""
+"When a `SUMMARY.md` file already exists, the `init` command will first parse "
+"it and generate the missing files according to the paths used in the "
+"`SUMMARY.md`. This allows you to think and create the whole structure of "
+"your book and then let mdBook generate it for you."
+msgstr ""
+
+#: src/cli/init.md:41
+msgid ""
+"The `init` command can take a directory as an argument to use as the book's "
+"root instead of the current working directory."
+msgstr ""
+
+#: src/cli/init.md:48
+msgid "`--theme`"
+msgstr ""
+
+#: src/cli/init.md:50
+msgid ""
+"When you use the `--theme` flag, the default theme will be copied into a "
+"directory called `theme` in your source directory so that you can modify it."
+msgstr ""
+
+#: src/cli/init.md:53
+msgid ""
+"The theme is selectively overwritten, this means that if you don't want to "
+"overwrite a specific file, just delete it and the default file will be used."
+msgstr ""
+
+#: src/cli/init.md:56
+msgid "`--title`"
+msgstr ""
+
+#: src/cli/init.md:58
+msgid ""
+"Specify a title for the book. If not supplied, an interactive prompt will "
+"ask for a title."
+msgstr ""
+
+#: src/cli/init.md:62
+msgid "\"my amazing book\""
+msgstr ""
+
+#: src/cli/init.md:65
+msgid "`--ignore`"
+msgstr ""
+
+#: src/cli/init.md:67
+msgid ""
+"Create a `.gitignore` file configured to ignore the `book` directory created "
+"when [building](build.md) a book. If not supplied, an interactive prompt "
+"will ask whether it should be created."
+msgstr ""
+
+#: src/cli/init.md:80
+msgid "`--force`"
+msgstr ""
+
+#: src/cli/init.md:82
+msgid ""
+"Skip the prompts to create a `.gitignore` and for the title for the book."
+msgstr ""
+
+#: src/cli/serve.md:1
+msgid "The serve command"
+msgstr "serve 命令"
+
+#: src/cli/serve.md:3
+msgid ""
+"The serve command is used to preview a book by serving it via HTTP at "
+"`localhost:3000` by default:"
+msgstr ""
+
+#: src/cli/serve.md:10
+msgid ""
+"The `serve` command  watches the book's `src` directory for changes, "
+"rebuilding the book and refreshing clients for each change; this includes re-"
+"creating deleted files still mentioned in `SUMMARY.md`! A websocket "
+"connection is used to trigger the client-side refresh."
+msgstr ""
+
+#: src/cli/serve.md:15
+msgid ""
+"_**Note:**_ _The `serve` command is for testing a book's HTML output, and is "
+"not intended to be a complete HTTP server for a website._"
+msgstr ""
+
+#: src/cli/serve.md:20
+msgid ""
+"The `serve` command can take a directory as an argument to use as the book's "
+"root instead of the current working directory."
+msgstr ""
+
+#: src/cli/serve.md:27
+msgid "Server options"
+msgstr ""
+
+#: src/cli/serve.md:29
+msgid ""
+"The `serve` hostname defaults to `localhost`, and the port defaults to "
+"`3000`. Either option can be specified on the command line:"
+msgstr ""
+
+#: src/cli/serve.md:37
+msgid ""
+"When you use the `--open` (`-o`) flag, mdbook will open the book in your "
+"default web browser after starting the server."
+msgstr ""
+
+#: src/cli/serve.md:47
+msgid "`--watcher`"
+msgstr ""
+
+#: src/cli/serve.md:49
+msgid "There are different backends used to determine when a file has changed."
+msgstr ""
+
+#: src/cli/serve.md:51
+msgid ""
+"`poll` (default) --- Checks for file modifications by scanning the "
+"filesystem every second."
+msgstr ""
+
+#: src/cli/serve.md:52
+msgid ""
+"`native` --- Uses the native operating system facilities to receive "
+"notifications when files change. This can have less constant overhead, but "
+"may not be as reliable as the `poll` based watcher. See these issues for "
+"more information: [\\#383](https://github.com/rust-lang/mdBook/issues/383) "
+"[\\#1441](https://github.com/rust-lang/mdBook/issues/1441) [\\#1707](https://"
+"github.com/rust-lang/mdBook/issues/1707) [\\#2035](https://github.com/rust-"
+"lang/mdBook/issues/2035) [\\#2102](https://github.com/rust-lang/mdBook/"
+"issues/2102)"
+msgstr ""
+
+#: src/cli/serve.md:55
+msgid "Specify exclude patterns"
+msgstr ""
+
+#: src/cli/serve.md:57
+msgid ""
+"The `serve` command will not automatically trigger a build for files listed "
+"in the `.gitignore` file in the book root directory. The `.gitignore` file "
+"may contain file patterns described in the [gitignore documentation](https://"
+"git-scm.com/docs/gitignore). This can be useful for ignoring temporary files "
+"created by some editors."
+msgstr ""
+
+#: src/cli/serve.md:63
+msgid ""
+"_**Note:**_ _Only the `.gitignore` from the book root directory is used. "
+"Global `$HOME/.gitignore` or `.gitignore` files in parent directories are "
+"not used._"
+msgstr ""
+
+#: src/cli/test.md:1
+msgid "The test command"
+msgstr "test 命令"
+
+#: src/cli/test.md:3
+msgid ""
+"When writing a book, you sometimes need to automate some tests. For example, "
+"[The Rust Programming Book](https://doc.rust-lang.org/stable/book/) uses a "
+"lot of code examples that could get outdated. Therefore it is very important "
+"for them to be able to automatically test these code examples."
+msgstr ""
+
+#: src/cli/test.md:8
+msgid ""
+"mdBook supports a `test` command that will run all available tests in a "
+"book. At the moment, only Rust tests are supported."
+msgstr ""
+
+#: src/cli/test.md:11
+msgid "Disable tests on a code block"
+msgstr ""
+
+#: src/cli/test.md:13
+msgid "rustdoc doesn't test code blocks which contain the `ignore` attribute:"
+msgstr ""
+
+#: src/cli/test.md:19
+msgid ""
+"rustdoc also doesn't test code blocks which specify a language other than "
+"Rust:"
+msgstr ""
+
+#: src/cli/test.md:25
+msgid "rustdoc _does_ test code blocks which have no language specified:"
+msgstr ""
+
+#: src/cli/test.md:33
+msgid ""
+"The `test` command can take a directory as an argument to use as the book's "
+"root instead of the current working directory."
+msgstr ""
+
+#: src/cli/test.md:40
+msgid "`--library-path`"
+msgstr ""
+
+#: src/cli/test.md:42
+msgid ""
+"The `--library-path` (`-L`) option allows you to add directories to the "
+"library search path used by `rustdoc` when it builds and tests the examples. "
+"Multiple directories can be specified with multiple options (`-L foo -L "
+"bar`) or with a comma-delimited list (`-L foo,bar`). The path should point "
+"to the Cargo [build cache](https://doc.rust-lang.org/cargo/guide/build-cache."
+"html) `deps` directory that contains the build output of your project. For "
+"example, if your Rust project's book is in a directory named `my-book`, the "
+"following command would include the crate's dependencies when running `test`:"
+msgstr ""
+
+#: src/cli/test.md:54
+msgid ""
+"See the `rustdoc` command-line [documentation](https://doc.rust-lang.org/"
+"rustdoc/command-line-arguments.html#-l--library-path-where-to-look-for-"
+"dependencies) for more information."
+msgstr ""
+
+#: src/cli/test.md:57
+msgid "`--chapter`"
+msgstr ""
+
+#: src/cli/test.md:59
+msgid ""
+"The `--chapter` (`-c`) option allows you to test a specific chapter of the "
+"book using the chapter name or the relative path to the chapter."
+msgstr ""
+
+#: src/cli/watch.md:1
+msgid "The watch command"
+msgstr ""
+
+#: src/cli/watch.md:3
+msgid ""
+"The `watch` command is useful when you want your book to be rendered on "
+"every file change. You could repeatedly issue `mdbook build` every time a "
+"file is changed. But using `mdbook watch` once will watch your files and "
+"will trigger a build automatically whenever you modify a file; this includes "
+"re-creating deleted files still mentioned in `SUMMARY.md`!"
+msgstr ""
+
+#: src/cli/watch.md:11
+msgid ""
+"The `watch` command can take a directory as an argument to use as the book's "
+"root instead of the current working directory."
+msgstr ""
+
+#: src/cli/watch.md:20
+msgid ""
+"When you use the `--open` (`-o`) option, mdbook will open the rendered book "
+"in your default web browser."
+msgstr ""
+
+#: src/cli/watch.md:40
+msgid ""
+"The `watch` command will not automatically trigger a build for files listed "
+"in the `.gitignore` file in the book root directory. The `.gitignore` file "
+"may contain file patterns described in the [gitignore documentation](https://"
+"git-scm.com/docs/gitignore). This can be useful for ignoring temporary files "
+"created by some editors."
+msgstr ""
+
+#: src/cli/watch.md:46
+msgid ""
+"_Note: Only `.gitignore` from book root directory is used. Global `$HOME/."
+"gitignore` or `.gitignore` files in parent directories are not used._"
+msgstr ""
+
+#: src/continuous-integration.md:1
+msgid "Running `mdbook` in continuous integration"
+msgstr "在持續整合中執行 `mdbook`"
+
+#: src/continuous-integration.md:3
+msgid ""
+"There are a variety of services such as [GitHub Actions](https://docs.github."
+"com/en/actions) or [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) which can "
+"be used to test and deploy your book automatically."
+msgstr ""
+
+#: src/continuous-integration.md:5
+msgid ""
+"The following provides some general guidelines on how to configure your "
+"service to run mdBook. Specific recipes can be found at the [Automated "
+"Deployment](https://github.com/rust-lang/mdBook/wiki/Automated-Deployment) "
+"wiki page."
+msgstr ""
+
+#: src/continuous-integration.md:12
+msgid "Installing mdBook"
+msgstr "安裝 mdBook"
+
+#: src/continuous-integration.md:14
+msgid ""
+"There are several different strategies for installing mdBook. The particular "
+"method depends on your needs and preferences."
+msgstr ""
+
+#: src/continuous-integration.md:17
+msgid "Pre-compiled binaries"
+msgstr ""
+
+#: src/continuous-integration.md:19
+msgid ""
+"Perhaps the easiest method is to use the pre-compiled binaries found on the "
+"[GitHub Releases page](https://github.com/rust-lang/mdBook/releases). A "
+"simple approach would be to use the popular `curl` CLI tool to download the "
+"executable:"
+msgstr ""
+
+#: src/continuous-integration.md:28
+msgid "Some considerations for this approach:"
+msgstr ""
+
+#: src/continuous-integration.md:30
+msgid ""
+"This is relatively fast, and does not necessarily require dealing with "
+"caching."
+msgstr ""
+
+#: src/continuous-integration.md:31
+msgid "This does not require installing Rust."
+msgstr ""
+
+#: src/continuous-integration.md:32
+msgid ""
+"Specifying a specific URL means you have to manually update your script to "
+"get a new version. This may be a benefit if you want to lock to a specific "
+"version. However, some users prefer to automatically get a newer version "
+"when they are published."
+msgstr ""
+
+#: src/continuous-integration.md:35
+msgid "You are reliant on the GitHub CDN being available."
+msgstr ""
+
+#: src/continuous-integration.md:39
+msgid "Building from source"
+msgstr "從來源碼建置"
+
+#: src/continuous-integration.md:41
+msgid ""
+"Building from source will require having Rust installed. Some services have "
+"Rust pre-installed, but if your service does not, you will need to add a "
+"step to install it."
+msgstr ""
+
+#: src/continuous-integration.md:44
+msgid ""
+"After Rust is installed, `cargo install` can be used to build and install "
+"mdBook. We recommend using a SemVer version specifier so that you get the "
+"latest **non-breaking** version of mdBook. For example:"
+msgstr ""
+
+#: src/continuous-integration.md:49
+msgid "\"^0.4\""
+msgstr ""
+
+#: src/continuous-integration.md:52
+msgid "This includes several recommended options:"
+msgstr ""
+
+#: src/continuous-integration.md:54
+msgid ""
+"`--no-default-features` --- Disables features like the HTTP server used by "
+"`mdbook serve` that is likely not needed on CI. This will speed up the build "
+"time significantly."
+msgstr ""
+
+#: src/continuous-integration.md:56
+msgid ""
+"`--features search` --- Disabling default features means you should then "
+"manually enable features that you want, such as the built-in [search](guide/"
+"reading.md#search) capability."
+msgstr ""
+
+#: src/continuous-integration.md:57
+msgid ""
+"`--vers \"^0.4\"` --- This will install the most recent version of the `0.4` "
+"series. However, versions after like `0.5.0` won't be installed, as they may "
+"break your build. Cargo will automatically upgrade mdBook if you have an "
+"older version already installed."
+msgstr ""
+
+#: src/continuous-integration.md:60
+msgid ""
+"`--locked` --- This will use the dependencies that were used when mdBook was "
+"released. Without `--locked`, it will use the latest version of all "
+"dependencies, which may include some fixes since the last release, but may "
+"also (rarely) cause build problems."
+msgstr ""
+
+#: src/continuous-integration.md:63
+msgid ""
+"You will likely want to investigate caching options, as building mdBook can "
+"be somewhat slow."
+msgstr ""
+
+#: src/continuous-integration.md:67
+msgid "Running tests"
+msgstr "執行測試"
+
+#: src/continuous-integration.md:69
+msgid ""
+"You may want to run tests using [`mdbook test`](cli/test.md) every time you "
+"push a change or create a pull request. This can be used to validate Rust "
+"code examples in the book."
+msgstr ""
+
+#: src/continuous-integration.md:72
+msgid ""
+"This will require having Rust installed. Some services have Rust pre-"
+"installed, but if your service does not, you will need to add a step to "
+"install it."
+msgstr ""
+
+#: src/continuous-integration.md:75
+msgid ""
+"Other than making sure the appropriate version of Rust is installed, there's "
+"not much more than just running `mdbook test` from the book directory."
+msgstr ""
+
+#: src/continuous-integration.md:77
+msgid ""
+"You may also want to consider running other kinds of tests, like [mdbook-"
+"linkcheck](https://github.com/Michael-F-Bryan/mdbook-linkcheck#continuous-"
+"integration) which will check for broken links. Or if you have your own "
+"style checks, spell checker, or any other tests it might be good to run them "
+"in CI."
+msgstr ""
+
+#: src/continuous-integration.md:83
+msgid "Deploying"
+msgstr ""
+
+#: src/continuous-integration.md:85
+msgid ""
+"You may want to automatically deploy your book. Some may want to do this "
+"every time a change is pushed, and others may want to only deploy when a "
+"specific release is tagged."
+msgstr ""
+
+#: src/continuous-integration.md:88
+msgid ""
+"You'll also need to understand the specifics on how to push a change to your "
+"web service. For example, [GitHub Pages](https://docs.github.com/en/pages) "
+"just requires committing the output onto a specific git branch. Other "
+"services may require using something like SSH to connect to a remote server."
+msgstr ""
+
+#: src/continuous-integration.md:92
+msgid ""
+"The basic outline is that you need to run `mdbook build` to generate the "
+"output, and then transfer the files (which are in the `book` directory) to "
+"the correct location."
+msgstr ""
+
+#: src/continuous-integration.md:94
+msgid ""
+"You may then want to consider if you need to invalidate any caches on your "
+"web service."
+msgstr ""
+
+#: src/continuous-integration.md:96
+msgid ""
+"See the [Automated Deployment](https://github.com/rust-lang/mdBook/wiki/"
+"Automated-Deployment) wiki page for examples of various different services."
+msgstr ""
+
+#: src/continuous-integration.md:100
+msgid "404 handling"
+msgstr ""
+
+#: src/continuous-integration.md:102
+msgid ""
+"mdBook automatically generates a 404 page to be used for broken links. The "
+"default output is a file named `404.html` at the root of the book. Some "
+"services like [GitHub Pages](https://docs.github.com/en/pages) will "
+"automatically use this page for broken links. For other services, you may "
+"want to consider configuring the web server to use this page as it will "
+"provide the reader navigation to get back to the book."
+msgstr ""
+
+#: src/continuous-integration.md:107
+msgid ""
+"If your book is not deployed at the root of the domain, then you should set "
+"the [`output.html.site-url`](format/configuration/renderers.md#html-renderer-"
+"options) setting so that the 404 page works correctly. It needs to know "
+"where the book is deployed in order to load the static files (like CSS) "
+"correctly. For example, this guide is deployed at <https://rust-lang.github."
+"io/mdBook/>, and the `site-url` setting is configured like this:"
+msgstr ""
+
+#: src/continuous-integration.md:111
+msgid ""
+"```toml\n"
+"# book.toml\n"
+"[output.html]\n"
+"site-url = \"/mdBook/\"\n"
+"```"
+msgstr ""
+
+#: src/continuous-integration.md:117
+msgid ""
+"You can customize the look of the 404 page by creating a file named `src/404."
+"md` in your book. If you want to use a different filename, you can set "
+"[`output.html.input-404`](format/configuration/renderers.md#html-renderer-"
+"options) to a different filename."
+msgstr ""
+
+#: src/misc/contributors.md:1
+msgid "Contributors"
+msgstr "貢獻者"
+
+#: src/misc/contributors.md:3
+msgid ""
+"Here is a list of the contributors who have helped improving mdBook. Big "
+"shout-out to them!"
+msgstr ""
+
+#: src/misc/contributors.md:6
+msgid "[mdinger](https://github.com/mdinger)"
+msgstr ""
+
+#: src/misc/contributors.md:7
+msgid "Kevin ([kbknapp](https://github.com/kbknapp))"
+msgstr ""
+
+#: src/misc/contributors.md:8
+msgid "Steve Klabnik ([steveklabnik](https://github.com/steveklabnik))"
+msgstr ""
+
+#: src/misc/contributors.md:9
+msgid "Adam Solove ([asolove](https://github.com/asolove))"
+msgstr ""
+
+#: src/misc/contributors.md:10
+msgid "Wayne Nilsen ([waynenilsen](https://github.com/waynenilsen))"
+msgstr ""
+
+#: src/misc/contributors.md:11
+msgid "[funnkill](https://github.com/funkill)"
+msgstr ""
+
+#: src/misc/contributors.md:12
+msgid "Fu Gangqiang ([FuGangqiang](https://github.com/FuGangqiang))"
+msgstr ""
+
+#: src/misc/contributors.md:13
+msgid "[Michael-F-Bryan](https://github.com/Michael-F-Bryan)"
+msgstr ""
+
+#: src/misc/contributors.md:14
+msgid "Chris Spiegel ([cspiegel](https://github.com/cspiegel))"
+msgstr ""
+
+#: src/misc/contributors.md:15
+msgid "[projektir](https://github.com/projektir)"
+msgstr ""
+
+#: src/misc/contributors.md:16
+msgid "[Phaiax](https://github.com/Phaiax)"
+msgstr ""
+
+#: src/misc/contributors.md:17
+msgid "Matt Ickstadt ([mattico](https://github.com/mattico))"
+msgstr ""
+
+#: src/misc/contributors.md:18
+msgid "Weihang Lo ([weihanglo](https://github.com/weihanglo))"
+msgstr ""
+
+#: src/misc/contributors.md:19
+msgid "Avision Ho ([avisionh](https://github.com/avisionh))"
+msgstr ""
+
+#: src/misc/contributors.md:20
+msgid "Vivek Akupatni ([apatniv](https://github.com/apatniv))"
+msgstr ""
+
+#: src/misc/contributors.md:21
+msgid "Eric Huss ([ehuss](https://github.com/ehuss))"
+msgstr ""
+
+#: src/misc/contributors.md:22
+msgid "Josh Rotenberg ([joshrotenberg](https://github.com/joshrotenberg))"
+msgstr ""
+
+#: src/misc/contributors.md:24
+msgid ""
+"If you feel you're missing from this list, feel free to add yourself in a PR."
+msgstr ""
+
+#: src/for_developers/index.md:1
+msgid "For developers"
+msgstr ""
+
+#: src/for_developers/index.md:3
+msgid ""
+"While `mdbook` is mainly used as a command line tool, you can also import "
+"the underlying libraries directly and use those to manage a book. It also "
+"has a fairly flexible plugin mechanism, allowing you to create your own "
+"custom tooling and consumers (often referred to as _backends_) if you need "
+"to do some analysis of the book or render it in a different format."
+msgstr ""
+
+#: src/for_developers/index.md:9
+msgid ""
+"The _For Developers_ chapters are here to show you the more advanced usage "
+"of `mdbook`."
+msgstr ""
+
+#: src/for_developers/index.md:12
+msgid ""
+"The two main ways a developer can hook into the book's build process is via,"
+msgstr ""
+
+#: src/for_developers/index.md:14
+msgid "[Preprocessors](preprocessors.md)"
+msgstr ""
+
+#: src/for_developers/index.md:15
+msgid "[Alternative Backends](backends.md)"
+msgstr ""
+
+#: src/for_developers/index.md:17
+msgid "The build process"
+msgstr ""
+
+#: src/for_developers/index.md:19
+msgid "The process of rendering a book project goes through several steps."
+msgstr ""
+
+#: src/for_developers/index.md:21
+msgid "Load the book"
+msgstr ""
+
+#: src/for_developers/index.md:22
+msgid ""
+"Parse the `book.toml`, falling back to the default `Config` if it doesn't "
+"exist"
+msgstr ""
+
+#: src/for_developers/index.md:24
+msgid "Load the book chapters into memory"
+msgstr ""
+
+#: src/for_developers/index.md:25
+msgid "Discover which preprocessors/backends should be used"
+msgstr ""
+
+#: src/for_developers/index.md:26
+msgid "For each backend:"
+msgstr ""
+
+#: src/for_developers/index.md:27
+msgid "Run all the preprocessors."
+msgstr ""
+
+#: src/for_developers/index.md:28
+msgid "Call the backend to render the processed result."
+msgstr ""
+
+#: src/for_developers/index.md:30
+msgid "Using `mdbook` as a library"
+msgstr ""
+
+#: src/for_developers/index.md:32
+msgid ""
+"The `mdbook` binary is just a wrapper around the underlying mdBook crates, "
+"exposing their functionality as a command-line program. If you want to "
+"programmatically drive mdBook, you can use the \\[`mdbook-driver`\\] crate. "
+"This can be used to add your own functionality or tweak the build process."
+msgstr ""
+
+#: src/for_developers/index.md:37
+msgid ""
+"The easiest way to find out how to use the `mdbook-driver` crate is by "
+"looking at the [API Docs](https://docs.rs/mdbook-driver/latest/"
+"mdbook_driver/). The top level documentation explains how one would use the "
+"[`MDBook`](https://docs.rs/mdbook-driver/latest/mdbook_driver/struct.MDBook."
+"html) type to load and build a book, while the [config](https://docs.rs/"
+"mdbook-driver/latest/mdbook_driver/config/index.html) module gives a good "
+"explanation on the configuration system."
+msgstr ""
+
+#: src/for_developers/backends.md:1
+msgid "Alternative backends"
+msgstr ""
+
+#: src/for_developers/backends.md:3
+msgid ""
+"A \"backend\" is simply a program which `mdbook` will invoke during the book "
+"rendering process. This program is passed a JSON representation of the book "
+"and configuration information via `stdin`. Once the backend receives this "
+"information it is free to do whatever it wants."
+msgstr ""
+
+#: src/for_developers/backends.md:8
+msgid ""
+"See [Configuring Renderers](../format/configuration/renderers.md) for more "
+"information about using backends."
+msgstr ""
+
+#: src/for_developers/backends.md:10
+msgid ""
+"The community has developed several backends. See the [Third Party Plugins]"
+"(https://github.com/rust-lang/mdBook/wiki/Third-party-plugins) wiki page for "
+"a list of available backends."
+msgstr ""
+
+#: src/for_developers/backends.md:13
+msgid "Setting up"
+msgstr ""
+
+#: src/for_developers/backends.md:15
+msgid ""
+"This page will step you through creating your own alternative backend in the "
+"form of a simple word counting program. Although it will be written in Rust, "
+"there's no reason why it couldn't be accomplished using something like "
+"Python or Ruby."
+msgstr ""
+
+#: src/for_developers/backends.md:19
+msgid ""
+"First you'll want to create a new binary program and add `mdbook-renderer` "
+"as a dependency."
+msgstr ""
+
+#: src/for_developers/backends.md:28
+msgid ""
+"When our `mdbook-wordcount` plugin is invoked, `mdbook` will send it a JSON "
+"version of [`RenderContext`](https://docs.rs/mdbook-renderer/latest/"
+"mdbook_renderer/struct.RenderContext.html) via our plugin's `stdin`. For "
+"convenience, there's a [`RenderContext::from_json()`](https://docs.rs/mdbook-"
+"renderer/latest/mdbook_renderer/struct.RenderContext.html#method.from_json) "
+"constructor which will load a `RenderContext`."
+msgstr ""
+
+#: src/for_developers/backends.md:32
+msgid "This is all the boilerplate necessary for our backend to load the book."
+msgstr ""
+
+#: src/for_developers/backends.md:35
+msgid "// src/main.rs\n"
+msgstr ""
+
+#: src/for_developers/backends.md:45
+msgid ""
+"**Note:** The `RenderContext` contains a `version` field. This lets backends "
+"figure out whether they are compatible with the version of `mdbook` it's "
+"being called by. This `version` comes directly from the corresponding field "
+"in `mdbook`'s `Cargo.toml`."
+msgstr ""
+
+#: src/for_developers/backends.md:50
+msgid ""
+"It is recommended that backends use the [`semver`](https://crates.io/crates/"
+"semver) crate to inspect this field and emit a warning if there may be a "
+"compatibility issue."
+msgstr ""
+
+#: src/for_developers/backends.md:53
+msgid "Inspecting the book"
+msgstr ""
+
+#: src/for_developers/backends.md:55
+msgid ""
+"Now our backend has a copy of the book, lets count how many words are in "
+"each chapter!"
+msgstr ""
+
+#: src/for_developers/backends.md:58
+msgid ""
+"Because the `RenderContext` contains a [`Book`](https://docs.rs/mdbook-"
+"renderer/latest/mdbook_renderer/book/struct.Book.html) field (`book`), and a "
+"`Book` has the [`Book::iter()`](https://docs.rs/mdbook-renderer/latest/"
+"mdbook_renderer/book/struct.Book.html#method.iter) method for iterating over "
+"all items in a `Book`, this step turns out to be just as easy as the first."
+msgstr ""
+
+#: src/for_developers/backends.md:71
+msgid "\"{}: {}\""
+msgstr ""
+
+#: src/for_developers/backends.md:82
+msgid "Enabling the backend"
+msgstr "啟用後端"
+
+#: src/for_developers/backends.md:84
+msgid ""
+"Now we've got the basics running, we want to actually use it. First, install "
+"the program."
+msgstr ""
+
+#: src/for_developers/backends.md:91
+msgid ""
+"Then `cd` to the particular book you'd like to count the words of and update "
+"its `book.toml` file."
+msgstr ""
+
+#: src/for_developers/backends.md:105
+msgid ""
+"When it loads a book into memory, `mdbook` will inspect your `book.toml` "
+"file to try and figure out which backends to use by looking for all `output."
+"*` tables. If none are provided it'll fall back to using the default HTML "
+"renderer."
+msgstr ""
+
+#: src/for_developers/backends.md:109
+msgid ""
+"Notably, this means if you want to add your own custom backend you'll also "
+"need to make sure to add the HTML backend, even if its table just stays "
+"empty."
+msgstr ""
+
+#: src/for_developers/backends.md:112
+msgid ""
+"Now you just need to build your book like normal, and everything should "
+"_Just Work_."
+msgstr ""
+
+#: src/for_developers/backends.md:115
+msgid ""
+"```shell\n"
+"$ mdbook build\n"
+"...\n"
+"2018-01-16 07:31:15 [INFO] (mdbook::renderer): Invoking the \"mdbook-"
+"wordcount\" renderer\n"
+"mdBook: 126\n"
+"Command Line Tool: 224\n"
+"init: 283\n"
+"build: 145\n"
+"watch: 146\n"
+"serve: 292\n"
+"test: 139\n"
+"Format: 30\n"
+"SUMMARY.md: 259\n"
+"Configuration: 784\n"
+"Theme: 304\n"
+"index.hbs: 447\n"
+"Syntax highlighting: 314\n"
+"MathJax Support: 153\n"
+"Rust code specific features: 148\n"
+"For Developers: 788\n"
+"Alternative Backends: 710\n"
+"Contributors: 85\n"
+"```"
+msgstr ""
+"```shell\n"
+"$ mdbook build\n"
+"...\n"
+"2018-01-16 07:31:15 [INFO] (mdbook::renderer): Invoking the \"mdbook-"
+"wordcount\" renderer\n"
+"mdBook: 126\n"
+"Command Line Tool: 224\n"
+"init: 283\n"
+"build: 145\n"
+"watch: 146\n"
+"serve: 292\n"
+"test: 139\n"
+"Format: 30\n"
+"SUMMARY.md: 259\n"
+"Configuration: 784\n"
+"Theme: 304\n"
+"index.hbs: 447\n"
+"Syntax highlighting: 314\n"
+"MathJax Support: 153\n"
+"Rust code specific features: 148\n"
+"For Developers: 788\n"
+"Alternative Backends: 710\n"
+"Contributors: 85\n"
+"```"
+
+#: src/for_developers/backends.md:139
+msgid ""
+"The reason we didn't need to specify the full name/path of our `wordcount` "
+"backend is because `mdbook` will try to _infer_ the program's name via "
+"convention. The executable for the `foo` backend is typically called `mdbook-"
+"foo`, with an associated `[output.foo]` entry in the `book.toml`. To "
+"explicitly tell `mdbook` what command to invoke (it may require command-line "
+"arguments or be an interpreted script), you can use the `command` field."
+msgstr ""
+
+#: src/for_developers/backends.md:159
+msgid "Configuration"
+msgstr "組態"
+
+#: src/for_developers/backends.md:161
+msgid ""
+"Now imagine you don't want to count the number of words on a particular "
+"chapter (it might be generated text/code, etc). The canonical way to do this "
+"is via the usual `book.toml` configuration file by adding items to your "
+"`[output.foo]` table."
+msgstr ""
+
+#: src/for_developers/backends.md:166
+msgid ""
+"The `Config` can be treated roughly as a nested hashmap which lets you call "
+"methods like `get()` to access the config's contents, with a "
+"`get_deserialized()` convenience method for retrieving a value and "
+"automatically deserializing to some arbitrary type `T`."
+msgstr ""
+
+#: src/for_developers/backends.md:171
+msgid ""
+"To implement this, we'll create our own serializable `WordcountConfig` "
+"struct which will encapsulate all configuration for this backend."
+msgstr ""
+
+#: src/for_developers/backends.md:174
+msgid "First add `serde` and `serde_derive` to your `Cargo.toml`,"
+msgstr ""
+
+#: src/for_developers/backends.md:180
+msgid "And then you can create the config struct,"
+msgstr ""
+
+#: src/for_developers/backends.md:188
+msgid "\"kebab-case\""
+msgstr ""
+
+#: src/for_developers/backends.md:194
+msgid ""
+"Now we just need to deserialize the `WordcountConfig` from our "
+"`RenderContext` and then add a check to make sure we skip ignored chapters."
+msgstr ""
+
+#: src/for_developers/backends.md:219
+msgid "Output and signalling failure"
+msgstr ""
+
+#: src/for_developers/backends.md:221
+msgid ""
+"While it's nice to print word counts to the terminal when a book is built, "
+"it might also be a good idea to output them to a file somewhere. `mdbook` "
+"tells a backend where it should place any generated output via the "
+"`destination` field in [`RenderContext`](https://docs.rs/mdbook-renderer/"
+"latest/mdbook_renderer/struct.RenderContext.html)."
+msgstr ""
+
+#: src/for_developers/backends.md:251
+msgid ""
+"**Note:** There is no guarantee that the destination directory exists or is "
+"empty (`mdbook` may leave the previous contents to let backends do caching), "
+"so it's always a good idea to create it with `fs::create_dir_all()`."
+msgstr ""
+
+#: src/for_developers/backends.md:255
+msgid ""
+"If the destination directory already exists, don't assume it will be empty. "
+"To allow backends to cache the results from previous runs, `mdbook` may "
+"leave old content in the directory."
+msgstr ""
+
+#: src/for_developers/backends.md:259
+msgid ""
+"There's always the possibility that an error will occur while processing a "
+"book (just look at all the `unwrap()`'s we've written already), so `mdbook` "
+"will interpret a non-zero exit code as a rendering failure."
+msgstr ""
+
+#: src/for_developers/backends.md:263
+msgid ""
+"For example, if we wanted to make sure all chapters have an _even_ number of "
+"words, erroring out if an odd number is encountered, then you may do "
+"something like this:"
+msgstr ""
+
+#: src/for_developers/backends.md:298
+msgid "Now, if we reinstall the backend and build a book,"
+msgstr ""
+
+#: src/for_developers/backends.md:300
+msgid ""
+"```shell\n"
+"$ cargo install --path . --force\n"
+"$ mdbook build /path/to/book\n"
+"...\n"
+"2018-01-16 21:21:39 [INFO] (mdbook::renderer): Invoking the \"wordcount\" "
+"renderer\n"
+"mdBook: 126\n"
+"Command Line Tool: 224\n"
+"init: 283\n"
+"init has an odd number of words!\n"
+"2018-01-16 21:21:39 [ERROR] (mdbook::renderer): Renderer exited with non-"
+"zero return code.\n"
+"2018-01-16 21:21:39 [ERROR] (mdbook::utils): Error: Rendering failed\n"
+"2018-01-16 21:21:39 [ERROR] (mdbook::utils):    Caused By: The \"mdbook-"
+"wordcount\" renderer failed\n"
+"```"
+msgstr ""
+"```shell\n"
+"$ cargo install --path . --force\n"
+"$ mdbook build /path/to/book\n"
+"...\n"
+"2018-01-16 21:21:39 [INFO] (mdbook::renderer): Invoking the \"wordcount\" "
+"renderer\n"
+"mdBook: 126\n"
+"Command Line Tool: 224\n"
+"init: 283\n"
+"init has an odd number of words!\n"
+"2018-01-16 21:21:39 [ERROR] (mdbook::renderer): Renderer exited with non-"
+"zero return code.\n"
+"2018-01-16 21:21:39 [ERROR] (mdbook::utils): Error: Rendering failed\n"
+"2018-01-16 21:21:39 [ERROR] (mdbook::utils):    Caused By: The \"mdbook-"
+"wordcount\" renderer failed\n"
+"```"
+
+#: src/for_developers/backends.md:314
+msgid ""
+"As you've probably already noticed, output from the plugin's subprocess is "
+"immediately passed through to the user. It is encouraged for plugins to "
+"follow the \"rule of silence\" and only generate output when necessary (e.g. "
+"an error in generation or a warning)."
+msgstr ""
+
+#: src/for_developers/backends.md:319
+msgid ""
+"All environment variables are passed through to the backend, allowing you to "
+"use the usual `MDBOOK_LOG` to control logging verbosity."
+msgstr ""
+
+#: src/for_developers/backends.md:322
+msgid "Wrapping up"
+msgstr ""
+
+#: src/for_developers/backends.md:324
+msgid ""
+"Although contrived, hopefully this example was enough to show how you'd "
+"create an alternative backend for `mdbook`. If you feel it's missing "
+"something, don't hesitate to create an issue in the [issue tracker](https://"
+"github.com/rust-lang/mdBook/issues) so we can improve the user guide."
+msgstr ""
+
+#: src/for_developers/backends.md:329
+msgid ""
+"The existing backends mentioned towards the start of this chapter should "
+"serve as a good example of how it's done in real life, so feel free to skim "
+"through the source code or ask questions."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:1
+msgid "Preprocessors"
+msgstr "預處理器"
+
+#: src/for_developers/preprocessors.md:3
+msgid ""
+"A _preprocessor_ is simply a bit of code which gets run immediately after "
+"the book is loaded and before it gets rendered, allowing you to update and "
+"mutate the book. Possible use cases are:"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:7
+msgid "Creating custom helpers like `{{#include /path/to/file.md}}`"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:8
+msgid ""
+"Substituting in latex-style expressions (`$$ \\frac{1}{3} $$`) with their "
+"mathjax equivalents"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:11
+msgid ""
+"See [Configuring Preprocessors](../format/configuration/preprocessors.md) "
+"for more information about using preprocessors."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:13
+msgid "Hooking into MDBook"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:15
+msgid ""
+"MDBook uses a fairly simple mechanism for discovering third party plugins. A "
+"new table is added to `book.toml` (e.g. `[preprocessor.foo]` for the `foo` "
+"preprocessor) and then `mdbook` will try to invoke the `mdbook-foo` program "
+"as part of the build process."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:20
+msgid ""
+"Once the preprocessor has been defined and the build process starts, mdBook "
+"executes the command defined in the `preprocessor.foo.command` key twice. "
+"The first time it runs the preprocessor to determine if it supports the "
+"given renderer. mdBook passes two arguments to the process: the first "
+"argument is the string `supports` and the second argument is the renderer "
+"name. The preprocessor should exit with a status code 0 if it supports the "
+"given renderer, or return a non-zero exit code if it does not."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:25
+msgid ""
+"If the preprocessor supports the renderer, then mdbook runs it a second "
+"time, passing JSON data into stdin. The JSON consists of an array of "
+"`[context, book]` where `context` is the serialized object "
+"[`PreprocessorContext`](https://docs.rs/mdbook-preprocessor/latest/"
+"mdbook_preprocessor/struct.PreprocessorContext.html) and `book` is a [`Book`]"
+"(https://docs.rs/mdbook-preprocessor/latest/mdbook_preprocessor/book/struct."
+"Book.html) object containing the content of the book."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:28
+msgid ""
+"The preprocessor should return the JSON format of the [`Book`](https://docs."
+"rs/mdbook-preprocessor/latest/mdbook_preprocessor/book/struct.Book.html) "
+"object to stdout, with any modifications it wishes to perform."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:30
+msgid ""
+"The easiest way to get started is by creating your own implementation of the "
+"`Preprocessor` trait (e.g. in `lib.rs`) and then creating a shell binary "
+"which translates inputs to the correct `Preprocessor` method. For "
+"convenience, there is [an example no-op preprocessor](https://github.com/"
+"rust-lang/mdBook/blob/master/examples/nop-preprocessor.rs) in the `examples/"
+"` directory which can easily be adapted for other preprocessors."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:40
+msgid "// nop-preprocessors.rs\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:41
+msgid "//! A basic example of a preprocessor that does nothing.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:54
+#: src/for_developers/preprocessors.md:130
+msgid "\"nop-preprocessor\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:55
+msgid "\"A mdbook preprocessor which does precisely nothing\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:57
+#: src/for_developers/preprocessors.md:69
+#: src/for_developers/preprocessors.md:244
+#: src/for_developers/preprocessors.md:320
+msgid "\"supports\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:58
+#: src/for_developers/preprocessors.md:101
+msgid "\"renderer\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:59
+msgid "\"Check whether a renderer is supported by this preprocessor\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:66
+msgid "// Users will want to construct their own preprocessor here\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:72
+msgid "\"{e:?}\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:85
+msgid ""
+"\"Warning: The {} plugin was built against version {} of mdbook, \\\n"
+"             but we're being called from version {}\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:102
+msgid "\"Required argument\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:105
+msgid "// Signal whether the renderer is supported by exiting with 1 or 0.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:112
+msgid ""
+"/// The actual implementation of the `Nop` preprocessor. This would usually "
+"go\n"
+"/// in your main `lib.rs` file.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:115
+msgid "\"wouldn't be a problem in a proper lib.rs\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:119
+msgid "/// A no-op preprocessor.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:134
+msgid ""
+"// In testing we want to tell the preprocessor to blow up by setting a\n"
+"            // particular config value\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:138
+msgid "\"preprocessor.nop-preprocessor.blow-up\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:140
+msgid "\"Boom!!1!\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:142
+msgid "\"expect bool for blow-up: {e}\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:145
+msgid "// we *are* a no-op preprocessor after all\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:150
+msgid "\"not-supported\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:160
+msgid ""
+"r##\"[\n"
+"                {\n"
+"                    \"root\": \"/path/to/book\",\n"
+"                    \"config\": {\n"
+"                        \"book\": {\n"
+"                            \"authors\": [\"AUTHOR\"],\n"
+"                            \"language\": \"en\",\n"
+"                            \"src\": \"src\",\n"
+"                            \"title\": \"TITLE\"\n"
+"                        },\n"
+"                        \"preprocessor\": {\n"
+"                            \"nop\": {}\n"
+"                        }\n"
+"                    },\n"
+"                    \"renderer\": \"html\",\n"
+"                    \"mdbook_version\": \"0.4.21\"\n"
+"                },\n"
+"                {\n"
+"                    \"items\": [\n"
+"                        {\n"
+"                            \"Chapter\": {\n"
+"                                \"name\": \"Chapter 1\",\n"
+"                                \"content\": \"# Chapter 1\\n\",\n"
+"                                \"number\": [1],\n"
+"                                \"sub_items\": [],\n"
+"                                \"path\": \"chapter_1.md\",\n"
+"                                \"source_path\": \"chapter_1.md\",\n"
+"                                \"parent_names\": []\n"
+"                            }\n"
+"                        }\n"
+"                    ]\n"
+"                }\n"
+"            ]\"##"
+msgstr ""
+"r##\"[\n"
+"                {\n"
+"                    \"root\": \"/path/to/book\",\n"
+"                    \"config\": {\n"
+"                        \"book\": {\n"
+"                            \"authors\": [\"AUTHOR\"],\n"
+"                            \"language\": \"en\",\n"
+"                            \"src\": \"src\",\n"
+"                            \"title\": \"TITLE\"\n"
+"                        },\n"
+"                        \"preprocessor\": {\n"
+"                            \"nop\": {}\n"
+"                        }\n"
+"                    },\n"
+"                    \"renderer\": \"html\",\n"
+"                    \"mdbook_version\": \"0.4.21\"\n"
+"                },\n"
+"                {\n"
+"                    \"items\": [\n"
+"                        {\n"
+"                            \"Chapter\": {\n"
+"                                \"name\": \"Chapter 1\",\n"
+"                                \"content\": \"# Chapter 1\\n\",\n"
+"                                \"number\": [1],\n"
+"                                \"sub_items\": [],\n"
+"                                \"path\": \"chapter_1.md\",\n"
+"                                \"source_path\": \"chapter_1.md\",\n"
+"                                \"parent_names\": []\n"
+"                            }\n"
+"                        }\n"
+"                    ]\n"
+"                }\n"
+"            ]\"##"
+
+#: src/for_developers/preprocessors.md:200
+msgid ""
+"// The nop-preprocessor should not have made any changes to the book "
+"content.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:209
+msgid "Hints for implementing a preprocessor"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:211
+msgid ""
+"By pulling in `mdbook-preprocessor` as a library, preprocessors can have "
+"access to the existing infrastructure for dealing with books."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:214
+msgid ""
+"For example, a custom preprocessor could use the [`parse_input()`](https://"
+"docs.rs/mdbook-preprocessor/latest/mdbook_preprocessor/fn.parse_input.html) "
+"function to deserialize the JSON written to `stdin`. Then each chapter of "
+"the `Book` can be mutated in-place via [`Book::for_each_mut()`](https://docs."
+"rs/mdbook-preprocessor/latest/mdbook_preprocessor/book/struct.Book."
+"html#method.for_each_mut), and then written to `stdout` with the "
+"`serde_json` crate."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:220
+msgid ""
+"Chapters can be accessed either directly (by recursively iterating over "
+"chapters) or via the `Book::for_each_mut()` convenience method."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:223
+msgid ""
+"The `chapter.content` is just a string which happens to be markdown. While "
+"it's entirely possible to use regular expressions or do a manual find & "
+"replace, you'll probably want to process the input into something more "
+"computer-friendly. The [`mdbook-markdown`](https://docs.rs/mdbook-markdown/"
+"latest/mdbook_markdown/) crate exposes the [`pulldown-cmark`](https://crates."
+"io/crates/pulldown-cmark) crate used by mdBook to parse Markdown. The "
+"[`pulldown-cmark-to-cmark`](https://crates.io/crates/pulldown-cmark-to-"
+"cmark) crate can be used to translate events back into markdown text."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:228
+msgid ""
+"The following code block shows how to remove all emphasis from markdown, "
+"without accidentally breaking the document."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:232
+msgid ""
+"//! This is a demonstration of an mdBook preprocessor which parses markdown\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:233
+msgid "//! and removes any instances of emphasis.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:245
+msgid "// Supports all renderers.\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:249
+msgid "\"unknown argument: {arg}\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:256
+msgid "\"{e}\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:265
+msgid "\"remove-emphasis\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:272
+msgid "\"failed to process chapter: {e:?}\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:274
+msgid "\"removed {total} emphasis\""
+msgstr ""
+
+#: src/for_developers/preprocessors.md:305
+msgid ""
+"Take a look at the [full example source](https://github.com/rust-lang/mdBook/"
+"tree/master/examples/remove-emphasis/) for more details."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:307
+msgid "Implementing a preprocessor with a different language"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:309
+msgid ""
+"The fact that mdBook utilizes stdin and stdout to communicate with the "
+"preprocessors makes it easy to implement them in a language other than Rust. "
+"The following code shows how to implement a simple preprocessor in Python, "
+"which will modify the content of the first chapter. The example below "
+"follows the configuration shown above with `preprocessor.foo.command` "
+"actually pointing to a Python script."
+msgstr ""
+
+#: src/for_developers/preprocessors.md:318
+msgid "'__main__'"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:319
+msgid "# we check if we received any argument\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:321
+msgid ""
+"# then we are good to return an exit status code of 0, since the other "
+"argument will just be the renderer's name\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:324
+msgid "# load both the context and the book representations from stdin\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:326
+msgid "# and now, we can just modify the content of the first chapter\n"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:327
+msgid "'items'"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:327
+msgid "'Chapter'"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:327
+msgid "'content'"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:327
+msgid "'# Hello'"
+msgstr ""
+
+#: src/for_developers/preprocessors.md:328
+msgid ""
+"# we are done with the book's modification, we can just print it to "
+"stdout, \n"
+msgstr ""
+
+#: src/format/index.md:1
+msgid "Format"
+msgstr "格式化"
+
+#: src/format/index.md:3
+msgid "In this section you will learn how to:"
+msgstr ""
+
+#: src/format/index.md:5
+msgid "Structure your book correctly"
+msgstr ""
+
+#: src/format/index.md:6
+msgid "Format your `SUMMARY.md` file"
+msgstr "格式化您的 `SUMMARY.md` 檔案"
+
+#: src/format/index.md:7
+msgid "Configure your book using `book.toml`"
+msgstr "使用 `book.toml` 組態您的手冊"
+
+#: src/format/index.md:8
+msgid "Customize your theme"
+msgstr "自訂您的主題"
+
+#: src/format/configuration/index.md:3
+msgid ""
+"This section details the configuration options available in the _**book."
+"toml**_:"
+msgstr ""
+
+#: src/format/configuration/index.md:4
+msgid ""
+"**[General](general.md)** configuration including the `book`, `rust`, "
+"`build` sections"
+msgstr ""
+
+#: src/format/configuration/index.md:5
+msgid ""
+"**[Preprocessor](preprocessors.md)** configuration for default and custom "
+"book preprocessors"
+msgstr ""
+
+#: src/format/configuration/index.md:6
+msgid ""
+"**[Renderer](renderers.md)** configuration for the HTML, Markdown and custom "
+"renderers"
+msgstr ""
+
+#: src/format/configuration/index.md:7
+msgid ""
+"**[Environment Variable](environment-variables.md)** configuration for "
+"overriding configuration options in your environment"
+msgstr ""
+"**[環境變數](environment-variables.md)**組態，用於在您的環境中覆蓋組態選項"
+
+#: src/format/configuration/environment-variables.md:1
+msgid "Environment variables"
+msgstr "環境變數"
+
+#: src/format/configuration/environment-variables.md:3
+msgid ""
+"All configuration values can be overridden from the command line by setting "
+"the corresponding environment variable. Because many operating systems "
+"restrict environment variables to be alphanumeric characters or `_`, the "
+"configuration key needs to be formatted slightly differently to the normal "
+"`foo.bar.baz` form."
+msgstr ""
+"所有組態值都可以從命令行透過設定對應的環境變數來覆蓋。由於許多作業系統限制環"
+"境變數僅能包含英數字元或底線（`_`），因此需將組態鍵稍微格式化為不同於普通的 "
+"`foo.bar.baz` 形式。"
+
+#: src/format/configuration/environment-variables.md:8
+msgid ""
+"Variables starting with `MDBOOK_` are used for configuration. The key is "
+"created by removing the `MDBOOK_` prefix and turning the resulting string "
+"into `kebab-case`. Double underscores (`__`) separate nested keys, while a "
+"single underscore (`_`) is replaced with a dash (`-`)."
+msgstr ""
+"使用以 `MDBOOK_` 開頭的變數進行組態。鍵（key）的建立方式是移除 `MDBOOK_` 前"
+"綴，並將剩餘的字串轉換為 `kebab-case`。雙底線（`__`）用於分隔嵌套的鍵，而單底"
+"線（`_`）則會被替換為短橫線 (`-`)。"
+
+#: src/format/configuration/environment-variables.md:13
+msgid "For example:"
+msgstr "例如："
+
+#: src/format/configuration/environment-variables.md:15
+msgid "`MDBOOK_book` -> `book`"
+msgstr "`MDBOOK_book` -> `book`"
+
+#: src/format/configuration/environment-variables.md:16
+msgid "`MDBOOK_BOOK` -> `book`"
+msgstr "`MDBOOK_BOOK` -> `book`"
+
+#: src/format/configuration/environment-variables.md:17
+msgid "`MDBOOK_BOOK__TITLE` -> `book.title`"
+msgstr "`MDBOOK_BOOK__TITLE` -> `book.title`"
+
+#: src/format/configuration/environment-variables.md:18
+msgid "`MDBOOK_BOOK__TEXT_DIRECTION` -> `book.text-direction`"
+msgstr "`MDBOOK_BOOK__TEXT_DIRECTION` -> `book.text-direction`"
+
+#: src/format/configuration/environment-variables.md:20
+msgid ""
+"So by setting the `MDBOOK_BOOK__TITLE` environment variable you can override "
+"the book's title without needing to touch your `book.toml`."
+msgstr ""
+"因此，透過設定 `MDBOOK_BOOK__TITLE` 環境變數而無需修改您的 `book.toml`，就可"
+"以覆蓋手冊的題名。"
+
+#: src/format/configuration/environment-variables.md:23
+msgid ""
+"**Note:** To facilitate setting more complex config items, the value of an "
+"environment variable is first parsed as JSON, falling back to a string if "
+"the parse fails."
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:27
+msgid ""
+"This means, if you so desired, you could override all book metadata when "
+"building the book with something like"
+msgstr ""
+"這代表如果您有需要，可以在建置手冊時透過類似以下的方式覆蓋所有手冊的元資料"
+
+#: src/format/configuration/environment-variables.md:30
+msgid ""
+"```shell\n"
+"$ export MDBOOK_BOOK='{\"title\": \"My Awesome Book\", \"authors\": "
+"[\"Michael-F-Bryan\"]}'\n"
+"$ mdbook build\n"
+"```"
+msgstr ""
+"```shell\n"
+"$ export MDBOOK_BOOK='{\"title\": \"My Awesome Book\", \"authors\": "
+"[\"Michael-F-Bryan\"]}'\n"
+"$ mdbook build\n"
+"```"
+
+#: src/format/configuration/environment-variables.md:35
+msgid ""
+"The latter case may be useful in situations where `mdbook` is invoked from a "
+"script or CI, where it sometimes isn't possible to update the `book.toml` "
+"before building."
+msgstr ""
+
+#: src/format/configuration/general.md:1
+msgid "General configuration"
+msgstr "一般組態"
+
+#: src/format/configuration/general.md:3
+msgid ""
+"You can configure the parameters for your book in the _**book.toml**_ file."
+msgstr ""
+
+#: src/format/configuration/general.md:5
+msgid "Here is an example of what a _**book.toml**_ file might look like:"
+msgstr ""
+
+#: src/format/configuration/general.md:7
+msgid ""
+"```toml\n"
+"[book]\n"
+"title = \"Example book\"\n"
+"authors = [\"John Doe\"]\n"
+"description = \"The example book covers examples.\"\n"
+"\n"
+"[rust]\n"
+"edition = \"2018\"\n"
+"\n"
+"[build]\n"
+"build-dir = \"my-example-book\"\n"
+"create-missing = false\n"
+"\n"
+"[preprocessor.index]\n"
+"\n"
+"[preprocessor.links]\n"
+"\n"
+"[output.html]\n"
+"additional-css = [\"custom.css\"]\n"
+"\n"
+"[output.html.search]\n"
+"limit-results = 15\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/general.md:31
+msgid "Supported configuration options"
+msgstr "支援的組態選項"
+
+#: src/format/configuration/general.md:33
+msgid ""
+"It is important to note that **any** relative path specified in the "
+"configuration will always be taken relative from the root of the book where "
+"the configuration file is located."
+msgstr ""
+
+#: src/format/configuration/general.md:37
+msgid "General metadata"
+msgstr ""
+
+#: src/format/configuration/general.md:39
+msgid "This is general information about your book."
+msgstr ""
+
+#: src/format/configuration/general.md:41
+msgid "**title:** The title of the book"
+msgstr "**title:** 手冊的題名"
+
+#: src/format/configuration/general.md:42
+msgid "**authors:** The author(s) of the book"
+msgstr "**authors:** 手冊的作者"
+
+#: src/format/configuration/general.md:43
+msgid ""
+"**description:** A description for the book, which is added as meta "
+"information in the html `<head>` of each page"
+msgstr ""
+
+#: src/format/configuration/general.md:45
+msgid ""
+"**src:** By default, the source directory is found in the directory named "
+"`src` directly under the root folder. But this is configurable with the "
+"`src` key in the configuration file."
+msgstr ""
+
+#: src/format/configuration/general.md:48
+msgid ""
+"**language:** The main language of the book, which is used as a language "
+"attribute `<html lang=\"en\">` for example. This is also used to derive the "
+"direction of text (RTL, LTR) within the book."
+msgstr ""
+
+#: src/format/configuration/general.md:50
+msgid ""
+"**text-direction**: The direction of text in the book: Left-to-right (LTR) "
+"or Right-to-left (RTL). Possible values: `ltr`, `rtl`. When not specified, "
+"the text direction is derived from the book's `language` attribute."
+msgstr ""
+
+#: src/format/configuration/general.md:53
+msgid "**book.toml**"
+msgstr "**book.toml**"
+
+#: src/format/configuration/general.md:54
+msgid ""
+"```toml\n"
+"[book]\n"
+"title = \"Example book\"\n"
+"authors = [\"John Doe\", \"Jane Doe\"]\n"
+"description = \"The example book covers examples.\"\n"
+"src = \"my-src\"  # the source files will be found in `root/my-src` instead "
+"of `root/src`\n"
+"language = \"en\"\n"
+"text-direction = \"ltr\"\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/general.md:64
+msgid "Rust options"
+msgstr "Rust 選項"
+
+#: src/format/configuration/general.md:66
+msgid ""
+"Options for the Rust language, relevant to running tests and playground "
+"integration."
+msgstr ""
+
+#: src/format/configuration/general.md:69
+msgid ""
+"```toml\n"
+"[rust]\n"
+"edition = \"2015\"   # the default edition for code blocks\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/general.md:74
+msgid ""
+"**edition**: Rust edition to use by default for the code snippets. Default "
+"is `\"2015\"`. Individual code blocks can be controlled with the "
+"`edition2015`, `edition2018`, `edition2021` or `edition2024` annotations, "
+"such as:"
+msgstr ""
+
+#: src/format/configuration/general.md:78
+msgid ""
+"````text\n"
+"```rust,edition2015\n"
+"// This only works in 2015.\n"
+"let try = true;\n"
+"```\n"
+"````"
+msgstr ""
+
+#: src/format/configuration/general.md:85
+msgid "Build options"
+msgstr "建置選項"
+
+#: src/format/configuration/general.md:87
+msgid "This controls the build process of your book."
+msgstr ""
+
+#: src/format/configuration/general.md:89
+msgid ""
+"```toml\n"
+"[build]\n"
+"build-dir = \"book\"                # the directory where the output is "
+"placed\n"
+"create-missing = true             # whether or not to create missing pages\n"
+"use-default-preprocessors = true  # use the default preprocessors\n"
+"extra-watch-dirs = []             # directories to watch for triggering "
+"builds\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/general.md:97
+msgid ""
+"**build-dir:** The directory to put the rendered book in. By default this is "
+"`book/` in the book's root directory. This can overridden with the `--dest-"
+"dir` CLI option."
+msgstr ""
+
+#: src/format/configuration/general.md:100
+msgid ""
+"**create-missing:** By default, any missing files specified in `SUMMARY.md` "
+"will be created when the book is built (i.e. `create-missing = true`). If "
+"this is `false` then the build process will instead exit with an error if "
+"any files do not exist."
+msgstr ""
+
+#: src/format/configuration/general.md:104
+msgid ""
+"**use-default-preprocessors:** Disable the default preprocessors (of `links` "
+"& `index`) by setting this option to `false`."
+msgstr ""
+
+#: src/format/configuration/general.md:107
+msgid ""
+"If you have the same, and/or other preprocessors declared via their table of "
+"configuration, they will run instead."
+msgstr ""
+
+#: src/format/configuration/general.md:110
+msgid ""
+"For clarity, with no preprocessor configuration, the default `links` and "
+"`index` will run."
+msgstr ""
+
+#: src/format/configuration/general.md:112
+msgid ""
+"Setting `use-default-preprocessors = false` will disable these default "
+"preprocessors from running."
+msgstr ""
+
+#: src/format/configuration/general.md:114
+msgid ""
+"Adding `[preprocessor.links]`, for example, will ensure, regardless of `use-"
+"default-preprocessors` that `links` it will run."
+msgstr ""
+
+#: src/format/configuration/general.md:116
+msgid ""
+"**extra-watch-dirs**: A list of paths to directories that will be watched in "
+"the `watch` and `serve` commands. Changes to files under these directories "
+"will trigger rebuilds. Useful if your book depends on files outside its "
+"`src` directory."
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:1
+msgid "Configuring Preprocessors"
+msgstr "組態預處理器"
+
+#: src/format/configuration/preprocessors.md:3
+msgid ""
+"Preprocessors are extensions that can modify the raw Markdown source before "
+"it gets sent to the renderer."
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:5
+msgid "The following preprocessors are built-in and included by default:"
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:7
+msgid ""
+"`links`: Expands the `{{ #playground }}`, `{{ #include }}`, and "
+"`{{ #rustdoc_include }}` handlebars helpers in a chapter to include the "
+"contents of a file. See [Including files](../mdbook.md#including-files) for "
+"more."
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:10
+msgid ""
+"`index`: Convert all chapter files named `README.md` into `index.md`. That "
+"is to say, all `README.md` would be rendered to an index file `index.html` "
+"in the rendered book."
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:14
+msgid ""
+"The built-in preprocessors can be disabled with the [`build.use-default-"
+"preprocessors`](general.md#build-options) config option."
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:16
+msgid ""
+"The community has developed several preprocessors. See the [Third Party "
+"Plugins](https://github.com/rust-lang/mdBook/wiki/Third-party-plugins) wiki "
+"page for a list of available preprocessors."
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:19
+msgid ""
+"For information on how to create a new preprocessor, see the [Preprocessors "
+"for Developers](../../for_developers/preprocessors.md) chapter."
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:26
+msgid "Custom preprocessor configuration"
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:28
+msgid ""
+"Preprocessors can be added by including a `preprocessor` table in `book."
+"toml` with the name of the preprocessor. For example, if you have a "
+"preprocessor called `mdbook-example`, then you can include it with:"
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:35
+msgid "With this table, mdBook will execute the `mdbook-example` preprocessor."
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:37
+msgid ""
+"This table can include additional key-value pairs that are specific to the "
+"preprocessor. For example, if our example preprocessor needed some extra "
+"configuration options:"
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:45
+msgid "Locking a preprocessor dependency to a renderer"
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:47
+msgid ""
+"You can explicitly specify that a preprocessor should run for a renderer by "
+"binding the two together."
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:50
+msgid ""
+"```toml\n"
+"[preprocessor.example]\n"
+"renderers = [\"html\"]  # example preprocessor only runs with the HTML "
+"renderer\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:55
+msgid "Provide your own command"
+msgstr "提供您自己的命令"
+
+#: src/format/configuration/preprocessors.md:57
+msgid ""
+"By default when you add a `[preprocessor.foo]` table to your `book.toml` "
+"file, `mdbook` will try to invoke the `mdbook-foo` executable. If you want "
+"to use a different program name or pass in command-line arguments, this "
+"behaviour can be overridden by adding a `command` field."
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:62
+msgid ""
+"```toml\n"
+"[preprocessor.random]\n"
+"command = \"python random.py\"\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:67
+msgid "Optional preprocessors"
+msgstr "選用的預處理器"
+
+#: src/format/configuration/preprocessors.md:69
+msgid ""
+"If you enable a preprocessor that isn't installed, the default behavior is "
+"to throw an error. This behavior can be changed by marking the preprocessor "
+"as optional:"
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:77
+msgid "This demotes the error to a warning."
+msgstr "這會將錯誤降級為警告。"
+
+#: src/format/configuration/preprocessors.md:79
+msgid "Require a certain order"
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:81
+msgid ""
+"The order in which preprocessors are run can be controlled with the `before` "
+"and `after` fields. For example, suppose you want your `linenos` "
+"preprocessor to process lines that may have been `{{#include}}`d; then you "
+"want it to run after the built-in `links` preprocessor, which you can "
+"require using either the `before` or `after` field:"
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:84
+msgid ""
+"```toml\n"
+"[preprocessor.linenos]\n"
+"after = [ \"links\" ]\n"
+"```"
+msgstr ""
+"```toml\n"
+"[preprocessor.linenos]\n"
+"after = [ \"links\" ]\n"
+"```"
+
+#: src/format/configuration/preprocessors.md:89
+msgid "or"
+msgstr "或者"
+
+#: src/format/configuration/preprocessors.md:91
+msgid ""
+"```toml\n"
+"[preprocessor.links]\n"
+"before = [ \"linenos\" ]\n"
+"```"
+msgstr ""
+"```toml\n"
+"[preprocessor.links]\n"
+"before = [ \"linenos\" ]\n"
+"```"
+
+#: src/format/configuration/preprocessors.md:96
+msgid ""
+"It would also be possible, though redundant, to specify both of the above in "
+"the same config file."
+msgstr ""
+
+#: src/format/configuration/preprocessors.md:98
+msgid ""
+"Preprocessors having the same priority specified through `before` and "
+"`after` are sorted by name. Any infinite loops will be detected and produce "
+"an error."
+msgstr ""
+
+#: src/format/configuration/renderers.md:1
+msgid "Configuring Renderers"
+msgstr "組態算繪器"
+
+#: src/format/configuration/renderers.md:3
+msgid ""
+"Renderers (also called \"backends\") are responsible for creating the output "
+"of the book."
+msgstr ""
+
+#: src/format/configuration/renderers.md:5
+msgid "The following backends are built-in:"
+msgstr ""
+
+#: src/format/configuration/renderers.md:7
+msgid ""
+"[`html`](#html-renderer-options) --- This renders the book to HTML. This is "
+"enabled by default if no other `[output]` tables are defined in `book.toml`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:9
+msgid ""
+"[`markdown`](#markdown-renderer) --- This outputs the book as markdown after "
+"running the preprocessors. This is useful for debugging preprocessors."
+msgstr ""
+
+#: src/format/configuration/renderers.md:15
+msgid ""
+"For information on how to create a new backend, see the [Backends for "
+"Developers](../../for_developers/backends.md) chapter."
+msgstr ""
+
+#: src/format/configuration/renderers.md:20
+msgid "Output tables"
+msgstr "輸出表格"
+
+#: src/format/configuration/renderers.md:22
+msgid ""
+"Backends can be added by including a `output` table in `book.toml` with the "
+"name of the backend. For example, if you have a backend called `mdbook-"
+"wordcount`, then you can include it with:"
+msgstr ""
+
+#: src/format/configuration/renderers.md:29
+msgid "With this table, mdBook will execute the `mdbook-wordcount` backend."
+msgstr "使用此表格，mdBook 將會執行 `mdbook-wordcount` 後端。"
+
+#: src/format/configuration/renderers.md:31
+msgid ""
+"This table can include additional key-value pairs that are specific to the "
+"backend. For example, if our example backend needed some extra configuration "
+"options:"
+msgstr ""
+
+#: src/format/configuration/renderers.md:34
+msgid ""
+"```toml\n"
+"[output.wordcount]\n"
+"ignores = [\"Example Chapter\"]\n"
+"```"
+msgstr ""
+"```toml\n"
+"[output.wordcount]\n"
+"ignores = [\"Example Chapter\"]\n"
+"```"
+
+#: src/format/configuration/renderers.md:39
+msgid ""
+"If you define any `[output]` tables, then the `html` backend is not enabled "
+"by default. If you want to keep the `html` backend running, then just "
+"include it in the `book.toml` file. For example:"
+msgstr ""
+
+#: src/format/configuration/renderers.md:43
+msgid ""
+"```toml\n"
+"[book]\n"
+"title = \"My Awesome Book\"\n"
+"\n"
+"[output.wordcount]\n"
+"\n"
+"[output.html]\n"
+"```"
+msgstr ""
+"```toml\n"
+"[book]\n"
+"title = \"My Awesome Book\"\n"
+"\n"
+"[output.wordcount]\n"
+"\n"
+"[output.html]\n"
+"```"
+
+#: src/format/configuration/renderers.md:52
+msgid ""
+"If more than one `output` table is included, this changes the behavior for "
+"the layout of the output directory. If there is only one backend, then it "
+"places its output directly in the `book` directory (see [`build.build-dir`]"
+"(general.md#build-options) to override this location). If there is more than "
+"one backend, then each backend is placed in a separate directory underneath "
+"`book`. For example, the above would have directories `book/html` and `book/"
+"wordcount`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:59
+msgid "Custom backend commands"
+msgstr "自訂後端命令"
+
+#: src/format/configuration/renderers.md:61
+msgid ""
+"By default when you add an `[output.foo]` table to your `book.toml` file, "
+"`mdbook` will try to invoke the `mdbook-foo` executable. If you want to use "
+"a different program name or pass in command-line arguments, this behaviour "
+"can be overridden by adding a `command` field."
+msgstr ""
+
+#: src/format/configuration/renderers.md:66
+msgid ""
+"```toml\n"
+"[output.random]\n"
+"command = \"python random.py\"\n"
+"```"
+msgstr ""
+"```toml\n"
+"[output.random]\n"
+"command = \"python random.py\"\n"
+"```"
+
+#: src/format/configuration/renderers.md:71
+msgid "Optional backends"
+msgstr "選用的後端"
+
+#: src/format/configuration/renderers.md:73
+msgid ""
+"If you enable a backend that isn't installed, the default behavior is to "
+"throw an error. This behavior can be changed by marking the backend as "
+"optional:"
+msgstr ""
+
+#: src/format/configuration/renderers.md:84
+msgid "HTML renderer options"
+msgstr "HTML 算繪器選項"
+
+#: src/format/configuration/renderers.md:86
+msgid ""
+"The HTML renderer has a variety of options detailed below. They should be "
+"specified in the `[output.html]` table of the `book.toml` file."
+msgstr ""
+
+#: src/format/configuration/renderers.md:89
+msgid ""
+"```toml\n"
+"# Example book.toml file with all output options.\n"
+"[book]\n"
+"title = \"Example book\"\n"
+"authors = [\"John Doe\", \"Jane Doe\"]\n"
+"description = \"The example book covers examples.\"\n"
+"\n"
+"[output.html]\n"
+"theme = \"my-theme\"\n"
+"default-theme = \"light\"\n"
+"preferred-dark-theme = \"navy\"\n"
+"smart-punctuation = true\n"
+"definition-lists = true\n"
+"admonitions = true\n"
+"mathjax-support = false\n"
+"additional-css = [\"custom.css\", \"custom2.css\"]\n"
+"additional-js = [\"custom.js\"]\n"
+"no-section-label = false\n"
+"git-repository-url = \"https://github.com/rust-lang/mdBook\"\n"
+"git-repository-icon = \"fab-github\"\n"
+"edit-url-template = \"https://github.com/rust-lang/mdBook/edit/master/guide/"
+"{path}\"\n"
+"site-url = \"/example-book/\"\n"
+"cname = \"myproject.rs\"\n"
+"input-404 = \"not-found.md\"\n"
+"sidebar-header-nav = true\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/renderers.md:116
+msgid "The following configuration options are available:"
+msgstr "可使用以下組態選項："
+
+#: src/format/configuration/renderers.md:118
+msgid ""
+"**theme:** mdBook comes with a default theme and all the resource files "
+"needed for it. But if this option is set, mdBook will selectively overwrite "
+"the theme files with the ones found in the specified folder."
+msgstr ""
+
+#: src/format/configuration/renderers.md:121
+msgid ""
+"**default-theme:** The theme color scheme to select by default in the "
+"'Change Theme' dropdown. Defaults to `light`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:123
+msgid ""
+"**preferred-dark-theme:** The default dark theme. This theme will be used if "
+"the browser requests the dark version of the site via the [`prefers-color-"
+"scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-"
+"color-scheme) CSS media query. Defaults to `navy`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:127
+msgid ""
+"**smart-punctuation:** Converts quotes to curly quotes, `...` to `…`, `--` "
+"to en-dash, and `---` to em-dash. See [Smart Punctuation](../markdown."
+"md#smart-punctuation). Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:130
+msgid ""
+"**definition-lists:** Enables [definition lists](../markdown.md#definition-"
+"lists). Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:131
+msgid ""
+"**admonitions:** Enables [admonitions](../markdown.md#admonitions). Defaults "
+"to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:132
+msgid ""
+"**mathjax-support:** Adds support for [MathJax](../mathjax.md). Defaults to "
+"`false`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:134
+msgid ""
+"**additional-css:** If you need to slightly change the appearance of your "
+"book without overwriting the whole style, you can specify a set of "
+"stylesheets that will be loaded after the default ones where you can "
+"surgically change the style."
+msgstr ""
+
+#: src/format/configuration/renderers.md:138
+msgid ""
+"**additional-js:** If you need to add some behaviour to your book without "
+"removing the current behaviour, you can specify a set of JavaScript files "
+"that will be loaded alongside the default one."
+msgstr ""
+
+#: src/format/configuration/renderers.md:141
+msgid ""
+"**no-section-label:** mdBook by defaults adds numeric section labels in the "
+"table of contents column. For example, \"1.\", \"2.1\". Set this option to "
+"true to disable those labels. Defaults to `false`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:144
+msgid ""
+"**git-repository-url:**  A url to the git repository for the book. If "
+"provided an icon link will be output in the menu bar of the book."
+msgstr ""
+
+#: src/format/configuration/renderers.md:146
+msgid ""
+"**git-repository-icon:** The Font Awesome icon class to use for the git "
+"repository link. Defaults to `fab-github` which looks like <i class=\"fab fa-"
+"github\"></i>. If you are not using GitHub, another option to consider is "
+"`fas-code-fork` which looks like <i class=\"fas fa-code-fork\"></i>. The "
+"start of the string should be `fa-` for regular icons, `fas-` for solid "
+"icons, or `fab-` for brand icons. See the [free icon set](https://"
+"fontawesome.com/v6/search) for the available icons."
+msgstr ""
+
+#: src/format/configuration/renderers.md:147
+msgid ""
+"**edit-url-template:** Edit url template, when provided shows a \"Suggest an "
+"edit\" button (which looks like <i class=\"fas fa-pencil\"></i>) for "
+"directly jumping to editing the currently viewed page. For e.g. GitHub "
+"projects set this to `https://github.com/<owner>/<repo>/edit/<branch>/{path}"
+"` or for Bitbucket projects set it to `https://bitbucket.org/<owner>/<repo>/"
+"src/<branch>/{path}?mode=edit` where {path} will be replaced with the full "
+"path of the file in the repository."
+msgstr ""
+
+#: src/format/configuration/renderers.md:155
+msgid ""
+"**input-404:** The name of the markdown file used for missing files. The "
+"corresponding output file will be the same, with the extension replaced with "
+"`html`. Defaults to `404.md`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:158
+msgid ""
+"**site-url:** The url where the book will be hosted. This is required to "
+"ensure navigation links and script/css imports in the 404 file work "
+"correctly, even when accessing urls in subdirectories. Defaults to `/`. If "
+"`site-url` is set, make sure to use document relative links for your assets, "
+"meaning they should not start with `/`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:162
+msgid ""
+"**cname:** The DNS subdomain or apex domain at which your book will be "
+"hosted. This string will be written to a file named CNAME in the root of "
+"your site, as required by GitHub Pages (see [_Managing a custom domain for "
+"your GitHub Pages site_](https://docs.github.com/en/github/working-with-"
+"github-pages/managing-a-custom-domain-for-your-github-pages-site))."
+msgstr ""
+
+#: src/format/configuration/renderers.md:166
+msgid ""
+"**hash-files:** Include a cryptographic \"fingerprint\" of the files' "
+"contents in static asset filenames, so that if the contents of the file are "
+"changed, the name of the file will also change. For example, `css/chrome."
+"css` may become `css/chrome-9b8f428e.css`. Chapter HTML files are not "
+"renamed. Static CSS and JS files can reference each other using `{{ resource "
+"\"filename\" }}` directives. Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:172
+msgid ""
+"**sidebar-header-nav:** If `true`, the sidebar will contain navigation for "
+"headers on the current page. Default is `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:176
+msgid "`[output.html.print]`"
+msgstr "`[output.html.print]`"
+
+#: src/format/configuration/renderers.md:178
+msgid ""
+"The `[output.html.print]` table provides options for controlling the "
+"printable output. By default, mdBook will include an icon on the top right "
+"of the book (which looks like <i class=\"fas fa-print\"></i>) that will "
+"print the book as a single page."
+msgstr ""
+
+#: src/format/configuration/renderers.md:187
+msgid ""
+"**enable:** Enable print support. When `false`, all print support will not "
+"be rendered. Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:189
+msgid ""
+"**page-break:** Insert page breaks between chapters. Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:191
+msgid "`[output.html.fold]`"
+msgstr "`[output.html.fold]`"
+
+#: src/format/configuration/renderers.md:193
+msgid ""
+"The `[output.html.fold]` table provides options for controlling folding of "
+"the chapter listing in the navigation sidebar."
+msgstr ""
+
+#: src/format/configuration/renderers.md:201
+msgid ""
+"**enable:** Enable section-folding. When off, all folds are open. Defaults "
+"to `false`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:203
+msgid ""
+"**level:** The higher the more folded regions are open. When level is 0, all "
+"folds are closed. Defaults to `0`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:206
+msgid "`[output.html.playground]`"
+msgstr "`[output.html.playground]`"
+
+#: src/format/configuration/renderers.md:208
+msgid ""
+"The `[output.html.playground]` table provides options for controlling Rust "
+"sample code blocks, and their integration with the [Rust Playground](https://"
+"play.rust-lang.org/)."
+msgstr ""
+
+#: src/format/configuration/renderers.md:221
+msgid "**editable:** Allow editing the source code. Defaults to `false`."
+msgstr "**editable：** 允許編輯來源碼。預設值為 `false`。"
+
+#: src/format/configuration/renderers.md:222
+msgid ""
+"**copyable:** Display the copy button on code snippets. Defaults to `true`."
+msgstr "**copyable:** 在程式碼片段上顯示複製按鈕。預設值為 `true`。"
+
+#: src/format/configuration/renderers.md:223
+msgid ""
+"**copy-js:** Copy JavaScript files for the editor to the output directory. "
+"Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:225
+msgid ""
+"**line-numbers:** Display line numbers on editable sections of code. "
+"Requires both `editable` and `copy-js` to be `true`. Defaults to `false`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:226
+msgid ""
+"**runnable:** Displays a run button for rust code snippets. Changing this to "
+"`false` will disable the run in playground feature globally. Defaults to "
+"`true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:230
+msgid "`[output.html.code]`"
+msgstr "`[output.html.code]`"
+
+#: src/format/configuration/renderers.md:232
+msgid ""
+"The `[output.html.code]` table provides options for controlling code blocks."
+msgstr ""
+
+#: src/format/configuration/renderers.md:234
+msgid ""
+"```toml\n"
+"[output.html.code]\n"
+"# A prefix string per language (one or more chars).\n"
+"# Any line starting with whitespace+prefix is hidden.\n"
+"hidelines = { python = \"~\" }\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/renderers.md:241
+msgid ""
+"**hidelines:** A table that defines how [hidden code lines](../mdbook."
+"md#hiding-code-lines) work for each language. The key is the language and "
+"the value is a string that will cause code lines starting with that prefix "
+"to be hidden."
+msgstr ""
+
+#: src/format/configuration/renderers.md:244
+msgid "`[output.html.search]`"
+msgstr "`[output.html.search]`"
+
+#: src/format/configuration/renderers.md:246
+msgid ""
+"The `[output.html.search]` table provides options for controlling the built-"
+"in text [search](../../guide/reading.md#search). mdBook must be compiled "
+"with the `search` feature enabled (on by default)."
+msgstr ""
+
+#: src/format/configuration/renderers.md:265
+msgid "**enable:** Enables the search feature. Defaults to `true`."
+msgstr "**enable：**啟用搜尋功能。預設值為 `true`。"
+
+#: src/format/configuration/renderers.md:266
+msgid ""
+"**limit-results:** The maximum number of search results. Defaults to `30`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:267
+msgid ""
+"**teaser-word-count:** The number of words used for a search result teaser. "
+"Defaults to `30`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:269
+msgid ""
+"**use-boolean-and:** Define the logical link between multiple search words. "
+"If true, all search words must appear in each result. Defaults to `false`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:271
+msgid ""
+"**boost-title:** Boost factor for the search result score if a search word "
+"appears in the header. Defaults to `2`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:273
+msgid ""
+"**boost-hierarchy:** Boost factor for the search result score if a search "
+"word appears in the hierarchy. The hierarchy contains all titles of the "
+"parent documents and all parent headings. Defaults to `1`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:276
+msgid ""
+"**boost-paragraph:** Boost factor for the search result score if a search "
+"word appears in the text. Defaults to `1`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:278
+msgid ""
+"**expand:** True if search should match longer results e.g. search `micro` "
+"should match `microwave`. Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:280
+msgid ""
+"**heading-split-level:** Search results will link to a section of the "
+"document which contains the result. Documents are split into sections by "
+"headings this level or less. Defaults to `3`. (`### This is a level 3 "
+"heading`)"
+msgstr ""
+
+#: src/format/configuration/renderers.md:283
+msgid ""
+"**copy-js:** Copy JavaScript files for the search implementation to the "
+"output directory. Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:286
+msgid "`[output.html.search.chapter]`"
+msgstr "`[output.html.search.chapter]`"
+
+#: src/format/configuration/renderers.md:288
+msgid ""
+"The \\[`output.html.search.chapter`\\] table provides the ability to modify "
+"search settings per chapter or directory. Each key is the path to the "
+"chapter source file or directory, and the value is a table of settings to "
+"apply to that path. This will merge recursively, with more specific paths "
+"taking precedence."
+msgstr ""
+
+#: src/format/configuration/renderers.md:290
+msgid ""
+"```toml\n"
+"[output.html.search.chapter]\n"
+"# Disables search indexing for all chapters in the `appendix` directory.\n"
+"\"appendix\" = { enable = false }\n"
+"# Enables search indexing for just this one appendix chapter.\n"
+"\"appendix/glossary.md\" = { enable = true }\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/renderers.md:298
+msgid ""
+"**enable:** Enables or disables search indexing for the given chapters. "
+"Defaults to `true`. This does not override the overall `output.html.search."
+"enable` setting; that must be `true` for any search functionality to be "
+"enabled. Be cautious when disabling indexing for chapters because that can "
+"potentially lead to user confusion when they search for terms and expect "
+"them to be found. This should only be used in exceptional circumstances "
+"where keeping the chapter in the index will cause issues with the quality of "
+"the search results."
+msgstr ""
+
+#: src/format/configuration/renderers.md:300
+msgid "`[output.html.redirect]`"
+msgstr ""
+
+#: src/format/configuration/renderers.md:302
+msgid ""
+"The `[output.html.redirect]` table provides a way to add redirects. This is "
+"useful when you move, rename, or remove a page to ensure that links to the "
+"old URL will go to the new location."
+msgstr ""
+
+#: src/format/configuration/renderers.md:305
+msgid ""
+"```toml\n"
+"[output.html.redirect]\n"
+"\"/appendices/bibliography.html\" = \"https://rustc-dev-guide.rust-lang.org/"
+"appendix/bibliography.html\"\n"
+"\"/other-installation-methods.html\" = \"../infra/other-installation-methods."
+"html\"\n"
+"\n"
+"# Fragment redirects also work.\n"
+"\"/some-existing-page.html#old-fragment\" = \"some-existing-page.html#new-"
+"fragment\"\n"
+"\n"
+"# Fragment redirects also work for deleted pages.\n"
+"\"/old-page.html\" = \"new-page.html\"\n"
+"\"/old-page.html#old-fragment\" = \"new-page.html#new-fragment\"\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/renderers.md:318
+msgid ""
+"The table contains key-value pairs where the key is where the redirect file "
+"needs to be created, as an absolute path from the build directory, (e.g. `/"
+"appendices/bibliography.html`). The value can be any valid URI the browser "
+"should navigate to (e.g. `https://rust-lang.org/`, `/overview.html`, or `../"
+"bibliography.html`)."
+msgstr ""
+
+#: src/format/configuration/renderers.md:321
+msgid ""
+"This will generate an HTML page which will automatically redirect to the "
+"given location."
+msgstr ""
+
+#: src/format/configuration/renderers.md:323
+msgid ""
+"When fragment redirects are specified, the page must use JavaScript to "
+"redirect to the correct location. This is useful if you rename or move a "
+"section header. Fragment redirects work with existing pages and deleted "
+"pages."
+msgstr ""
+
+#: src/format/configuration/renderers.md:325
+msgid "Markdown renderer"
+msgstr "Markdown 算繪器"
+
+#: src/format/configuration/renderers.md:327
+msgid ""
+"The Markdown renderer will run preprocessors and then output the resulting "
+"Markdown. This is mostly useful for debugging preprocessors, especially in "
+"conjunction with `mdbook test` to see the Markdown that `mdbook` is passing "
+"to `rustdoc`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:332
+msgid ""
+"The Markdown renderer is included with `mdbook` but disabled by default. "
+"Enable it by adding an empty table to your `book.toml` as follows:"
+msgstr ""
+
+#: src/format/configuration/renderers.md:339
+msgid ""
+"There are no configuration options for the Markdown renderer at this time; "
+"only whether it is enabled or disabled."
+msgstr ""
+
+#: src/format/configuration/renderers.md:342
+msgid ""
+"See [the preprocessors documentation](preprocessors.md) for how to specify "
+"which preprocessors should run before the Markdown renderer."
+msgstr ""
+
+#: src/format/markdown.md:1
+msgid "Markdown"
+msgstr "Markdown"
+
+#: src/format/markdown.md:3
+msgid ""
+"mdBook's [parser](https://github.com/raphlinus/pulldown-cmark) adheres to "
+"the [CommonMark](https://commonmark.org/) specification with some extensions "
+"described below. You can take a quick [tutorial](https://commonmark.org/help/"
+"tutorial/), or [try out](https://spec.commonmark.org/dingus/) CommonMark in "
+"real time. A complete Markdown overview is out of scope for this "
+"documentation, but below is a high level overview of some of the basics. For "
+"a more in-depth experience, check out the [Markdown Guide](https://www."
+"markdownguide.org)."
+msgstr ""
+
+#: src/format/markdown.md:9
+msgid "Text and paragraphs"
+msgstr ""
+
+#: src/format/markdown.md:11
+msgid "Text is rendered relatively predictably:"
+msgstr ""
+
+#: src/format/markdown.md:19
+msgid "Will look like you might expect:"
+msgstr ""
+
+#: src/format/markdown.md:21
+msgid "Here is a line of text."
+msgstr ""
+
+#: src/format/markdown.md:23
+msgid "This is a new line."
+msgstr ""
+
+#: src/format/markdown.md:25
+msgid "Headings"
+msgstr ""
+
+#: src/format/markdown.md:27
+msgid ""
+"Headings use the `#` marker and should be on a line by themselves. More `#` "
+"mean smaller headings:"
+msgstr ""
+
+#: src/format/markdown.md:39
+msgid "A heading"
+msgstr ""
+
+#: src/format/markdown.md:41
+msgid "Some text."
+msgstr ""
+
+#: src/format/markdown.md:43
+msgid "A smaller heading"
+msgstr ""
+
+#: src/format/markdown.md:45
+msgid "More text."
+msgstr ""
+
+#: src/format/markdown.md:47
+msgid "Lists"
+msgstr ""
+
+#: src/format/markdown.md:49
+msgid ""
+"Lists can be unordered or ordered. Ordered lists will order automatically:"
+msgstr ""
+
+#: src/format/markdown.md:61
+msgid "milk"
+msgstr ""
+
+#: src/format/markdown.md:62
+msgid "eggs"
+msgstr ""
+
+#: src/format/markdown.md:63
+msgid "butter"
+msgstr ""
+
+#: src/format/markdown.md:65
+msgid "carrots"
+msgstr ""
+
+#: src/format/markdown.md:66
+msgid "celery"
+msgstr ""
+
+#: src/format/markdown.md:67
+msgid "radishes"
+msgstr ""
+
+#: src/format/markdown.md:69
+msgid "Links"
+msgstr ""
+
+#: src/format/markdown.md:71
+msgid "Linking to a URL or local file is easy:"
+msgstr ""
+
+#: src/format/markdown.md:85
+msgid "Use [mdBook](https://github.com/rust-lang/mdBook)."
+msgstr ""
+
+#: src/format/markdown.md:87
+msgid "Read about [mdBook](mdbook.md)."
+msgstr ""
+
+#: src/format/markdown.md:89
+msgid ""
+"And now [an mdBook link](https://github.com/rust-lang/mdBook) that is not "
+"inline, unlike the above."
+msgstr ""
+
+#: src/format/markdown.md:91
+msgid "A bare url: <https://www.rust-lang.org>."
+msgstr ""
+
+#: src/format/markdown.md:96
+msgid ""
+"Relative links that end with `.md` will be converted to the `.html` "
+"extension. It is recommended to use `.md` links when possible. This is "
+"useful when viewing the Markdown file outside of mdBook, for example on "
+"GitHub or GitLab which render Markdown automatically."
+msgstr ""
+
+#: src/format/markdown.md:100
+msgid ""
+"Links to `README.md` will be converted to `index.html`. This is done since "
+"some services like GitHub render README files automatically, but web servers "
+"typically expect the root file to be called `index.html`."
+msgstr ""
+
+#: src/format/markdown.md:103
+msgid ""
+"You can link to individual headings with `#` fragments. For example, `mdbook."
+"md#text-and-paragraphs` would link to the [Text and Paragraphs](#text-and-"
+"paragraphs) section above. The ID is created by transforming the heading "
+"such as converting to lowercase and replacing spaces with dashes. You can "
+"click on any heading and look at the URL in your browser to see what the "
+"fragment looks like."
+msgstr ""
+
+#: src/format/markdown.md:108
+msgid "Images"
+msgstr ""
+
+#: src/format/markdown.md:110
+msgid ""
+"Including images is simply a matter of including a link to them, much like "
+"in the _Links_ section above. The following markdown includes the Rust logo "
+"SVG image found in the `images` directory at the same level as this file:"
+msgstr ""
+
+#: src/format/markdown.md:117
+msgid "Produces the following HTML when built with mdBook:"
+msgstr ""
+
+#: src/format/markdown.md:120
+msgid "\"images/rust-logo-blk.svg\""
+msgstr ""
+
+#: src/format/markdown.md:120
+msgid "\"The Rust Logo\""
+msgstr ""
+
+#: src/format/markdown.md:123
+msgid "Which, of course displays the image like so:"
+msgstr ""
+
+#: src/format/markdown.md:125
+msgid "![The Rust Logo](images/rust-logo-blk.svg)"
+msgstr ""
+
+#: src/format/markdown.md:127
+msgid "Extensions"
+msgstr "擴充套件"
+
+#: src/format/markdown.md:129
+msgid ""
+"mdBook has several extensions beyond the standard CommonMark specification."
+msgstr ""
+
+#: src/format/markdown.md:131
+msgid "Strikethrough"
+msgstr ""
+
+#: src/format/markdown.md:133
+msgid ""
+"Text may be rendered with a horizontal line through the center by wrapping "
+"the text with one or two tilde characters on each side:"
+msgstr ""
+
+#: src/format/markdown.md:140 src/format/markdown.md:161
+msgid "This example will render as:"
+msgstr ""
+
+#: src/format/markdown.md:142
+msgid "An example of ~~strikethrough text~~."
+msgstr ""
+
+#: src/format/markdown.md:144
+msgid ""
+"This follows the [GitHub Strikethrough extension](https://github.github.com/"
+"gfm/#strikethrough-extension-)."
+msgstr ""
+
+#: src/format/markdown.md:146
+msgid "Footnotes"
+msgstr "腳註"
+
+#: src/format/markdown.md:148
+msgid ""
+"A footnote generates a small numbered link in the text which when clicked "
+"takes the reader to the footnote text at the bottom of the item. The "
+"footnote label is written similarly to a link reference with a caret at the "
+"front. The footnote text is written like a link reference definition, with "
+"the text following the label. Example:"
+msgstr ""
+
+#: src/format/markdown.md:163
+msgid "This is an example of a footnote[^note]."
+msgstr ""
+
+#: src/format/markdown.md:165
+msgid ""
+"This text is the contents of the footnote, which will be rendered towards "
+"the bottom."
+msgstr ""
+
+#: src/format/markdown.md:168
+msgid ""
+"The footnotes are automatically numbered based on the order the footnotes "
+"are written."
+msgstr ""
+
+#: src/format/markdown.md:171
+msgid "Tables"
+msgstr "表格"
+
+#: src/format/markdown.md:173
+msgid ""
+"Tables can be written using pipes and dashes to draw the rows and columns of "
+"the table. These will be translated to HTML table matching the shape. "
+"Example:"
+msgstr ""
+
+#: src/format/markdown.md:182
+msgid "This example will render similarly to this:"
+msgstr ""
+
+#: src/format/markdown.md:184
+msgid "Header1"
+msgstr ""
+
+#: src/format/markdown.md:184
+msgid "Header2"
+msgstr ""
+
+#: src/format/markdown.md:186
+msgid "abc"
+msgstr ""
+
+#: src/format/markdown.md:186
+msgid "def"
+msgstr ""
+
+#: src/format/markdown.md:188
+msgid ""
+"See the specification for the [GitHub Tables extension](https://github."
+"github.com/gfm/#tables-extension-) for more details on the exact syntax "
+"supported."
+msgstr ""
+
+#: src/format/markdown.md:191
+msgid "Task lists"
+msgstr ""
+
+#: src/format/markdown.md:193
+msgid ""
+"Task lists can be used as a checklist of items that have been completed. "
+"Example:"
+msgstr ""
+
+#: src/format/markdown.md:201 src/format/markdown.md:260
+msgid "This will render as:"
+msgstr ""
+
+#: src/format/markdown.md:203
+msgid "Complete task"
+msgstr ""
+
+#: src/format/markdown.md:204
+msgid "Incomplete task"
+msgstr ""
+
+#: src/format/markdown.md:206
+msgid ""
+"See the specification for the [task list extension](https://github.github."
+"com/gfm/#task-list-items-extension-) for more details."
+msgstr ""
+
+#: src/format/markdown.md:208
+msgid "Smart punctuation"
+msgstr ""
+
+#: src/format/markdown.md:210
+msgid ""
+"Some ASCII punctuation sequences will be automatically turned into fancy "
+"Unicode characters:"
+msgstr ""
+
+#: src/format/markdown.md:213
+msgid "ASCII sequence"
+msgstr "ASCII 序列"
+
+#: src/format/markdown.md:213
+msgid "Unicode"
+msgstr ""
+
+#: src/format/markdown.md:215
+msgid "`--`"
+msgstr ""
+
+#: src/format/markdown.md:215
+msgid "–"
+msgstr ""
+
+#: src/format/markdown.md:216
+msgid "`---`"
+msgstr ""
+
+#: src/format/markdown.md:216
+msgid "—"
+msgstr ""
+
+#: src/format/markdown.md:217
+msgid "`...`"
+msgstr ""
+
+#: src/format/markdown.md:217
+msgid "…"
+msgstr ""
+
+#: src/format/markdown.md:218
+msgid "`\"`"
+msgstr ""
+
+#: src/format/markdown.md:218
+msgid "“ or ”, depending on context"
+msgstr ""
+
+#: src/format/markdown.md:219
+msgid "`'`"
+msgstr ""
+
+#: src/format/markdown.md:219
+msgid "‘ or ’, depending on context"
+msgstr ""
+
+#: src/format/markdown.md:221
+msgid "So, no need to manually enter those Unicode characters!"
+msgstr ""
+
+#: src/format/markdown.md:223
+msgid ""
+"This feature is enabled by default. To disable it, see the [`output.html."
+"smart-punctuation`](configuration/renderers.md#html-renderer-options) config "
+"option."
+msgstr ""
+
+#: src/format/markdown.md:231
+msgid "Heading attributes"
+msgstr ""
+
+#: src/format/markdown.md:233
+msgid ""
+"Headings can have a custom HTML ID and classes. This lets you maintain the "
+"same ID even if you change the heading's text, it also lets you add multiple "
+"classes in the heading."
+msgstr ""
+
+#: src/format/markdown.md:235 src/format/markdown.md:248
+msgid "Example:"
+msgstr "範例："
+
+#: src/format/markdown.md:240
+msgid ""
+"This makes the level 1 heading with the content `Example heading`, ID "
+"`first`, and classes `class1` and `class2`. Note that the attributes should "
+"be space-separated."
+msgstr ""
+
+#: src/format/markdown.md:242
+msgid ""
+"More information can be found in the [heading attrs spec page](https://"
+"github.com/raphlinus/pulldown-cmark/blob/master/pulldown-cmark/specs/"
+"heading_attrs.txt)."
+msgstr ""
+
+#: src/format/markdown.md:244
+msgid "Definition lists"
+msgstr ""
+
+#: src/format/markdown.md:246
+msgid ""
+"Definition lists can be used for things like glossary entries. The term is "
+"listed on a line by itself, followed by one or more definitions. Each "
+"definition must begin with a `:` (after 0-2 spaces)."
+msgstr ""
+
+#: src/format/markdown.md:262
+msgid "term A : This is a definition of term A. Text can span multiple lines."
+msgstr ""
+
+#: src/format/markdown.md:266
+msgid ""
+"term B : This is a definition of term B. : This has more than one definition."
+msgstr ""
+
+#: src/format/markdown.md:270
+msgid ""
+"Terms are clickable just like headers, which will set the browser's URL to "
+"point directly to that term."
+msgstr ""
+
+#: src/format/markdown.md:272
+msgid ""
+"See the [definition lists spec](https://github.com/pulldown-cmark/pulldown-"
+"cmark/blob/HEAD/pulldown-cmark/specs/definition_lists.txt) for more "
+"information on the specifics of the syntax. See the [Wikipedia guidelines "
+"for glossaries](https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/"
+"Glossaries#General_guidelines_for_writing_glossaries) for some guidelines on "
+"how to write a glossary."
+msgstr ""
+
+#: src/format/markdown.md:274
+msgid ""
+"This feature is enabled by default. To disable it, see the [`output.html."
+"definition-lists`](configuration/renderers.md#html-renderer-options) config "
+"option."
+msgstr ""
+
+#: src/format/markdown.md:279
+msgid "Admonitions"
+msgstr ""
+
+#: src/format/markdown.md:281
+msgid ""
+"An admonition is a special type of callout or notice block used to highlight "
+"important information. It is written as a blockquote with a special tag on "
+"the first line."
+msgstr ""
+
+#: src/format/markdown.md:300
+msgid "These will render as:"
+msgstr ""
+
+#: src/format/markdown.md:302
+msgid "\\[!NOTE\\] General information or additional context."
+msgstr ""
+
+#: src/format/markdown.md:305
+msgid "\\[!TIP\\] A helpful suggestion or best practice."
+msgstr ""
+
+#: src/format/markdown.md:308
+msgid "\\[!IMPORTANT\\] Key information that shouldn't be missed."
+msgstr ""
+
+#: src/format/markdown.md:311
+msgid "\\[!WARNING\\] Critical information that highlights a potential risk."
+msgstr ""
+
+#: src/format/markdown.md:314
+msgid "\\[!CAUTION\\] Information about potential issues that require caution."
+msgstr ""
+
+#: src/format/markdown.md:317
+msgid ""
+"This feature is enabled by default. To disable it, see the [`output.html."
+"admonitions`](configuration/renderers.md#html-renderer-options) config "
+"option."
+msgstr ""
+
+#: src/format/mathjax.md:1
+msgid "MathJax support"
+msgstr "MathJax 支援"
+
+#: src/format/mathjax.md:3
+msgid ""
+"mdBook has optional support for math equations through [MathJax](https://www."
+"mathjax.org/)."
+msgstr ""
+
+#: src/format/mathjax.md:6
+msgid ""
+"To enable MathJax, you need to add the `mathjax-support` key to your `book."
+"toml` under the `output.html` section."
+msgstr ""
+
+#: src/format/mathjax.md:14
+msgid ""
+"**Note:** The usual delimiters MathJax uses are not yet supported. You can't "
+"currently use `$$ ... $$` as delimiters and the `\\[ ... \\]` delimiters "
+"need an extra backslash to work. Hopefully this limitation will be lifted "
+"soon."
+msgstr ""
+
+#: src/format/mathjax.md:18
+msgid ""
+"**Note:** When you use double backslashes in MathJax blocks (for example in "
+"commands such as `\\begin{cases} \\frac 1 2 \\\\ \\frac 3 4 \\end{cases}`) "
+"you need to add _two extra_ backslashes (e.g., `\\begin{cases} \\frac 1 2 \\"
+"\\\\\\ \\frac 3 4 \\end{cases}`)."
+msgstr ""
+
+#: src/format/mathjax.md:24
+msgid "Inline equations"
+msgstr ""
+
+#: src/format/mathjax.md:25
+msgid ""
+"Inline equations are delimited by `\\\\(` and `\\\\)`. So for example, to "
+"render the following inline equation \\\\( \\int x dx = \\frac{x^2}{2} + C \\"
+"\\) you would write the following:"
+msgstr ""
+
+#: src/format/mathjax.md:32
+msgid "Block equations"
+msgstr ""
+
+#: src/format/mathjax.md:33
+msgid ""
+"Block equations are delimited by `\\\\[` and `\\\\]`. To render the "
+"following equation"
+msgstr ""
+
+#: src/format/mathjax.md:36
+msgid "\\\\\\[ \\mu = \\frac{1}{N} \\sum\\_{i=0} x_i \\\\\\]"
+msgstr ""
+
+#: src/format/mathjax.md:39
+msgid "you would write:"
+msgstr ""
+
+#: src/format/mdbook.md:1
+msgid "mdBook-specific features"
+msgstr "mdBook 特定功能"
+
+#: src/format/mdbook.md:3
+msgid "Hiding code lines"
+msgstr ""
+
+#: src/format/mdbook.md:5
+msgid ""
+"There is a feature in mdBook that lets you hide code lines by prepending "
+"them with a specific prefix."
+msgstr ""
+
+#: src/format/mdbook.md:7
+msgid ""
+"For the Rust language, you can prefix lines with `# ` (`#` followed by a "
+"space) to hide them [like you would with Rustdoc](https://doc.rust-lang.org/"
+"stable/rustdoc/write-documentation/documentation-tests.html#hiding-portions-"
+"of-the-example). This prefix can be escaped with `##` to prevent the hiding "
+"of a line that should begin with the literal string `# ` (see [Rustdoc's "
+"docs](https://doc.rust-lang.org/stable/rustdoc/write-documentation/"
+"documentation-tests.html#hiding-portions-of-the-example) for more details)"
+msgstr ""
+
+#: src/format/mdbook.md:13
+msgid "# fn main() {\n"
+msgstr "# fn main() {\n"
+
+#: src/format/mdbook.md:17 src/format/mdbook.md:28
+msgid "\"{}\""
+msgstr "\"{}\""
+
+#: src/format/mdbook.md:17
+msgid "# }\n"
+msgstr "# }\n"
+
+#: src/format/mdbook.md:21
+msgid "Will render as"
+msgstr ""
+
+#: src/format/mdbook.md:32
+msgid ""
+"When you tap or hover the mouse over the code block, there will be an "
+"eyeball icon (<i class=\"fa fa-eye\"></i>) which will toggle the visibility "
+"of the hidden lines."
+msgstr ""
+
+#: src/format/mdbook.md:34
+msgid ""
+"By default, this only works for code examples that are annotated with "
+"`rust`. However, you can define custom prefixes for other languages by "
+"adding a new line-hiding prefix in your `book.toml` with the language name "
+"and prefix character(s):"
+msgstr ""
+
+#: src/format/mdbook.md:37
+msgid ""
+"```toml\n"
+"[output.html.code.hidelines]\n"
+"python = \"~\"\n"
+"```"
+msgstr ""
+"```toml\n"
+"[output.html.code.hidelines]\n"
+"python = \"~\"\n"
+"```"
+
+#: src/format/mdbook.md:42
+msgid ""
+"The prefix will hide any lines that begin with the given prefix. With the "
+"python prefix shown above, this:"
+msgstr ""
+
+#: src/format/mdbook.md:52
+msgid "will render as"
+msgstr ""
+
+#: src/format/mdbook.md:62
+msgid ""
+"This behavior can be overridden locally with a different prefix. This has "
+"the same effect as above:"
+msgstr ""
+
+#: src/format/mdbook.md:74
+msgid "Rust playground"
+msgstr ""
+
+#: src/format/mdbook.md:76
+msgid ""
+"Rust language code blocks will automatically get a play button (<i "
+"class=\"fas fa-play\"></i>) which will execute the code and display the "
+"output just below the code block. This works by sending the code to the "
+"[Rust Playground](https://play.rust-lang.org/)."
+msgstr ""
+
+#: src/format/mdbook.md:80
+msgid "\"Hello, World!\""
+msgstr ""
+
+#: src/format/mdbook.md:83
+msgid ""
+"If there is no `main` function, then the code is automatically wrapped "
+"inside one."
+msgstr ""
+
+#: src/format/mdbook.md:85
+msgid ""
+"If you wish to disable the play button for a code block, you can include the "
+"`noplayground` option on the code block like this:"
+msgstr ""
+
+#: src/format/mdbook.md:95
+msgid ""
+"Or, if you wish to disable the play button for all code blocks in your book, "
+"you can write the config to the `book.toml` like this."
+msgstr ""
+
+#: src/format/mdbook.md:102
+msgid "Rust code block attributes"
+msgstr ""
+
+#: src/format/mdbook.md:104
+msgid ""
+"Additional attributes can be included in Rust code blocks with comma, space, "
+"or tab-separated terms just after the language term. For example:"
+msgstr ""
+
+#: src/format/mdbook.md:113
+msgid ""
+"These are particularly important when using [`mdbook test`](../cli/test.md) "
+"to test Rust examples. These use the same attributes as [rustdoc attributes]"
+"(https://doc.rust-lang.org/rustdoc/documentation-tests.html#attributes), "
+"with a few additions:"
+msgstr ""
+
+#: src/format/mdbook.md:116
+msgid "`editable` --- Enables the [editor](theme/editor.md)."
+msgstr "`editable` --- 啟用[編輯器](theme/editor.md)。"
+
+#: src/format/mdbook.md:117
+msgid "`noplayground` --- Removes the play button, but will still be tested."
+msgstr "`noplayground` --- 移除播放按鈕，但仍會進行測試。"
+
+#: src/format/mdbook.md:118
+msgid ""
+"`mdbook-runnable` --- Forces the play button to be displayed. This is "
+"intended to be combined with the `ignore` attribute for examples that should "
+"not be tested, but you want to allow the reader to run."
+msgstr ""
+
+#: src/format/mdbook.md:120
+msgid ""
+"`ignore` --- Will not be tested and no play button is shown, but it is still "
+"highlighted as Rust syntax."
+msgstr "`ignore` --- 不會進行測試且不顯示播放按鈕，但仍會以 Rust 語法標明。"
+
+#: src/format/mdbook.md:121
+msgid "`should_panic` --- When executed, it should produce a panic."
+msgstr ""
+
+#: src/format/mdbook.md:122
+msgid ""
+"`no_run` --- The code is compiled when tested, but it is not run. The play "
+"button is also not shown."
+msgstr ""
+
+#: src/format/mdbook.md:124
+msgid "`compile_fail` --- The code should fail to compile."
+msgstr ""
+
+#: src/format/mdbook.md:125
+msgid ""
+"`edition2015`, `edition2018`, `edition2021`, `edition2024` --- Forces the "
+"use of a specific Rust edition. See [`rust.edition`](configuration/general."
+"md#rust-options) to set this globally."
+msgstr ""
+
+#: src/format/mdbook.md:133
+msgid "Including files"
+msgstr ""
+
+#: src/format/mdbook.md:135
+msgid "With the following syntax, you can include files into your book:"
+msgstr ""
+
+#: src/format/mdbook.md:141
+msgid "The path to the file has to be relative from the current source file."
+msgstr ""
+
+#: src/format/mdbook.md:143
+msgid ""
+"mdBook will interpret included files as Markdown. Since the include command "
+"is usually used for inserting code snippets and examples, you will often "
+"wrap the command with ```` ``` ```` to display the file contents without "
+"interpreting them."
+msgstr ""
+
+#: src/format/mdbook.md:154
+msgid "Including portions of a file"
+msgstr ""
+
+#: src/format/mdbook.md:155
+msgid ""
+"Often you only need a specific part of the file, e.g. relevant lines for an "
+"example. We support four different modes of partial includes:"
+msgstr ""
+
+#: src/format/mdbook.md:165
+msgid ""
+"The first command only includes the second line from file `file.rs`. The "
+"second command includes all lines up to line 10, i.e. the lines from 11 till "
+"the end of the file are omitted. The third command includes all lines from "
+"line 2, i.e. the first line is omitted. The last command includes the "
+"excerpt of `file.rs` consisting of lines 2 to 10."
+msgstr ""
+
+#: src/format/mdbook.md:171
+msgid ""
+"To avoid breaking your book when modifying included files, you can also "
+"include a specific section using anchors instead of line numbers. An anchor "
+"is a pair of matching lines. The line beginning an anchor must match the "
+"regex `ANCHOR:\\s*[\\w_-]+` and similarly the ending line must match the "
+"regex `ANCHOR_END:\\s*[\\w_-]+`. This allows you to put anchors in any kind "
+"of commented line."
+msgstr ""
+
+#: src/format/mdbook.md:178
+msgid "Consider the following file to include:"
+msgstr ""
+
+#: src/format/mdbook.md:180
+msgid "/* ANCHOR: all */"
+msgstr ""
+
+#: src/format/mdbook.md:181
+msgid "// ANCHOR: component\n"
+msgstr ""
+
+#: src/format/mdbook.md:185
+msgid "// ANCHOR_END: component\n"
+msgstr ""
+
+#: src/format/mdbook.md:187
+msgid "////////// ANCHOR: system\n"
+msgstr ""
+
+#: src/format/mdbook.md:189
+msgid "////////// ANCHOR_END: system\n"
+msgstr ""
+
+#: src/format/mdbook.md:191
+msgid "/* ANCHOR_END: all */"
+msgstr ""
+
+#: src/format/mdbook.md:195
+msgid "Then in the book, all you have to do is:"
+msgstr ""
+
+#: src/format/mdbook.md:213
+msgid ""
+"Lines containing anchor patterns inside the included anchor are ignored."
+msgstr ""
+
+#: src/format/mdbook.md:215
+msgid "Including a file but initially hiding all except specified lines"
+msgstr ""
+
+#: src/format/mdbook.md:217
+msgid ""
+"The `rustdoc_include` helper is for including code from external Rust files "
+"that contain complete examples, but only initially showing particular lines "
+"specified with line numbers or anchors in the same way as with `include`."
+msgstr ""
+
+#: src/format/mdbook.md:221
+msgid ""
+"The lines not in the line number range or between the anchors will still be "
+"included, but they will be prefaced with `#`. This way, a reader can expand "
+"the snippet to see the complete example, and Rustdoc will use the complete "
+"example when you run `mdbook test`."
+msgstr ""
+
+#: src/format/mdbook.md:225
+msgid ""
+"For example, consider a file named `file.rs` that contains this Rust program:"
+msgstr ""
+
+#: src/format/mdbook.md:238
+msgid ""
+"We can include a snippet that initially shows only line 2 by using this "
+"syntax:"
+msgstr ""
+
+#: src/format/mdbook.md:248
+msgid ""
+"This would have the same effect as if we had manually inserted the code and "
+"hidden all but line 2 using `#`:"
+msgstr ""
+
+#: src/format/mdbook.md:266
+msgid ""
+"That is, it looks like this (click the \"expand\" icon to see the rest of "
+"the file):"
+msgstr ""
+
+#: src/format/mdbook.md:279
+msgid "Inserting runnable Rust files"
+msgstr "插入可執行的 Rust 檔案"
+
+#: src/format/mdbook.md:281
+msgid ""
+"With the following syntax, you can insert runnable Rust files into your book:"
+msgstr ""
+
+#: src/format/mdbook.md:287
+msgid ""
+"The path to the Rust file has to be relative from the current source file."
+msgstr ""
+
+#: src/format/mdbook.md:289
+msgid ""
+"When play is clicked, the code snippet will be sent to the [Rust Playground]"
+"(https://play.rust-lang.org/) to be compiled and run. The result is sent "
+"back and displayed directly underneath the code."
+msgstr ""
+
+#: src/format/mdbook.md:293
+msgid "Here is what a rendered code snippet looks like:"
+msgstr ""
+
+#: src/format/mdbook.md:297
+msgid "\"Hello World!\""
+msgstr ""
+
+#: src/format/mdbook.md:299
+msgid "// You can even hide lines! :D\n"
+msgstr ""
+
+#: src/format/mdbook.md:300
+msgid "\"I am hidden! Expand the code snippet to see me\""
+msgstr ""
+
+#: src/format/mdbook.md:305
+msgid ""
+"Any additional values passed after the filename will be included as "
+"attributes of the code block. For example `{{#playground example.rs "
+"editable}}` will create the code block like the following:"
+msgstr ""
+
+#: src/format/mdbook.md:314
+msgid ""
+"And the `editable` attribute will enable the [editor](theme/editor.md) as "
+"described at [Rust code block attributes](#rust-code-block-attributes)."
+msgstr ""
+
+#: src/format/mdbook.md:318
+msgid "Controlling page \\<title\\>"
+msgstr ""
+
+#: src/format/mdbook.md:320
+msgid ""
+"A chapter can set a \\<title\\> that is different from its entry in the "
+"table of contents (sidebar) by including a `{{#title ...}}` near the top of "
+"the page."
+msgstr ""
+
+#: src/format/mdbook.md:327
+msgid "HTML classes provided by mdBook"
+msgstr ""
+
+#: src/format/mdbook.md:331
+msgid "`class=\"left\"` and `\"right\"`"
+msgstr ""
+
+#: src/format/mdbook.md:333
+msgid "These classes are provided by default, for inline HTML to float images."
+msgstr ""
+
+#: src/format/mdbook.md:336
+msgid "\"right\""
+msgstr ""
+
+#: src/format/mdbook.md:336
+msgid "\"The Rust logo\""
+msgstr ""
+
+#: src/format/mdbook.md:339
+msgid "`class=\"hidden\"`"
+msgstr ""
+
+#: src/format/mdbook.md:341
+msgid "HTML tags with class `hidden` will not be shown."
+msgstr ""
+
+#: src/format/mdbook.md:344
+msgid "\"hidden\""
+msgstr ""
+
+#: src/format/mdbook.md:349
+msgid "Font-Awesome icons"
+msgstr "Font-Awesome 圖示"
+
+#: src/format/mdbook.md:351
+msgid ""
+"mdBook includes a copy of version 6 of [Font Awesome Free's](https://"
+"fontawesome.com) MIT-licensed SVG files. It emulates the `<i>` syntax, but "
+"converts the results to inline SVG. Only the regular, solid, and brands "
+"icons are included; paid features like the light icons are not."
+msgstr ""
+
+#: src/format/mdbook.md:356
+msgid "For example, given this HTML syntax:"
+msgstr ""
+
+#: src/format/mdbook.md:358
+msgid ""
+"```hbs\n"
+"The result looks like this: <i class=\"fa-solid fa-print\"></i>\n"
+"```"
+msgstr ""
+
+#: src/format/mdbook.md:362
+msgid "The result looks like this: <i class=\"fa-solid fa-print\"></i>"
+msgstr ""
+
+#: src/format/mdbook.md:364
+msgid ""
+"See the [free icon set](https://fontawesome.com/v6/search) for the available "
+"icons."
+msgstr ""
+
+#: src/format/summary.md:1
+msgid "SUMMARY.md"
+msgstr "SUMMARY.md"
+
+#: src/format/summary.md:3
+msgid ""
+"The summary file is used by mdBook to know what chapters to include, in what "
+"order they should appear, what their hierarchy is and where the source files "
+"are. Without this file, there is no book."
+msgstr ""
+
+#: src/format/summary.md:7
+msgid ""
+"This markdown file must be named `SUMMARY.md`. Its formatting is very strict "
+"and must follow the structure outlined below to allow for easy parsing. Any "
+"element not specified below, be it formatting or textual, is likely to be "
+"ignored at best, or may cause an error when attempting to build the book."
+msgstr ""
+
+#: src/format/summary.md:12
+msgid "Structure"
+msgstr ""
+
+#: src/format/summary.md:14
+msgid ""
+"_**Title**_ - While optional, it's common practice to begin with a title, "
+"generally <code\n"
+"class=\"language-markdown\">\\# Summary</code>. This is ignored by the "
+"parser however, and can be omitted."
+msgstr ""
+
+#: src/format/summary.md:21
+msgid ""
+"_**Prefix Chapter**_ - Before the main numbered chapters, prefix chapters "
+"can be added that will not be numbered. This is useful for forewords, "
+"introductions, etc. There are, however, some constraints. Prefix chapters "
+"cannot be nested; they should all be on the root level. And you cannot add "
+"prefix chapters once you have added numbered chapters."
+msgstr ""
+
+#: src/format/summary.md:32
+msgid ""
+"_**Part Title**_ - Level 1 headers can be used as a title for the following "
+"numbered chapters. This can be used to logically separate different sections "
+"of the book. The title is rendered as unclickable text. Titles are optional, "
+"and the numbered chapters can be broken into as many parts as desired. Part "
+"titles must be h1 headers (one `#`), other heading levels are ignored."
+msgstr ""
+
+#: src/format/summary.md:44
+msgid ""
+"_**Numbered Chapter**_ - Numbered chapters outline the main content of the "
+"book and can be nested, resulting in a nice hierarchy (chapters, sub-"
+"chapters, etc.)."
+msgstr ""
+
+#: src/format/summary.md:52
+msgid ""
+"   - [Sub Chapter](relative/path/to/markdown3.md)\n"
+"\n"
+msgstr ""
+
+#: src/format/summary.md:54
+msgid ""
+"# Title of Another Part\n"
+"\n"
+msgstr ""
+
+#: src/format/summary.md:58
+msgid ""
+"Numbered chapters can be denoted with either `-` or `*` (do not mix "
+"delimiters)."
+msgstr ""
+
+#: src/format/summary.md:60
+msgid ""
+"_**Suffix Chapter**_ - Like prefix chapters, suffix chapters are unnumbered, "
+"but they come after numbered chapters."
+msgstr ""
+
+#: src/format/summary.md:68
+msgid ""
+"_**Draft chapters**_ - Draft chapters are chapters without a file and thus "
+"content. The purpose of a draft chapter is to signal future chapters still "
+"to be written. Or when still laying out the structure of the book to avoid "
+"creating the files while you are still changing the structure of the book a "
+"lot. Draft chapters will be rendered in the HTML renderer as disabled links "
+"in the table of contents, as you can see for the next chapter in the table "
+"of contents on the left. Draft chapters are written like normal chapters but "
+"without writing the path to the file."
+msgstr ""
+
+#: src/format/summary.md:79
+msgid ""
+"_**Separators**_ - Separators can be added before, in between, and after any "
+"other element. They result in an HTML rendered line in the built table of "
+"contents.  A separator is a line containing exclusively dashes and at least "
+"three of them: `---`."
+msgstr ""
+
+#: src/format/summary.md:93
+msgid "Example"
+msgstr "範例"
+
+#: src/format/summary.md:95
+msgid ""
+"Below is the markdown source for the `SUMMARY.md` for this guide, with the "
+"resulting table of contents as rendered to the left."
+msgstr ""
+
+#: src/format/theme/index.md:1
+msgid "Theme"
+msgstr "主題"
+
+#: src/format/theme/index.md:3
+msgid ""
+"The default renderer uses a [handlebars](https://handlebarsjs.com) template "
+"to render your markdown files and comes with a default theme included in the "
+"mdBook binary."
+msgstr ""
+
+#: src/format/theme/index.md:7
+msgid ""
+"The theme is totally customizable, you can selectively replace every file "
+"from the theme by your own by adding a `theme` directory next to `src` "
+"folder in your project root. Create a new file with the name of the file you "
+"want to override and now that file will be used instead of the default file."
+msgstr ""
+
+#: src/format/theme/index.md:12
+msgid "Here are the files you can override:"
+msgstr ""
+
+#: src/format/theme/index.md:14
+msgid "**_index.hbs_** is the handlebars template."
+msgstr ""
+
+#: src/format/theme/index.md:15
+msgid "**_head.hbs_** is appended to the HTML `<head>` section."
+msgstr ""
+
+#: src/format/theme/index.md:16
+msgid "**_header.hbs_** content is appended on top of every book page."
+msgstr ""
+
+#: src/format/theme/index.md:17
+msgid "**_css/_** contains the CSS files for styling the book."
+msgstr ""
+
+#: src/format/theme/index.md:18
+msgid "**_css/chrome.css_** is for UI elements."
+msgstr ""
+
+#: src/format/theme/index.md:19
+msgid "**_css/general.css_** is the base styles."
+msgstr ""
+
+#: src/format/theme/index.md:20
+msgid "**_css/print.css_** is the style for printer output."
+msgstr ""
+
+#: src/format/theme/index.md:21
+msgid "**_css/variables.css_** contains variables used in other CSS files."
+msgstr ""
+
+#: src/format/theme/index.md:22
+msgid ""
+"**_book.js_** is mostly used to add client side functionality, like hiding / "
+"un-hiding the sidebar, changing the theme, ..."
+msgstr ""
+
+#: src/format/theme/index.md:24
+msgid ""
+"**_highlight.js_** is the JavaScript that is used to highlight code "
+"snippets, you should not need to modify this."
+msgstr ""
+
+#: src/format/theme/index.md:26
+msgid "**_highlight.css_** is the theme used for the code highlighting."
+msgstr ""
+
+#: src/format/theme/index.md:27
+msgid ""
+"**_favicon.svg_** and **_favicon.png_** the favicon that will be used. The "
+"SVG version is used by [newer browsers](https://caniuse.com/#feat=link-icon-"
+"svg)."
+msgstr ""
+
+#: src/format/theme/index.md:29
+msgid ""
+"**fonts/fonts.css** contains the definition of which fonts to load. Custom "
+"fonts can be included in the `fonts` directory."
+msgstr ""
+
+#: src/format/theme/index.md:32
+msgid ""
+"Generally, when you want to tweak the theme, you don't need to override all "
+"the files. If you only need changes in the stylesheet, there is no point in "
+"overriding all the other files. Because custom files take precedence over "
+"built-in ones, they will not get updated with new fixes / features."
+msgstr ""
+
+#: src/format/theme/index.md:37
+msgid ""
+"**Note:** When you override a file, it is possible that you break some "
+"functionality. Therefore I recommend to use the file from the default theme "
+"as template and only add / modify what you need. You can copy the default "
+"theme into your source directory automatically by using `mdbook init --"
+"theme` and just remove the files you don't want to override."
+msgstr ""
+
+#: src/format/theme/index.md:43
+msgid ""
+"`mdbook init --theme` will not create every file listed above. Some files, "
+"such as `head.hbs`, do not have built-in equivalents. Just create the file "
+"if you need it."
+msgstr ""
+
+#: src/format/theme/index.md:47
+msgid ""
+"If you completely replace all built-in themes, be sure to also set [`output."
+"html.preferred-dark-theme`](../configuration/renderers.md#html-renderer-"
+"options) in the config, which defaults to the built-in `navy` theme."
+msgstr ""
+
+#: src/format/theme/editor.md:1
+msgid "Editor"
+msgstr "編輯器"
+
+#: src/format/theme/editor.md:3
+msgid ""
+"In addition to providing runnable code playgrounds, mdBook optionally allows "
+"them to be editable. In order to enable editable code blocks, the following "
+"needs to be added to the _**book.toml**_:"
+msgstr ""
+
+#: src/format/theme/editor.md:12
+msgid ""
+"After enabling editable code blocks, the `editable` attribute must be added "
+"to a code block to make it editable:"
+msgstr ""
+
+#: src/format/theme/editor.md:24
+msgid "The above will result in this editable playground:"
+msgstr ""
+
+#: src/format/theme/editor.md:33
+msgid "Note the new `Undo Changes` button in the editable playgrounds."
+msgstr ""
+
+#: src/format/theme/editor.md:35
+msgid "Customizing the editor"
+msgstr "訂製編輯器"
+
+#: src/format/theme/editor.md:37
+msgid ""
+"By default, the editor is the [Ace](https://ace.c9.io/) editor, but, if "
+"desired, the functionality may be overridden by providing a different folder:"
+msgstr ""
+
+#: src/format/theme/editor.md:40
+msgid ""
+"```toml\n"
+"[output.html.playground]\n"
+"editable = true\n"
+"editor = \"/path/to/editor\"\n"
+"```"
+msgstr ""
+"```toml\n"
+"[output.html.playground]\n"
+"editable = true\n"
+"editor = \"/path/to/editor\"\n"
+"```"
+
+#: src/format/theme/editor.md:46
+msgid ""
+"Note that for the editor changes to function correctly, the `book.js` inside "
+"of the `theme` folder will need to be overridden as it has some couplings "
+"with the default Ace editor."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:1
+msgid "index.hbs"
+msgstr "index.hbs"
+
+#: src/format/theme/index-hbs.md:3
+msgid ""
+"`index.hbs` is the handlebars template that is used to render the book. The "
+"markdown files are processed to html and then injected in that template."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:6
+msgid ""
+"If you want to change the layout or style of your book, chances are that you "
+"will have to modify this template a little bit. Here is what you need to "
+"know."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:9
+msgid "Data"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:11
+msgid ""
+"A lot of data is exposed to the handlebars template with the \"context\". In "
+"the handlebars template you can access this information by using"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:18
+msgid "Here is a list of the properties that are exposed:"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:20
+msgid ""
+"_**language**_ Language of the book in the form `en`, as specified in `book."
+"toml` (if not specified, defaults to `en`). To use in <code\n"
+"class=\"language-html\">\\<html lang=\"{{ language }}\"></code> for example."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:22
+msgid ""
+"_**title**_ Title used for the current page. This is identical to "
+"`{{ chapter_title }} - {{ book_title }}` unless `book_title` is not set in "
+"which case it just defaults to the `chapter_title`."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:23
+msgid "_**book_title**_ Title of the book, as specified in `book.toml`"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:24
+msgid ""
+"_**chapter_title**_ Title of the current chapter, as listed in `SUMMARY.md`"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:26
+msgid ""
+"_**path**_ Relative path to the original markdown file from the source "
+"directory"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:28
+msgid "_**content**_ This is the rendered markdown."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:29
+msgid ""
+"_**path_to_root**_ This is a path containing exclusively `../`'s that points "
+"to the root of the book from the current file. Since the original directory "
+"structure is maintained, it is useful to prepend relative links with this "
+"`path_to_root`."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:33
+msgid ""
+"_**previous**_ and _**next**_ These are objects used for linking to the "
+"previous and next chapter. They contain the properties `title` and `link` of "
+"the corresponding chapter."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:34
+msgid "_**chapters**_ Is an array of dictionaries of the form"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:36 src/format/theme/index-hbs.md:61
+msgid "\"section\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:36
+msgid "\"1.2.1\""
+msgstr "\"1.2.1\""
+
+#: src/format/theme/index-hbs.md:36
+msgid "\"name\""
+msgstr "\"name\""
+
+#: src/format/theme/index-hbs.md:36
+msgid "\"name of this chapter\""
+msgstr "\"name of this chapter\""
+
+#: src/format/theme/index-hbs.md:36
+msgid "\"path\""
+msgstr "\"path\""
+
+#: src/format/theme/index-hbs.md:36
+msgid "\"dir/markdown.md\""
+msgstr "\"dir/markdown.md\""
+
+#: src/format/theme/index-hbs.md:38
+msgid ""
+"containing all the chapters of the book. It is used for example to construct "
+"the table of contents (sidebar)."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:41
+msgid "Handlebars helpers"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:43
+msgid ""
+"In addition to the properties you can access, there are some handlebars "
+"helpers at your disposal."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:46
+msgid "toc"
+msgstr "toc"
+
+#: src/format/theme/index-hbs.md:48
+msgid "The toc helper is used like this"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:54
+msgid ""
+"and outputs something that looks like this, depending on the structure of "
+"your book"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:58
+msgid "\"chapter\""
+msgstr "\"chapter\""
+
+#: src/format/theme/index-hbs.md:59
+msgid "\"link/to/file.html\""
+msgstr "\"link/to/file.html\""
+
+#: src/format/theme/index-hbs.md:62
+msgid "\"link/to/other_file.html\""
+msgstr "\"link/to/other_file.html\""
+
+#: src/format/theme/index-hbs.md:68
+msgid ""
+"If you would like to make a toc with another structure, you have access to "
+"the chapters property containing all the data. The only limitation at the "
+"moment is that you would have to do it with JavaScript instead of with a "
+"handlebars helper."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:75
+msgid "// Processing here"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:80
+msgid "resource"
+msgstr "resource"
+
+#: src/format/theme/index-hbs.md:82
+msgid ""
+"The path to a static file. It implicitly includes `path_to_root`, and "
+"accounts for files that are renamed with a hash in their filename."
+msgstr ""
+
+#: src/format/theme/index-hbs.md:86
+msgid ""
+"```handlebars\n"
+"<link rel=\"stylesheet\" href=\"{{ resource \"css/chrome.css\" }}\">\n"
+"```"
+msgstr ""
+"```handlebars\n"
+"<link rel=\"stylesheet\" href=\"{{ resource \"css/chrome.css\" }}\">\n"
+"```"
+
+#: src/format/theme/index-hbs.md:90
+msgid "fa"
+msgstr "fa"
+
+#: src/format/theme/index-hbs.md:92
+msgid ""
+"mdBook includes a copy of [Font Awesome Free's](https://fontawesome.com) MIT-"
+"licensed SVG files. It accepts three positional arguments:"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:95
+msgid ""
+"Type: one of \"solid\", \"regular\", and \"brands\" (light and duotone are "
+"not currently supported)"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:97
+msgid ""
+"Icon: anything chosen from the [free icon set](https://fontawesome.com/v6/"
+"search)"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:99
+msgid ""
+"ID (optional): if included, an HTML ID attribute will be added to the icon's "
+"wrapping `<span>` tag"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:102
+msgid "For example, this handlebars syntax will become this HTML:"
+msgstr ""
+
+#: src/format/theme/index-hbs.md:104
+msgid ""
+"```handlebars\n"
+"{{fa \"solid\" \"print\" \"print-button\"}}\n"
+"```"
+msgstr ""
+"```handlebars\n"
+"{{fa \"solid\" \"print\" \"print-button\"}}\n"
+"```"
+
+#: src/format/theme/index-hbs.md:109
+msgid "fa-svg"
+msgstr "fa-svg"
+
+#: src/format/theme/index-hbs.md:109
+msgid "\"print-button\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:109
+msgid "\"http://www.w3.org/2000/svg\""
+msgstr "\"http://www.w3.org/2000/svg\""
+
+#: src/format/theme/index-hbs.md:109
+msgid "\"0 0 512 512\""
+msgstr ""
+
+#: src/format/theme/index-hbs.md:109
+msgid ""
+"\"M448 192V77.25c0-8.49-3.37-16.62-9.37-22.63L393.37 "
+"9.37c-6-6-14.14-9.37-22.63-9.37H96C78.33 0 64 14.33 64 32v160c-35.35 0-64 "
+"28.65-64 64v112c0 8.84 7.16 16 16 16h48v96c0 17.67 14.33 32 32 32h320c17.67 "
+"0 32-14.33 32-32v-96h48c8.84 0 16-7.16 16-16V256c0-35.35-28.65-64-64-64zm-64 "
+"256H128v-96h256v96zm0-224H128V64h192v48c0 8.84 7.16 16 16 16h48v96zm48 "
+"72c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 "
+"13.25-10.75 24-24 24z\""
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:1
+msgid "Syntax highlighting"
+msgstr "語法標明"
+
+#: src/format/theme/syntax-highlighting.md:3
+msgid ""
+"mdBook uses [Highlight.js](https://highlightjs.org) with a custom theme for "
+"syntax highlighting."
+msgstr ""
+"mdBook 使用 [Highlight.js](https://highlightjs.org) 搭配自訂主題來進行語法標"
+"明。"
+
+#: src/format/theme/syntax-highlighting.md:6
+msgid ""
+"Automatic language detection has been turned off, so you will probably want "
+"to specify the programming language you use like this:"
+msgstr "已關閉自動語言偵測，因此您可能會想像這樣指定您使用的程式語言："
+
+#: src/format/theme/syntax-highlighting.md:17
+msgid "Supported languages"
+msgstr "支援的語言"
+
+#: src/format/theme/syntax-highlighting.md:19
+msgid ""
+"These languages are supported by default, but you can add more by supplying "
+"your own `highlight.js` file:"
+msgstr ""
+"這些語言預設皆有支援，但您也可以透過提供自訂的 `highlight.js` 檔案來增加更多"
+"語言："
+
+#: src/format/theme/syntax-highlighting.md:22
+msgid "apache"
+msgstr "apache"
+
+#: src/format/theme/syntax-highlighting.md:23
+msgid "armasm"
+msgstr "armasm"
+
+#: src/format/theme/syntax-highlighting.md:24
+msgid "bash"
+msgstr "bash"
+
+#: src/format/theme/syntax-highlighting.md:25
+msgid "c"
+msgstr "c"
+
+#: src/format/theme/syntax-highlighting.md:26
+msgid "coffeescript"
+msgstr "coffeescript"
+
+#: src/format/theme/syntax-highlighting.md:27
+msgid "cpp"
+msgstr "cpp"
+
+#: src/format/theme/syntax-highlighting.md:28
+msgid "csharp"
+msgstr "csharp"
+
+#: src/format/theme/syntax-highlighting.md:29
+msgid "css"
+msgstr "css"
+
+#: src/format/theme/syntax-highlighting.md:30
+msgid "d"
+msgstr "d"
+
+#: src/format/theme/syntax-highlighting.md:31
+msgid "diff"
+msgstr "diff"
+
+#: src/format/theme/syntax-highlighting.md:32
+msgid "go"
+msgstr "go"
+
+#: src/format/theme/syntax-highlighting.md:33
+msgid "handlebars"
+msgstr "handlebars"
+
+#: src/format/theme/syntax-highlighting.md:34
+msgid "haskell"
+msgstr "haskell"
+
+#: src/format/theme/syntax-highlighting.md:35
+msgid "http"
+msgstr "http"
+
+#: src/format/theme/syntax-highlighting.md:36
+msgid "ini"
+msgstr "ini"
+
+#: src/format/theme/syntax-highlighting.md:37
+msgid "java"
+msgstr "java"
+
+#: src/format/theme/syntax-highlighting.md:38
+msgid "javascript"
+msgstr "javascript"
+
+#: src/format/theme/syntax-highlighting.md:39
+msgid "json"
+msgstr "json"
+
+#: src/format/theme/syntax-highlighting.md:40
+msgid "julia"
+msgstr "julia"
+
+#: src/format/theme/syntax-highlighting.md:41
+msgid "kotlin"
+msgstr "kotlin"
+
+#: src/format/theme/syntax-highlighting.md:42
+msgid "less"
+msgstr "less"
+
+#: src/format/theme/syntax-highlighting.md:43
+msgid "lua"
+msgstr "lua"
+
+#: src/format/theme/syntax-highlighting.md:44
+msgid "makefile"
+msgstr "makefile"
+
+#: src/format/theme/syntax-highlighting.md:45
+msgid "markdown"
+msgstr "markdown"
+
+#: src/format/theme/syntax-highlighting.md:46
+msgid "nginx"
+msgstr "nginx"
+
+#: src/format/theme/syntax-highlighting.md:47
+msgid "nim"
+msgstr "nim"
+
+#: src/format/theme/syntax-highlighting.md:48
+msgid "nix"
+msgstr "nix"
+
+#: src/format/theme/syntax-highlighting.md:49
+msgid "objectivec"
+msgstr "objectivec"
+
+#: src/format/theme/syntax-highlighting.md:50
+msgid "perl"
+msgstr "perl"
+
+#: src/format/theme/syntax-highlighting.md:51
+msgid "php"
+msgstr "php"
+
+#: src/format/theme/syntax-highlighting.md:52
+msgid "plaintext"
+msgstr "plaintext"
+
+#: src/format/theme/syntax-highlighting.md:53
+msgid "properties"
+msgstr "properties"
+
+#: src/format/theme/syntax-highlighting.md:54
+msgid "python"
+msgstr "python"
+
+#: src/format/theme/syntax-highlighting.md:55
+msgid "r"
+msgstr "r"
+
+#: src/format/theme/syntax-highlighting.md:56
+msgid "ruby"
+msgstr "ruby"
+
+#: src/format/theme/syntax-highlighting.md:57
+msgid "rust"
+msgstr "rust"
+
+#: src/format/theme/syntax-highlighting.md:58
+msgid "scala"
+msgstr "scala"
+
+#: src/format/theme/syntax-highlighting.md:59
+msgid "scss"
+msgstr "scss"
+
+#: src/format/theme/syntax-highlighting.md:60
+msgid "shell"
+msgstr "shell"
+
+#: src/format/theme/syntax-highlighting.md:61
+msgid "sql"
+msgstr "sql"
+
+#: src/format/theme/syntax-highlighting.md:62
+msgid "swift"
+msgstr "swift"
+
+#: src/format/theme/syntax-highlighting.md:63
+msgid "typescript"
+msgstr "typescript"
+
+#: src/format/theme/syntax-highlighting.md:64
+msgid "x86asm"
+msgstr "x86asm"
+
+#: src/format/theme/syntax-highlighting.md:65
+msgid "xml"
+msgstr "xml"
+
+#: src/format/theme/syntax-highlighting.md:66
+msgid "yaml"
+msgstr "yaml"
+
+#: src/format/theme/syntax-highlighting.md:68
+msgid "Custom theme"
+msgstr "自訂主題"
+
+#: src/format/theme/syntax-highlighting.md:69
+msgid ""
+"Like the rest of the theme, the files used for syntax highlighting can be "
+"overridden with your own."
+msgstr "與主題的其他部分相同，用於語法標明的檔案也可以替換為您自己的檔案。"
+
+#: src/format/theme/syntax-highlighting.md:72
+msgid ""
+"_**highlight.js**_ normally you shouldn't have to overwrite this file, "
+"unless you want to use a more recent version."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:74
+msgid "_**highlight.css**_ theme used by highlight.js for syntax highlighting."
+msgstr "_**highlight.css**_ 是 highlight.js 用於語法標明的主題。"
+
+#: src/format/theme/syntax-highlighting.md:76
+msgid ""
+"If you want to use another theme for `highlight.js` download it from their "
+"website, or make it yourself, rename it to `highlight.css` and put it in the "
+"`theme` folder of your book."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:80
+msgid "Now your theme will be used instead of the default theme."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:82
+msgid "Improve default theme"
+msgstr "改善預設主題"
+
+#: src/format/theme/syntax-highlighting.md:84
+msgid ""
+"If you think the default theme doesn't look quite right for a specific "
+"language, or could be improved, feel free to [submit a new issue](https://"
+"github.com/rust-lang/mdBook/issues) explaining what you have in mind and I "
+"will take a look at it."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:89
+msgid "You could also create a pull-request with the proposed improvements."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:91
+msgid ""
+"Overall the theme should be light and sober, without too many flashy colors."
+msgstr ""
+
+#: src/index.md:1
+msgid "Introduction"
+msgstr "簡介"
+
+#: src/index.md:20
+msgid ""
+"**mdBook** is a command line tool to create books with Markdown. It is ideal "
+"for creating product or API documentation, tutorials, course materials or "
+"anything that requires a clean, easily navigable and customizable "
+"presentation."
+msgstr ""
+
+#: src/index.md:24
+msgid ""
+"Lightweight [Markdown](format/markdown.md) syntax helps you focus more on "
+"your content"
+msgstr ""
+
+#: src/index.md:25
+msgid "Integrated [search](guide/reading.md#search) support"
+msgstr ""
+
+#: src/index.md:26
+msgid ""
+"Color [syntax highlighting](format/theme/syntax-highlighting.md) for code "
+"blocks for many different languages"
+msgstr ""
+
+#: src/index.md:27
+msgid ""
+"[Theme](format/theme/index.html) files allow customizing the formatting of "
+"the output"
+msgstr "[主題](format/theme/index.html)檔案允許客製化輸出的格式"
+
+#: src/index.md:28
+msgid ""
+"[Preprocessors](format/configuration/preprocessors.md) can provide "
+"extensions for custom syntax and modifying content"
+msgstr ""
+
+#: src/index.md:29
+msgid ""
+"[Backends](format/configuration/renderers.md) can render the output to "
+"multiple formats"
+msgstr "[後端](format/configuration/renderers.md)可以將輸出算繪成多種格式"
+
+#: src/index.md:30
+msgid ""
+"Written in [Rust](https://www.rust-lang.org/) for speed, safety, and "
+"simplicity"
+msgstr ""
+
+#: src/index.md:31
+msgid "Automated testing of [Rust code samples](cli/test.md)"
+msgstr ""
+
+#: src/index.md:33
+msgid ""
+"This guide is an example of what mdBook produces. mdBook is used by the Rust "
+"programming language project, and [The Rust Programming Language](https://"
+"doc.rust-lang.org/book/) book is another fine example of mdBook in action."
+msgstr ""
+
+#: src/index.md:46
+msgid "Contributing"
+msgstr "貢獻"
+
+#: src/index.md:48
+msgid ""
+"mdBook is free and open source. You can find the source code on [GitHub]"
+"(https://github.com/rust-lang/mdBook) and issues and feature requests can be "
+"posted on the [GitHub issue tracker](https://github.com/rust-lang/mdBook/"
+"issues). mdBook relies on the community to fix bugs and add features: if "
+"you'd like to contribute, please read the [CONTRIBUTING](https://github.com/"
+"rust-lang/mdBook/blob/master/CONTRIBUTING.md) guide and consider opening a "
+"[pull request](https://github.com/rust-lang/mdBook/pulls)."
+msgstr ""
+
+#: src/index.md:55
+msgid "License"
+msgstr "授權條款"
+
+#: src/index.md:57
+msgid ""
+"The mdBook source and documentation are released under the [Mozilla Public "
+"License v2.0](https://www.mozilla.org/MPL/2.0/)."
+msgstr ""
+
+#: src/SUMMARY.md:1
+msgid "Summary"
+msgstr "摘要"
+
+#: src/SUMMARY.md:5
+msgid "User guide"
+msgstr "使用者指南"
+
+#: src/SUMMARY.md:7
+msgid "Installation"
+msgstr "安裝"
+
+#: src/SUMMARY.md:8
+msgid "Reading books"
+msgstr "閱讀手冊"
+
+#: src/SUMMARY.md:9
+msgid "Creating a book"
+msgstr "建立手冊"
+
+#: src/SUMMARY.md:11
+msgid "Reference guide"
+msgstr "參考指南"
+
+#: src/SUMMARY.md:14
+msgid "init"
+msgstr "init"
+
+#: src/SUMMARY.md:15
+msgid "build"
+msgstr "build"
+
+#: src/SUMMARY.md:16
+msgid "watch"
+msgstr "watch"
+
+#: src/SUMMARY.md:17
+msgid "serve"
+msgstr "serve"
+
+#: src/SUMMARY.md:18
+msgid "test"
+msgstr "test"
+
+#: src/SUMMARY.md:19
+msgid "clean"
+msgstr "clean"
+
+#: src/SUMMARY.md:20
+msgid "completions"
+msgstr "completions"
+
+#: src/SUMMARY.md:23
+msgid "Draft chapter"
+msgstr ""
+
+#: src/SUMMARY.md:25
+msgid "General"
+msgstr "一般"
+
+#: src/SUMMARY.md:27
+msgid "Renderers"
+msgstr "算繪器"
+
+#: src/SUMMARY.md:36
+msgid "Continuous integration"
+msgstr "持續整合"
+
+#: src/guide/creating.md:3
+msgid ""
+"Once you have the `mdbook` CLI tool installed, you can use it to create and "
+"render a book."
+msgstr ""
+
+#: src/guide/creating.md:5
+msgid "Initializing a book"
+msgstr "初始化手冊"
+
+#: src/guide/creating.md:7
+msgid ""
+"The `mdbook init` command will create a new directory containing an empty "
+"book for you to get started. Give it the name of the directory that you want "
+"to create:"
+msgstr ""
+"`mdbook init` 命令會建立一個包含空白手冊的新目錄，讓您可以開始使用。請提供您"
+"想要建立的目錄名稱："
+
+#: src/guide/creating.md:14
+msgid ""
+"It will ask a few questions before generating the book. After answering the "
+"questions, you can change the current directory into the new book:"
+msgstr ""
+
+#: src/guide/creating.md:21
+msgid ""
+"There are several ways to render a book, but one of the easiest methods is "
+"to use the `serve` command, which will build your book and start a local "
+"webserver:"
+msgstr ""
+
+#: src/guide/creating.md:27
+msgid ""
+"The `--open` option will open your default web browser to view your new "
+"book. You can leave the server running even while you edit the content of "
+"the book, and `mdbook` will automatically rebuild the output _and_ "
+"automatically refresh your web browser."
+msgstr ""
+
+#: src/guide/creating.md:30
+msgid ""
+"Check out the [CLI Guide](../cli/index.html) for more information about "
+"other `mdbook` commands and CLI options."
+msgstr ""
+
+#: src/guide/creating.md:32
+msgid "Anatomy of a book"
+msgstr ""
+
+#: src/guide/creating.md:34
+msgid ""
+"A book is built from several files which define the settings and layout of "
+"the book."
+msgstr ""
+
+#: src/guide/creating.md:36
+msgid "`book.toml`"
+msgstr "`book.toml`"
+
+#: src/guide/creating.md:38
+msgid ""
+"In the root of your book, there is a `book.toml` file which contains "
+"settings for describing how to build your book. This is written in the [TOML "
+"markup language](https://toml.io/). The default settings are usually good "
+"enough to get you started. When you are interested in exploring more "
+"features and options that mdBook provides, check out the [Configuration "
+"chapter](../format/configuration/index.html) for more details."
+msgstr ""
+
+#: src/guide/creating.md:43
+msgid "A very basic `book.toml` can be as simple as this:"
+msgstr ""
+
+#: src/guide/creating.md:45
+msgid ""
+"```toml\n"
+"[book]\n"
+"title = \"My First Book\"\n"
+"```"
+msgstr ""
+"```toml\n"
+"[book]\n"
+"title = \"My First Book\"\n"
+"```"
+
+#: src/guide/creating.md:50
+msgid "`SUMMARY.md`"
+msgstr "`SUMMARY.md`"
+
+#: src/guide/creating.md:52
+msgid ""
+"The next major part of a book is the summary file located at `src/SUMMARY."
+"md`. This file contains a list of all the chapters in the book. Before a "
+"chapter can be viewed, it must be added to this list."
+msgstr ""
+
+#: src/guide/creating.md:56
+msgid "Here's a basic summary file with a few chapters:"
+msgstr ""
+
+#: src/guide/creating.md:68
+msgid ""
+"Try opening up `src/SUMMARY.md` in your editor and adding a few chapters. If "
+"any of the chapter files do not exist, `mdbook` will automatically create "
+"them for you."
+msgstr ""
+
+#: src/guide/creating.md:71
+msgid ""
+"For more details on other formatting options for the summary file, check out "
+"the [Summary chapter](../format/summary.md)."
+msgstr ""
+
+#: src/guide/creating.md:73
+msgid "Source files"
+msgstr "來源檔"
+
+#: src/guide/creating.md:75
+msgid ""
+"The content of your book is all contained in the `src` directory. Each "
+"chapter is a separate Markdown file. Typically, each chapter starts with a "
+"level 1 heading with the title of the chapter."
+msgstr ""
+
+#: src/guide/creating.md:85
+msgid ""
+"The precise layout of the files is up to you. The organization of the files "
+"will correspond to the HTML files generated, so keep in mind that the file "
+"layout is part of the URL of each chapter."
+msgstr ""
+
+#: src/guide/creating.md:88
+msgid ""
+"While the `mdbook serve` command is running, you can open any of the chapter "
+"files and start editing them. Each time you save the file, `mdbook` will "
+"rebuild the book and refresh your web browser."
+msgstr ""
+
+#: src/guide/creating.md:91
+msgid ""
+"Check out the [Markdown chapter](../format/markdown.md) for more information "
+"on formatting the content of your chapters."
+msgstr ""
+
+#: src/guide/creating.md:93
+msgid ""
+"All other files in the `src` directory will be included in the output. So if "
+"you have images or other static files, just include them somewhere in the "
+"`src` directory."
+msgstr ""
+
+#: src/guide/creating.md:96
+msgid "Publishing a book"
+msgstr "發布手冊"
+
+#: src/guide/creating.md:98
+msgid ""
+"Once you've written your book, you may want to host it somewhere for others "
+"to view. The first step is to build the output of the book. This can be done "
+"with the `mdbook build` command in the same directory where the `book.toml` "
+"file is located:"
+msgstr ""
+
+#: src/guide/creating.md:106
+msgid ""
+"This will generate a directory named `book` which contains the HTML content "
+"of your book. You can then place this directory on any web server to host it."
+msgstr ""
+
+#: src/guide/creating.md:109
+msgid ""
+"For more information about publishing and deploying, check out the "
+"[Continuous Integration chapter](../continuous-integration.md) for more."
+msgstr ""
+
+#: src/guide/installation.md:3
+msgid ""
+"There are multiple ways to install the mdBook CLI tool. Choose any one of "
+"the methods below that best suit your needs. If you are installing mdBook "
+"for automatic deployment, check out the [continuous integration](../"
+"continuous-integration.md) chapter for more examples on how to install."
+msgstr ""
+
+#: src/guide/installation.md:11
+msgid ""
+"Executable binaries are available for download on the [GitHub Releases page]"
+"(https://github.com/rust-lang/mdBook/releases). Download the binary for your "
+"platform (Windows, macOS, or Linux) and extract the archive. The archive "
+"contains an `mdbook` executable which you can run to build your books."
+msgstr ""
+
+#: src/guide/installation.md:15
+msgid "To make it easier to run, put the path to the binary into your `PATH`."
+msgstr ""
+
+#: src/guide/installation.md:19
+msgid "Build from source using Rust"
+msgstr "使用 Rust 從來源碼建置"
+
+#: src/guide/installation.md:21
+msgid ""
+"To build the `mdbook` executable from source, you will first need to install "
+"Rust and Cargo. Follow the instructions on the [Rust installation page]"
+"(https://www.rust-lang.org/tools/install). mdBook currently requires at "
+"least Rust version 1.88."
+msgstr ""
+
+#: src/guide/installation.md:25
+msgid ""
+"Once you have installed Rust, the following command can be used to build and "
+"install mdBook:"
+msgstr ""
+
+#: src/guide/installation.md:31
+msgid ""
+"This will automatically download mdBook from [crates.io](https://crates."
+"io/), build it, and install it in Cargo's global binary directory (`~/.cargo/"
+"bin/` by default)."
+msgstr ""
+
+#: src/guide/installation.md:33
+msgid ""
+"You can run `cargo install mdbook` again whenever you want to update to a "
+"new version. That command will check if there is a newer version, and re-"
+"install mdBook if a newer version is found."
+msgstr ""
+
+#: src/guide/installation.md:36
+msgid "To uninstall, run the command `cargo uninstall mdbook`."
+msgstr ""
+
+#: src/guide/installation.md:41
+msgid "Installing the latest master version"
+msgstr ""
+
+#: src/guide/installation.md:43
+msgid ""
+"The version published to crates.io will ever so slightly be behind the "
+"version hosted on GitHub. If you need the latest version you can build the "
+"git version of mdBook yourself. Cargo makes this _**super easy**_!"
+msgstr ""
+
+#: src/guide/installation.md:51
+msgid "Again, make sure to add the Cargo bin directory to your `PATH`."
+msgstr ""
+
+#: src/guide/installation.md:53
+msgid "Modifying and contributing"
+msgstr ""
+
+#: src/guide/installation.md:55
+msgid ""
+"If you are interested in making modifications to mdBook itself, check out "
+"the [Contributing Guide](https://github.com/rust-lang/mdBook/blob/master/"
+"CONTRIBUTING.md) for more information."
+msgstr ""
+
+#: src/guide/reading.md:3
+msgid ""
+"This chapter gives an introduction on how to interact with a book produced "
+"by mdBook. This assumes you are reading an HTML book. The options and "
+"formatting will be different for other output formats such as PDF."
+msgstr ""
+
+#: src/guide/reading.md:7
+msgid ""
+"A book is organized into _chapters_. Each chapter is a separate page. "
+"Chapters can be nested into a hierarchy of sub-chapters. Typically, each "
+"chapter will be organized into a series of _headings_ to subdivide a chapter."
+msgstr ""
+
+#: src/guide/reading.md:12
+msgid "Navigation"
+msgstr ""
+
+#: src/guide/reading.md:14
+msgid ""
+"There are several methods for navigating through the chapters of a book."
+msgstr ""
+
+#: src/guide/reading.md:16
+msgid ""
+"The **sidebar** on the left provides a list of all chapters. Clicking on any "
+"of the chapter titles will load that page."
+msgstr ""
+
+#: src/guide/reading.md:19
+msgid ""
+"The sidebar may not automatically appear if the window is too narrow, "
+"particularly on mobile displays. In that situation, the menu icon (three "
+"horizontal bars) at the top-left of the page can be pressed to open and "
+"close the sidebar."
+msgstr ""
+
+#: src/guide/reading.md:22
+msgid ""
+"The **arrow buttons** at the bottom of the page can be used to navigate to "
+"the previous or the next chapter."
+msgstr ""
+
+#: src/guide/reading.md:24
+msgid ""
+"The **left and right arrow keys** on the keyboard can be used to navigate to "
+"the previous or the next chapter."
+msgstr ""
+
+#: src/guide/reading.md:26
+msgid "Top menu bar"
+msgstr ""
+
+#: src/guide/reading.md:28
+msgid ""
+"The menu bar at the top of the page provides some icons for interacting with "
+"the book. The icons displayed will depend on the settings of how the book "
+"was generated."
+msgstr ""
+
+#: src/guide/reading.md:31 src/guide/reading.md:59
+msgid "Icon"
+msgstr ""
+
+#: src/guide/reading.md:31 src/guide/reading.md:59
+msgid "Description"
+msgstr "描述"
+
+#: src/guide/reading.md:33
+msgid "<i class=\"fas fa-bars\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:33
+msgid "Opens and closes the chapter listing sidebar."
+msgstr ""
+
+#: src/guide/reading.md:34
+msgid "<i class=\"fas fa-paintbrush\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:34
+msgid "Opens a picker to choose a different color theme."
+msgstr ""
+
+#: src/guide/reading.md:35
+msgid "<i class=\"fas fa-magnifying-glass\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:35
+msgid "Opens a search bar for searching within the book."
+msgstr ""
+
+#: src/guide/reading.md:36
+msgid "<i class=\"fas fa-print\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:36
+msgid "Instructs the web browser to print the entire book."
+msgstr ""
+
+#: src/guide/reading.md:37
+msgid "<i class=\"fab fa-github\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:37
+msgid "Opens a link to the website that hosts the source code of the book."
+msgstr ""
+
+#: src/guide/reading.md:38
+msgid "<i class=\"fas fa-pencil\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:38
+msgid ""
+"Opens a page to directly edit the source of the page you are currently "
+"reading."
+msgstr ""
+
+#: src/guide/reading.md:40
+msgid "Tapping the menu bar will scroll the page to the top."
+msgstr ""
+
+#: src/guide/reading.md:42
+msgid "Search"
+msgstr "搜尋"
+
+#: src/guide/reading.md:44
+msgid ""
+"Each book has a built-in search system. Pressing the search icon <i "
+"class=\"fas fa-magnifying-glass\"></i> in the menu bar, or pressing the "
+"<kbd>/</kbd> or <kbd>S</kbd> key on the keyboard will open an input box for "
+"entering search terms. Typing some terms will show matching chapters and "
+"sections in real time."
+msgstr ""
+
+#: src/guide/reading.md:48
+msgid ""
+"Clicking any of the results will jump to that section. The up and down arrow "
+"keys can be used to navigate the results, and enter will open the "
+"highlighted section."
+msgstr ""
+
+#: src/guide/reading.md:51
+msgid ""
+"After loading a search result, the matching search terms will be highlighted "
+"in the text. Clicking a highlighted word or pressing the <kbd>Escape</kbd> "
+"key will remove the highlighting."
+msgstr ""
+
+#: src/guide/reading.md:54
+msgid "Code blocks"
+msgstr ""
+
+#: src/guide/reading.md:56
+msgid ""
+"mdBook books are often used for programming projects, and thus support "
+"highlighting code blocks and samples. Code blocks may contain several "
+"different icons for interacting with them:"
+msgstr ""
+
+#: src/guide/reading.md:61
+msgid "<i class=\"fa fa-copy\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:61
+msgid ""
+"Copies the code block into your local clipboard, to allow pasting into "
+"another application."
+msgstr ""
+
+#: src/guide/reading.md:62
+msgid "<i class=\"fas fa-play\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:62
+msgid ""
+"For Rust code examples, this will execute the sample code and display the "
+"compiler output just below the example (see [playground](../format/mdbook."
+"md#rust-playground))."
+msgstr ""
+
+#: src/guide/reading.md:63
+msgid "<i class=\"fa fa-eye\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:63
+msgid ""
+"For Rust code examples, this will toggle visibility of \"hidden\" lines. "
+"Sometimes, larger examples will hide lines which are not particularly "
+"relevant to what is being illustrated (see [hiding code lines](../format/"
+"mdbook.md#hiding-code-lines))."
+msgstr ""
+
+#: src/guide/reading.md:64
+msgid "<i class=\"fas fa-clock-rotate-left\"></i>"
+msgstr ""
+
+#: src/guide/reading.md:64
+msgid ""
+"For [editable code examples](../format/theme/editor.md), this will undo any "
+"changes you have made."
+msgstr ""
+
+#: src/guide/reading.md:66
+msgid "Here's an example:"
+msgstr ""
