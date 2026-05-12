@@ -63,7 +63,7 @@ msgstr ""
 
 #: src/cli/init.md:39
 msgid "Specify a directory"
-msgstr ""
+msgstr "指定一个目录"
 
 #: src/cli/init.md:41
 msgid ""

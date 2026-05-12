@@ -26,7 +26,7 @@ msgstr ""
 
 #: src/cli/watch.md:9
 msgid "Specify a directory"
-msgstr ""
+msgstr "指定一个目录"
 
 #: src/cli/watch.md:11
 msgid ""
@@ -46,7 +46,7 @@ msgstr ""
 
 #: src/cli/watch.md:23
 msgid "`--dest-dir`"
-msgstr ""
+msgstr "`--dest-dir`"
 
 #: src/cli/watch.md:25
 msgid ""

@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/cli/completions.md:1
 msgid "The completions command"
-msgstr ""
+msgstr "补全命令"
 
 #: src/cli/completions.md:3
 msgid ""
@@ -22,24 +22,29 @@ msgid ""
 "your shell's auto-complete key (usually the Tab key) and it may display what "
 "the valid options are, or finish partial input."
 msgstr ""
+"Completions命令用于为一些常见的shell生成自动补全功能。这意味着，当您在shell中"
+"输入`mdbook`时，可以按下shell的自动补全键（通常是Tab键），系统可能会显示可用"
+"的选项，或者完成部分输入。"
 
 #: src/cli/completions.md:6
 msgid "The completions first need to be installed for your shell:"
-msgstr ""
+msgstr "首先，需要为你的shell安装这些补全工具："
 
 #: src/cli/completions.md:9
 msgid "# bash\n"
-msgstr ""
+msgstr "# bash\n"
 
 #: src/cli/completions.md:10
 msgid "# oh-my-zsh\n"
-msgstr ""
+msgstr "# oh-my-zsh\n"
 
 #: src/cli/completions.md:16
 msgid ""
 "The command prints a completion script for the given shell. Run `mdbook "
 "completions --help` for a list of supported shells."
 msgstr ""
+"该命令会为给定的shell环境打印出补全脚本。如需查看支持的shell列表，请运行 "
+"`mdbook completions --help`。"
 
 #: src/cli/completions.md:19
 msgid ""
@@ -47,3 +52,5 @@ msgid ""
 "operating system. Consult your shell's documentation for more information "
 "one where to place the script."
 msgstr ""
+"放置补全信息的位置取决于你使用的shell以及你的操作系统。如需更多信息，请查阅你"
+"所使用的shell的相关文档，了解如何正确地放置脚本。"
