@@ -37,7 +37,7 @@ msgstr ""
 
 #: src/cli/serve.md:18
 msgid "Specify a directory"
-msgstr ""
+msgstr "指定一个目录"
 
 #: src/cli/serve.md:20
 msgid ""
@@ -67,7 +67,7 @@ msgstr ""
 
 #: src/cli/serve.md:40
 msgid "`--dest-dir`"
-msgstr ""
+msgstr "`--dest-dir`"
 
 #: src/cli/serve.md:42
 msgid ""

@@ -13,27 +13,28 @@ msgstr ""
 
 #: src/cli/clean.md:1
 msgid "The clean command"
-msgstr ""
+msgstr "清洁命令"
 
 #: src/cli/clean.md:3
 msgid ""
 "The clean command is used to delete the generated book and any other build "
 "artifacts."
-msgstr ""
+msgstr "“clean”命令用于删除生成的书籍文件以及所有其他构建产物。"
 
 #: src/cli/clean.md:10
 msgid "Specify a directory"
-msgstr ""
+msgstr "指定一个目录"
 
 #: src/cli/clean.md:12
 msgid ""
 "The `clean` command can take a directory as an argument to use as the book's "
 "root instead of the current working directory."
 msgstr ""
+"`clean`命令可以接受一个目录作为参数，用作书籍的根目录，而不是当前的工作目录。"
 
 #: src/cli/clean.md:19
 msgid "`--dest-dir`"
-msgstr ""
+msgstr "`--dest-dir`"
 
 #: src/cli/clean.md:21
 msgid ""
@@ -46,4 +47,4 @@ msgstr ""
 
 #: src/cli/clean.md:30
 msgid "`path/to/book` could be absolute or relative."
-msgstr ""
+msgstr "可以表示绝对值，也可以表示相对值。"

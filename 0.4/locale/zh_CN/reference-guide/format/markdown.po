@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/format/markdown.md:1
 msgid "Markdown"
-msgstr ""
+msgstr "Markdown指南"
 
 #: src/format/markdown.md:3
 msgid ""
@@ -26,6 +26,12 @@ msgid ""
 "a more in-depth experience, check out the [Markdown Guide](https://www."
 "markdownguide.org)."
 msgstr ""
+"mdBook的[解析器](https://github.com/raphlinus/pulldown-cmark)遵循[CommonMark]"
+"(https://commonmark.org/)规范，并有一些扩展功能，具体说明如下。您可以快速参考"
+"[教程](https://commonmark.org/help/tutorial/)，或者实时尝试使用[CommonMark]"
+"(https://spec.commonmark.org/dingus/)。关于Markdown的完整概述不在本文档的范围"
+"内，但以下是对一些基本功能的概述。如需更深入的体验，请查阅[Markdown指南]"
+"(https://www.markdownguide.org)。"
 
 #: src/format/markdown.md:9
 msgid "Text and Paragraphs"
@@ -33,104 +39,104 @@ msgstr ""
 
 #: src/format/markdown.md:11
 msgid "Text is rendered relatively predictably:"
-msgstr ""
+msgstr "文本的呈现相对具有可预测性："
 
 #: src/format/markdown.md:19
 msgid "Will look like you might expect:"
-msgstr ""
+msgstr "看起来会像你预期的那样："
 
 #: src/format/markdown.md:21
 msgid "Here is a line of text."
-msgstr ""
+msgstr "这是一行文本。"
 
 #: src/format/markdown.md:23
 msgid "This is a new line."
-msgstr ""
+msgstr "这是一行新的内容。"
 
 #: src/format/markdown.md:25
 msgid "Headings"
-msgstr ""
+msgstr "标题"
 
 #: src/format/markdown.md:27
 msgid ""
 "Headings use the `#` marker and should be on a line by themselves. More `#` "
 "mean smaller headings:"
-msgstr ""
+msgstr "标题使用`#`标记，应该自己在线。更多`#`意味着小标题："
 
 #: src/format/markdown.md:39
 msgid "A heading"
-msgstr ""
+msgstr "一个标题"
 
 #: src/format/markdown.md:41
 msgid "Some text."
-msgstr ""
+msgstr "一些文字."
 
 #: src/format/markdown.md:43
 msgid "A smaller heading"
-msgstr ""
+msgstr "一个小的标题"
 
 #: src/format/markdown.md:45
 msgid "More text."
-msgstr ""
+msgstr "更多文本。"
 
 #: src/format/markdown.md:47
 msgid "Lists"
-msgstr ""
+msgstr "列表"
 
 #: src/format/markdown.md:49
 msgid ""
 "Lists can be unordered or ordered. Ordered lists will order automatically:"
-msgstr ""
+msgstr "列表可以是无序的，也可以是有序的。有序列表会自动进行排序："
 
 #: src/format/markdown.md:61
 msgid "milk"
-msgstr ""
+msgstr "milk"
 
 #: src/format/markdown.md:62
 msgid "eggs"
-msgstr ""
+msgstr "eggs"
 
 #: src/format/markdown.md:63
 msgid "butter"
-msgstr ""
+msgstr "butter"
 
 #: src/format/markdown.md:65
 msgid "carrots"
-msgstr ""
+msgstr "carrots"
 
 #: src/format/markdown.md:66
 msgid "celery"
-msgstr ""
+msgstr "celery"
 
 #: src/format/markdown.md:67
 msgid "radishes"
-msgstr ""
+msgstr "radishes"
 
 #: src/format/markdown.md:69
 msgid "Links"
-msgstr ""
+msgstr "链接"
 
 #: src/format/markdown.md:71
 msgid "Linking to a URL or local file is easy:"
-msgstr ""
+msgstr "链接到URL或本地文件非常简单："
 
 #: src/format/markdown.md:85
 msgid "Use [mdBook](https://github.com/rust-lang/mdBook)."
-msgstr ""
+msgstr "使用 [mdBook](https://github.com/rust-lang/mdBook)。"
 
 #: src/format/markdown.md:87
 msgid "Read about [mdBook](mdbook.md)."
-msgstr ""
+msgstr "阅读关于 [mdBook](mdbook.md)。"
 
 #: src/format/markdown.md:89
 msgid ""
 "And now [an mdBook link](https://github.com/rust-lang/mdBook) that is not "
 "inline, unlike the above."
-msgstr ""
+msgstr "现在有一个[mdBook链接]，它并不是内联的，与上述情况不同。"
 
 #: src/format/markdown.md:91
 msgid "A bare url: <https://www.rust-lang.org>."
-msgstr ""
+msgstr "一个简单的网址： <https://www.rust-lang.org>。"
 
 #: src/format/markdown.md:96
 msgid ""
@@ -139,6 +145,9 @@ msgid ""
 "useful when viewing the Markdown file outside of mdBook, for example on "
 "GitHub or GitLab which render Markdown automatically."
 msgstr ""
+"以 `.md` 结尾的相对链接将被转换为 `.html` 扩展形式。建议尽可能使用 `.md` 链"
+"接。这在在 mdBook 外部查看 Markdown 文件时非常有用，例如在 GitHub 或 GitLab "
+"上，这些平台会自动渲染 Markdown 格式。"
 
 #: src/format/markdown.md:100
 msgid ""
@@ -146,6 +155,8 @@ msgid ""
 "some services like GitHub render README files automatically, but web servers "
 "typically expect the root file to be called `index.html`."
 msgstr ""
+"链接从 `README.md` 转换为 `index.html`。这是因为一些服务如 GitHub 会自动渲染 "
+"README 文件，但Web服务器通常期望根文件的名称为 `index.html`。"
 
 #: src/format/markdown.md:103
 msgid ""
@@ -156,10 +167,13 @@ msgid ""
 "click on any heading and look at the URL in your browser to see what the "
 "fragment looks like."
 msgstr ""
+"您可以链接到单个标题与 #` 片段。例如，`mdbook.md#text-and-paragraphs会链接到"
+"上面的 [文本和段落](#文本和段落) 部分。 ID是通过转换标题创建的，如转换为小写"
+"和用破折号替换空格。 您可以点击任何标题并查看浏览器中的URL来查看片段的外观。"
 
 #: src/format/markdown.md:108
 msgid "Images"
-msgstr ""
+msgstr "图片"
 
 #: src/format/markdown.md:110
 msgid ""
@@ -167,45 +181,48 @@ msgid ""
 "in the _Links_ section above. The following markdown includes the Rust logo "
 "SVG image found in the `images` directory at the same level as this file:"
 msgstr ""
+"包含图片只需提供图片的链接即可，就像在上面的“链接”部分一样。以下Markdown代码"
+"包含了位于与当前文件同一级别的 `images` 目录中的Rust徽标SVG图片："
 
 #: src/format/markdown.md:117
 msgid "Produces the following HTML when built with mdBook:"
-msgstr ""
+msgstr "使用 mdBook 构建时会产生以下 HTML："
 
 #: src/format/markdown.md:120
 msgid "\"images/rust-logo-blk.svg\""
-msgstr ""
+msgstr "\"images/rust-logo-blk.svg\""
 
 #: src/format/markdown.md:120
 msgid "\"The Rust Logo\""
-msgstr ""
+msgstr "\"Rust Logo\""
 
 #: src/format/markdown.md:123
 msgid "Which, of course displays the image like so:"
-msgstr ""
+msgstr "当然，这样就会显示图片："
 
 #: src/format/markdown.md:125
 msgid "![The Rust Logo](images/rust-logo-blk.svg)"
-msgstr ""
+msgstr "![The Rust Logo](images/rust-logo-blk.svg)"
 
 #: src/format/markdown.md:127
 msgid "Extensions"
-msgstr ""
+msgstr "扩展功能"
 
 #: src/format/markdown.md:129
 msgid ""
 "mdBook has several extensions beyond the standard CommonMark specification."
-msgstr ""
+msgstr "mdBook 除了标准的 CommonMark 规范之外，还提供了多种扩展功能。"
 
 #: src/format/markdown.md:131
 msgid "Strikethrough"
-msgstr ""
+msgstr "删除线"
 
 #: src/format/markdown.md:133
 msgid ""
 "Text may be rendered with a horizontal line through the center by wrapping "
 "the text with one or two tilde characters on each side:"
 msgstr ""
+"通过将文本两侧各加上一个或两个波浪号字符，可以在文本中间添加一条水平线："
 
 #: src/format/markdown.md:140 src/format/markdown.md:161
 msgid "This example will render as:"
