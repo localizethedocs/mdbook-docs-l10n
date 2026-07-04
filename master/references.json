@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2025-12-11 19:47:18 +0000",
-      "hash" : "7b29f8a7174fa4b7b31536b84ee62e50a786658b",
-      "title" : "Merge pull request #2985 from ehuss/bump-version"
+      "date" : "2026-06-29 18:25:41 +0000",
+      "hash" : "1cddf557f4d87416da00bd5e5553d6b62a347dfe",
+      "title" : "Merge pull request #3142 from GuillaumeGomez/fix-img-layout-bug"
     }
   },
   "type" : "branch",
