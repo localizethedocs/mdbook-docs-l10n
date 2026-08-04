@@ -1,0 +1,274 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:48:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/format/theme/syntax-highlighting.md:1
+msgid "Syntax highlighting"
+msgstr "語法標明"
+
+#: src/format/theme/syntax-highlighting.md:3
+msgid ""
+"mdBook uses [Highlight.js](https://highlightjs.org) with a custom theme for "
+"syntax highlighting."
+msgstr ""
+"mdBook 使用 [Highlight.js](https://highlightjs.org) 搭配自訂主題來進行語法標"
+"明。"
+
+#: src/format/theme/syntax-highlighting.md:6
+msgid ""
+"Automatic language detection has been turned off, so you will probably want "
+"to specify the programming language you use like this:"
+msgstr "已關閉自動語言偵測，因此您可能會想像這樣指定您使用的程式語言："
+
+#: src/format/theme/syntax-highlighting.md:17
+msgid "Supported languages"
+msgstr "支援的語言"
+
+#: src/format/theme/syntax-highlighting.md:19
+msgid ""
+"These languages are supported by default, but you can add more by supplying "
+"your own `highlight.js` file:"
+msgstr ""
+"這些語言預設皆有支援，但您也可以透過提供自訂的 `highlight.js` 檔案來增加更多"
+"語言："
+
+#: src/format/theme/syntax-highlighting.md:22
+msgid "apache"
+msgstr "apache"
+
+#: src/format/theme/syntax-highlighting.md:23
+msgid "armasm"
+msgstr "armasm"
+
+#: src/format/theme/syntax-highlighting.md:24
+msgid "bash"
+msgstr "bash"
+
+#: src/format/theme/syntax-highlighting.md:25
+msgid "c"
+msgstr "c"
+
+#: src/format/theme/syntax-highlighting.md:26
+msgid "coffeescript"
+msgstr "coffeescript"
+
+#: src/format/theme/syntax-highlighting.md:27
+msgid "cpp"
+msgstr "cpp"
+
+#: src/format/theme/syntax-highlighting.md:28
+msgid "csharp"
+msgstr "csharp"
+
+#: src/format/theme/syntax-highlighting.md:29
+msgid "css"
+msgstr "css"
+
+#: src/format/theme/syntax-highlighting.md:30
+msgid "d"
+msgstr "d"
+
+#: src/format/theme/syntax-highlighting.md:31
+msgid "diff"
+msgstr "diff"
+
+#: src/format/theme/syntax-highlighting.md:32
+msgid "go"
+msgstr "go"
+
+#: src/format/theme/syntax-highlighting.md:33
+msgid "handlebars"
+msgstr "handlebars"
+
+#: src/format/theme/syntax-highlighting.md:34
+msgid "haskell"
+msgstr "haskell"
+
+#: src/format/theme/syntax-highlighting.md:35
+msgid "http"
+msgstr "http"
+
+#: src/format/theme/syntax-highlighting.md:36
+msgid "ini"
+msgstr "ini"
+
+#: src/format/theme/syntax-highlighting.md:37
+msgid "java"
+msgstr "java"
+
+#: src/format/theme/syntax-highlighting.md:38
+msgid "javascript"
+msgstr "javascript"
+
+#: src/format/theme/syntax-highlighting.md:39
+msgid "json"
+msgstr "json"
+
+#: src/format/theme/syntax-highlighting.md:40
+msgid "julia"
+msgstr "julia"
+
+#: src/format/theme/syntax-highlighting.md:41
+msgid "kotlin"
+msgstr "kotlin"
+
+#: src/format/theme/syntax-highlighting.md:42
+msgid "less"
+msgstr "less"
+
+#: src/format/theme/syntax-highlighting.md:43
+msgid "lua"
+msgstr "lua"
+
+#: src/format/theme/syntax-highlighting.md:44
+msgid "makefile"
+msgstr "makefile"
+
+#: src/format/theme/syntax-highlighting.md:45
+msgid "markdown"
+msgstr "markdown"
+
+#: src/format/theme/syntax-highlighting.md:46
+msgid "nginx"
+msgstr "nginx"
+
+#: src/format/theme/syntax-highlighting.md:47
+msgid "nim"
+msgstr "nim"
+
+#: src/format/theme/syntax-highlighting.md:48
+msgid "nix"
+msgstr "nix"
+
+#: src/format/theme/syntax-highlighting.md:49
+msgid "objectivec"
+msgstr "objectivec"
+
+#: src/format/theme/syntax-highlighting.md:50
+msgid "perl"
+msgstr "perl"
+
+#: src/format/theme/syntax-highlighting.md:51
+msgid "php"
+msgstr "php"
+
+#: src/format/theme/syntax-highlighting.md:52
+msgid "plaintext"
+msgstr "plaintext"
+
+#: src/format/theme/syntax-highlighting.md:53
+msgid "properties"
+msgstr "properties"
+
+#: src/format/theme/syntax-highlighting.md:54
+msgid "python"
+msgstr "python"
+
+#: src/format/theme/syntax-highlighting.md:55
+msgid "r"
+msgstr "r"
+
+#: src/format/theme/syntax-highlighting.md:56
+msgid "ruby"
+msgstr "ruby"
+
+#: src/format/theme/syntax-highlighting.md:57
+msgid "rust"
+msgstr "rust"
+
+#: src/format/theme/syntax-highlighting.md:58
+msgid "scala"
+msgstr "scala"
+
+#: src/format/theme/syntax-highlighting.md:59
+msgid "scss"
+msgstr "scss"
+
+#: src/format/theme/syntax-highlighting.md:60
+msgid "shell"
+msgstr "shell"
+
+#: src/format/theme/syntax-highlighting.md:61
+msgid "sql"
+msgstr "sql"
+
+#: src/format/theme/syntax-highlighting.md:62
+msgid "swift"
+msgstr "swift"
+
+#: src/format/theme/syntax-highlighting.md:63
+msgid "typescript"
+msgstr "typescript"
+
+#: src/format/theme/syntax-highlighting.md:64
+msgid "x86asm"
+msgstr "x86asm"
+
+#: src/format/theme/syntax-highlighting.md:65
+msgid "xml"
+msgstr "xml"
+
+#: src/format/theme/syntax-highlighting.md:66
+msgid "yaml"
+msgstr "yaml"
+
+#: src/format/theme/syntax-highlighting.md:68
+msgid "Custom theme"
+msgstr "自訂主題"
+
+#: src/format/theme/syntax-highlighting.md:69
+msgid ""
+"Like the rest of the theme, the files used for syntax highlighting can be "
+"overridden with your own."
+msgstr "與主題的其他部分相同，用於語法標明的檔案也可以替換為您自己的檔案。"
+
+#: src/format/theme/syntax-highlighting.md:72
+msgid ""
+"_**highlight.js**_ normally you shouldn't have to overwrite this file, "
+"unless you want to use a more recent version."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:74
+msgid "_**highlight.css**_ theme used by highlight.js for syntax highlighting."
+msgstr "_**highlight.css**_ 是 highlight.js 用於語法標明的主題。"
+
+#: src/format/theme/syntax-highlighting.md:76
+msgid ""
+"If you want to use another theme for `highlight.js` download it from their "
+"website, or make it yourself, rename it to `highlight.css` and put it in the "
+"`theme` folder of your book."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:80
+msgid "Now your theme will be used instead of the default theme."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:82
+msgid "Improve default theme"
+msgstr "改善預設主題"
+
+#: src/format/theme/syntax-highlighting.md:84
+msgid ""
+"If you think the default theme doesn't look quite right for a specific "
+"language, or could be improved, feel free to [submit a new issue](https://"
+"github.com/rust-lang/mdBook/issues) explaining what you have in mind and I "
+"will take a look at it."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:89
+msgid "You could also create a pull-request with the proposed improvements."
+msgstr ""
+
+#: src/format/theme/syntax-highlighting.md:91
+msgid ""
+"Overall the theme should be light and sober, without too many flashy colors."
+msgstr ""
