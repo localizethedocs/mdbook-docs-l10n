@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2026-06-29 18:25:41 +0000",
-      "hash" : "1cddf557f4d87416da00bd5e5553d6b62a347dfe",
-      "title" : "Merge pull request #3142 from GuillaumeGomez/fix-img-layout-bug"
+      "date" : "2026-08-03 16:51:32 +0000",
+      "hash" : "b90df240a318da0c59ec3efe6b75a58f63c6c459",
+      "title" : "Merge pull request #3171 from rust-lang/update-dependencies"
     }
   },
   "type" : "branch",
