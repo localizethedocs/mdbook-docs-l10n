@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-28T05:48:51Z\n"
+"POT-Creation-Date: 2026-08-04T11:16:46Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -497,4 +497,16 @@ msgid ""
 "This feature is enabled by default. To disable it, see the [`output.html."
 "admonitions`](configuration/renderers.md#html-renderer-options) config "
 "option."
+msgstr ""
+
+#: src/format/markdown.md:322
+msgid "Zoom-in"
+msgstr ""
+
+#: src/format/markdown.md:324
+msgid ""
+"All images in the chapters content have a \"zoom-in\" feature: you can click "
+"on it to make it bigger, and click it again to zoom out. You can focus the "
+"image with the keyboard as well, and press the spacebar to zoom in and out "
+"as well."
 msgstr ""
