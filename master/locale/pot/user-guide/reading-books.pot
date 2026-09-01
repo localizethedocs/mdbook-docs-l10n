@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
+"POT-Creation-Date: 2026-09-01T13:27:22Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -75,11 +75,11 @@ msgid ""
 "was generated."
 msgstr ""
 
-#: src/guide/reading.md:31 src/guide/reading.md:59
+#: src/guide/reading.md:31 src/guide/reading.md:74
 msgid "Icon"
 msgstr ""
 
-#: src/guide/reading.md:31 src/guide/reading.md:59
+#: src/guide/reading.md:31 src/guide/reading.md:74
 msgid "Description"
 msgstr ""
 
@@ -175,32 +175,32 @@ msgid ""
 "different icons for interacting with them:"
 msgstr ""
 
-#: src/guide/reading.md:61
-msgid "<i class=\"fa fa-copy\"></i>"
+#: src/guide/reading.md:76
+msgid "<i class=\"clip-button\"></i>"
 msgstr ""
 
-#: src/guide/reading.md:61
+#: src/guide/reading.md:76
 msgid ""
 "Copies the code block into your local clipboard, to allow pasting into "
 "another application."
 msgstr ""
 
-#: src/guide/reading.md:62
+#: src/guide/reading.md:77
 msgid "<i class=\"fas fa-play\"></i>"
 msgstr ""
 
-#: src/guide/reading.md:62
+#: src/guide/reading.md:77
 msgid ""
 "For Rust code examples, this will execute the sample code and display the "
 "compiler output just below the example (see [playground](../format/mdbook."
 "md#rust-playground))."
 msgstr ""
 
-#: src/guide/reading.md:63
+#: src/guide/reading.md:78
 msgid "<i class=\"fa fa-eye\"></i>"
 msgstr ""
 
-#: src/guide/reading.md:63
+#: src/guide/reading.md:78
 msgid ""
 "For Rust code examples, this will toggle visibility of \"hidden\" lines. "
 "Sometimes, larger examples will hide lines which are not particularly "
@@ -208,20 +208,20 @@ msgid ""
 "mdbook.md#hiding-code-lines))."
 msgstr ""
 
-#: src/guide/reading.md:64
+#: src/guide/reading.md:79
 msgid "<i class=\"fas fa-clock-rotate-left\"></i>"
 msgstr ""
 
-#: src/guide/reading.md:64
+#: src/guide/reading.md:79
 msgid ""
 "For [editable code examples](../format/theme/editor.md), this will undo any "
 "changes you have made."
 msgstr ""
 
-#: src/guide/reading.md:66
+#: src/guide/reading.md:81
 msgid "Here's an example:"
 msgstr ""
 
-#: src/guide/reading.md:69
+#: src/guide/reading.md:84
 msgid "\"Hello, World!\""
 msgstr ""

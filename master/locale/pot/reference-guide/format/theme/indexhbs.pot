@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
+"POT-Creation-Date: 2026-09-01T13:27:22Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -57,18 +57,18 @@ msgid ""
 msgstr ""
 
 #: src/format/theme/index-hbs.md:23
-msgid "_**book_title**_ Title of the book, as specified in `book.toml`"
+msgid "_**book_title**_ Title of the book, as specified in `book.toml`."
 msgstr ""
 
 #: src/format/theme/index-hbs.md:24
 msgid ""
-"_**chapter_title**_ Title of the current chapter, as listed in `SUMMARY.md`"
+"_**chapter_title**_ Title of the current chapter, as listed in `SUMMARY.md`."
 msgstr ""
 
 #: src/format/theme/index-hbs.md:26
 msgid ""
 "_**path**_ Relative path to the original markdown file from the source "
-"directory"
+"directory."
 msgstr ""
 
 #: src/format/theme/index-hbs.md:28
