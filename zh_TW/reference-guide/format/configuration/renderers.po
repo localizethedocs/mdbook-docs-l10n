@@ -1,0 +1,645 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/format/configuration/renderers.md:1
+msgid "Configuring Renderers"
+msgstr "組態算繪器"
+
+#: src/format/configuration/renderers.md:3
+msgid ""
+"Renderers (also called \"backends\") are responsible for creating the output "
+"of the book."
+msgstr ""
+
+#: src/format/configuration/renderers.md:5
+msgid "The following backends are built-in:"
+msgstr ""
+
+#: src/format/configuration/renderers.md:7
+msgid ""
+"[`html`](#html-renderer-options) --- This renders the book to HTML. This is "
+"enabled by default if no other `[output]` tables are defined in `book.toml`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:9
+msgid ""
+"[`markdown`](#markdown-renderer) --- This outputs the book as markdown after "
+"running the preprocessors. This is useful for debugging preprocessors."
+msgstr ""
+
+#: src/format/configuration/renderers.md:12
+msgid ""
+"The community has developed several backends. See the [Third Party Plugins]"
+"(https://github.com/rust-lang/mdBook/wiki/Third-party-plugins) wiki page for "
+"a list of available backends."
+msgstr ""
+
+#: src/format/configuration/renderers.md:15
+msgid ""
+"For information on how to create a new backend, see the [Backends for "
+"Developers](../../for_developers/backends.md) chapter."
+msgstr ""
+
+#: src/format/configuration/renderers.md:20
+msgid "Output tables"
+msgstr "輸出表格"
+
+#: src/format/configuration/renderers.md:22
+msgid ""
+"Backends can be added by including a `output` table in `book.toml` with the "
+"name of the backend. For example, if you have a backend called `mdbook-"
+"wordcount`, then you can include it with:"
+msgstr ""
+
+#: src/format/configuration/renderers.md:29
+msgid "With this table, mdBook will execute the `mdbook-wordcount` backend."
+msgstr "使用此表格，mdBook 將會執行 `mdbook-wordcount` 後端。"
+
+#: src/format/configuration/renderers.md:31
+msgid ""
+"This table can include additional key-value pairs that are specific to the "
+"backend. For example, if our example backend needed some extra configuration "
+"options:"
+msgstr ""
+
+#: src/format/configuration/renderers.md:34
+msgid ""
+"```toml\n"
+"[output.wordcount]\n"
+"ignores = [\"Example Chapter\"]\n"
+"```"
+msgstr ""
+"```toml\n"
+"[output.wordcount]\n"
+"ignores = [\"Example Chapter\"]\n"
+"```"
+
+#: src/format/configuration/renderers.md:39
+msgid ""
+"If you define any `[output]` tables, then the `html` backend is not enabled "
+"by default. If you want to keep the `html` backend running, then just "
+"include it in the `book.toml` file. For example:"
+msgstr ""
+
+#: src/format/configuration/renderers.md:43
+msgid ""
+"```toml\n"
+"[book]\n"
+"title = \"My Awesome Book\"\n"
+"\n"
+"[output.wordcount]\n"
+"\n"
+"[output.html]\n"
+"```"
+msgstr ""
+"```toml\n"
+"[book]\n"
+"title = \"My Awesome Book\"\n"
+"\n"
+"[output.wordcount]\n"
+"\n"
+"[output.html]\n"
+"```"
+
+#: src/format/configuration/renderers.md:52
+msgid ""
+"If more than one `output` table is included, this changes the behavior for "
+"the layout of the output directory. If there is only one backend, then it "
+"places its output directly in the `book` directory (see [`build.build-dir`]"
+"(general.md#build-options) to override this location). If there is more than "
+"one backend, then each backend is placed in a separate directory underneath "
+"`book`. For example, the above would have directories `book/html` and `book/"
+"wordcount`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:59
+msgid "Custom backend commands"
+msgstr "自訂後端命令"
+
+#: src/format/configuration/renderers.md:61
+msgid ""
+"By default when you add an `[output.foo]` table to your `book.toml` file, "
+"`mdbook` will try to invoke the `mdbook-foo` executable. If you want to use "
+"a different program name or pass in command-line arguments, this behaviour "
+"can be overridden by adding a `command` field."
+msgstr ""
+
+#: src/format/configuration/renderers.md:66
+msgid ""
+"```toml\n"
+"[output.random]\n"
+"command = \"python random.py\"\n"
+"```"
+msgstr ""
+"```toml\n"
+"[output.random]\n"
+"command = \"python random.py\"\n"
+"```"
+
+#: src/format/configuration/renderers.md:71
+msgid "Optional backends"
+msgstr "選用的後端"
+
+#: src/format/configuration/renderers.md:73
+msgid ""
+"If you enable a backend that isn't installed, the default behavior is to "
+"throw an error. This behavior can be changed by marking the backend as "
+"optional:"
+msgstr ""
+
+#: src/format/configuration/renderers.md:81
+msgid "This demotes the error to a warning."
+msgstr "這會將錯誤降級為警告。"
+
+#: src/format/configuration/renderers.md:84
+msgid "HTML renderer options"
+msgstr "HTML 算繪器選項"
+
+#: src/format/configuration/renderers.md:86
+msgid ""
+"The HTML renderer has a variety of options detailed below. They should be "
+"specified in the `[output.html]` table of the `book.toml` file."
+msgstr ""
+
+#: src/format/configuration/renderers.md:89
+msgid ""
+"```toml\n"
+"# Example book.toml file with all output options.\n"
+"[book]\n"
+"title = \"Example book\"\n"
+"authors = [\"John Doe\", \"Jane Doe\"]\n"
+"description = \"The example book covers examples.\"\n"
+"\n"
+"[output.html]\n"
+"theme = \"my-theme\"\n"
+"default-theme = \"light\"\n"
+"preferred-dark-theme = \"navy\"\n"
+"smart-punctuation = true\n"
+"definition-lists = true\n"
+"admonitions = true\n"
+"mathjax-support = false\n"
+"additional-css = [\"custom.css\", \"custom2.css\"]\n"
+"additional-js = [\"custom.js\"]\n"
+"no-section-label = false\n"
+"git-repository-url = \"https://github.com/rust-lang/mdBook\"\n"
+"git-repository-icon = \"fab-github\"\n"
+"edit-url-template = \"https://github.com/rust-lang/mdBook/edit/master/guide/"
+"{path}\"\n"
+"site-url = \"/example-book/\"\n"
+"cname = \"myproject.rs\"\n"
+"input-404 = \"not-found.md\"\n"
+"sidebar-header-nav = true\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/renderers.md:116
+msgid "The following configuration options are available:"
+msgstr "可使用以下組態選項："
+
+#: src/format/configuration/renderers.md:118
+msgid ""
+"**theme:** mdBook comes with a default theme and all the resource files "
+"needed for it. But if this option is set, mdBook will selectively overwrite "
+"the theme files with the ones found in the specified folder."
+msgstr ""
+
+#: src/format/configuration/renderers.md:121
+msgid ""
+"**default-theme:** The theme color scheme to select by default in the "
+"'Change Theme' dropdown. Defaults to `light`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:123
+msgid ""
+"**preferred-dark-theme:** The default dark theme. This theme will be used if "
+"the browser requests the dark version of the site via the [`prefers-color-"
+"scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-"
+"color-scheme) CSS media query. Defaults to `navy`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:127
+msgid ""
+"**smart-punctuation:** Converts quotes to curly quotes, `...` to `…`, `--` "
+"to en-dash, and `---` to em-dash. See [Smart Punctuation](../markdown."
+"md#smart-punctuation). Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:130
+msgid ""
+"**definition-lists:** Enables [definition lists](../markdown.md#definition-"
+"lists). Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:131
+msgid ""
+"**admonitions:** Enables [admonitions](../markdown.md#admonitions). Defaults "
+"to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:132
+msgid ""
+"**mathjax-support:** Adds support for [MathJax](../mathjax.md). Defaults to "
+"`false`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:134
+msgid ""
+"**additional-css:** If you need to slightly change the appearance of your "
+"book without overwriting the whole style, you can specify a set of "
+"stylesheets that will be loaded after the default ones where you can "
+"surgically change the style."
+msgstr ""
+
+#: src/format/configuration/renderers.md:138
+msgid ""
+"**additional-js:** If you need to add some behaviour to your book without "
+"removing the current behaviour, you can specify a set of JavaScript files "
+"that will be loaded alongside the default one."
+msgstr ""
+
+#: src/format/configuration/renderers.md:141
+msgid ""
+"**no-section-label:** mdBook by defaults adds numeric section labels in the "
+"table of contents column. For example, \"1.\", \"2.1\". Set this option to "
+"true to disable those labels. Defaults to `false`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:144
+msgid ""
+"**git-repository-url:**  A url to the git repository for the book. If "
+"provided an icon link will be output in the menu bar of the book."
+msgstr ""
+
+#: src/format/configuration/renderers.md:146
+msgid ""
+"**git-repository-icon:** The Font Awesome icon class to use for the git "
+"repository link. Defaults to `fab-github` which looks like <i class=\"fab fa-"
+"github\"></i>. If you are not using GitHub, another option to consider is "
+"`fas-code-fork` which looks like <i class=\"fas fa-code-fork\"></i>. The "
+"start of the string should be `fa-` for regular icons, `fas-` for solid "
+"icons, or `fab-` for brand icons. See the [free icon set](https://"
+"fontawesome.com/v6/search) for the available icons."
+msgstr ""
+
+#: src/format/configuration/renderers.md:147
+msgid ""
+"**edit-url-template:** Edit url template, when provided shows a \"Suggest an "
+"edit\" button (which looks like <i class=\"fas fa-pencil\"></i>) for "
+"directly jumping to editing the currently viewed page. For e.g. GitHub "
+"projects set this to `https://github.com/<owner>/<repo>/edit/<branch>/{path}"
+"` or for Bitbucket projects set it to `https://bitbucket.org/<owner>/<repo>/"
+"src/<branch>/{path}?mode=edit` where {path} will be replaced with the full "
+"path of the file in the repository."
+msgstr ""
+
+#: src/format/configuration/renderers.md:155
+msgid ""
+"**input-404:** The name of the markdown file used for missing files. The "
+"corresponding output file will be the same, with the extension replaced with "
+"`html`. Defaults to `404.md`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:158
+msgid ""
+"**site-url:** The url where the book will be hosted. This is required to "
+"ensure navigation links and script/css imports in the 404 file work "
+"correctly, even when accessing urls in subdirectories. Defaults to `/`. If "
+"`site-url` is set, make sure to use document relative links for your assets, "
+"meaning they should not start with `/`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:162
+msgid ""
+"**cname:** The DNS subdomain or apex domain at which your book will be "
+"hosted. This string will be written to a file named CNAME in the root of "
+"your site, as required by GitHub Pages (see [_Managing a custom domain for "
+"your GitHub Pages site_](https://docs.github.com/en/github/working-with-"
+"github-pages/managing-a-custom-domain-for-your-github-pages-site))."
+msgstr ""
+
+#: src/format/configuration/renderers.md:166
+msgid ""
+"**hash-files:** Include a cryptographic \"fingerprint\" of the files' "
+"contents in static asset filenames, so that if the contents of the file are "
+"changed, the name of the file will also change. For example, `css/chrome."
+"css` may become `css/chrome-9b8f428e.css`. Chapter HTML files are not "
+"renamed. Static CSS and JS files can reference each other using `{{ resource "
+"\"filename\" }}` directives. Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:172
+msgid ""
+"**sidebar-header-nav:** If `true`, the sidebar will contain navigation for "
+"headers on the current page. Default is `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:176
+msgid "`[output.html.print]`"
+msgstr "`[output.html.print]`"
+
+#: src/format/configuration/renderers.md:178
+msgid ""
+"The `[output.html.print]` table provides options for controlling the "
+"printable output. By default, mdBook will include an icon on the top right "
+"of the book (which looks like <i class=\"fas fa-print\"></i>) that will "
+"print the book as a single page."
+msgstr ""
+
+#: src/format/configuration/renderers.md:187
+msgid ""
+"**enable:** Enable print support. When `false`, all print support will not "
+"be rendered. Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:189
+msgid ""
+"**page-break:** Insert page breaks between chapters. Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:191
+msgid "`[output.html.fold]`"
+msgstr "`[output.html.fold]`"
+
+#: src/format/configuration/renderers.md:193
+msgid ""
+"The `[output.html.fold]` table provides options for controlling folding of "
+"the chapter listing in the navigation sidebar."
+msgstr ""
+
+#: src/format/configuration/renderers.md:201
+msgid ""
+"**enable:** Enable section-folding. When off, all folds are open. Defaults "
+"to `false`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:203
+msgid ""
+"**level:** The higher the more folded regions are open. When level is 0, all "
+"folds are closed. Defaults to `0`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:206
+msgid "`[output.html.playground]`"
+msgstr "`[output.html.playground]`"
+
+#: src/format/configuration/renderers.md:208
+msgid ""
+"The `[output.html.playground]` table provides options for controlling Rust "
+"sample code blocks, and their integration with the [Rust Playground](https://"
+"play.rust-lang.org/)."
+msgstr ""
+
+#: src/format/configuration/renderers.md:221
+msgid "**editable:** Allow editing the source code. Defaults to `false`."
+msgstr "**editable：** 允許編輯來源碼。預設值為 `false`。"
+
+#: src/format/configuration/renderers.md:222
+msgid ""
+"**copyable:** Display the copy button on code snippets. Defaults to `true`."
+msgstr "**copyable:** 在程式碼片段上顯示複製按鈕。預設值為 `true`。"
+
+#: src/format/configuration/renderers.md:223
+msgid ""
+"**copy-js:** Copy JavaScript files for the editor to the output directory. "
+"Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:225
+msgid ""
+"**line-numbers:** Display line numbers on editable sections of code. "
+"Requires both `editable` and `copy-js` to be `true`. Defaults to `false`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:226
+msgid ""
+"**runnable:** Displays a run button for rust code snippets. Changing this to "
+"`false` will disable the run in playground feature globally. Defaults to "
+"`true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:230
+msgid "`[output.html.code]`"
+msgstr "`[output.html.code]`"
+
+#: src/format/configuration/renderers.md:232
+msgid ""
+"The `[output.html.code]` table provides options for controlling code blocks."
+msgstr ""
+
+#: src/format/configuration/renderers.md:234
+msgid ""
+"```toml\n"
+"[output.html.code]\n"
+"# A prefix string per language (one or more chars).\n"
+"# Any line starting with whitespace+prefix is hidden.\n"
+"hidelines = { python = \"~\" }\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/renderers.md:241
+msgid ""
+"**hidelines:** A table that defines how [hidden code lines](../mdbook."
+"md#hiding-code-lines) work for each language. The key is the language and "
+"the value is a string that will cause code lines starting with that prefix "
+"to be hidden."
+msgstr ""
+
+#: src/format/configuration/renderers.md:244
+msgid "`[output.html.search]`"
+msgstr "`[output.html.search]`"
+
+#: src/format/configuration/renderers.md:246
+msgid ""
+"The `[output.html.search]` table provides options for controlling the built-"
+"in text [search](../../guide/reading.md#search). mdBook must be compiled "
+"with the `search` feature enabled (on by default)."
+msgstr ""
+
+#: src/format/configuration/renderers.md:265
+msgid "**enable:** Enables the search feature. Defaults to `true`."
+msgstr "**enable：**啟用搜尋功能。預設值為 `true`。"
+
+#: src/format/configuration/renderers.md:266
+msgid ""
+"**limit-results:** The maximum number of search results. Defaults to `30`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:267
+msgid ""
+"**teaser-word-count:** The number of words used for a search result teaser. "
+"Defaults to `30`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:269
+msgid ""
+"**use-boolean-and:** Define the logical link between multiple search words. "
+"If true, all search words must appear in each result. Defaults to `false`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:271
+msgid ""
+"**boost-title:** Boost factor for the search result score if a search word "
+"appears in the header. Defaults to `2`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:273
+msgid ""
+"**boost-hierarchy:** Boost factor for the search result score if a search "
+"word appears in the hierarchy. The hierarchy contains all titles of the "
+"parent documents and all parent headings. Defaults to `1`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:276
+msgid ""
+"**boost-paragraph:** Boost factor for the search result score if a search "
+"word appears in the text. Defaults to `1`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:278
+msgid ""
+"**expand:** True if search should match longer results e.g. search `micro` "
+"should match `microwave`. Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:280
+msgid ""
+"**heading-split-level:** Search results will link to a section of the "
+"document which contains the result. Documents are split into sections by "
+"headings this level or less. Defaults to `3`. (`### This is a level 3 "
+"heading`)"
+msgstr ""
+
+#: src/format/configuration/renderers.md:283
+msgid ""
+"**copy-js:** Copy JavaScript files for the search implementation to the "
+"output directory. Defaults to `true`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:286
+msgid "`[output.html.search.chapter]`"
+msgstr "`[output.html.search.chapter]`"
+
+#: src/format/configuration/renderers.md:288
+msgid ""
+"The \\[`output.html.search.chapter`\\] table provides the ability to modify "
+"search settings per chapter or directory. Each key is the path to the "
+"chapter source file or directory, and the value is a table of settings to "
+"apply to that path. This will merge recursively, with more specific paths "
+"taking precedence."
+msgstr ""
+
+#: src/format/configuration/renderers.md:290
+msgid ""
+"```toml\n"
+"[output.html.search.chapter]\n"
+"# Disables search indexing for all chapters in the `appendix` directory.\n"
+"\"appendix\" = { enable = false }\n"
+"# Enables search indexing for just this one appendix chapter.\n"
+"\"appendix/glossary.md\" = { enable = true }\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/renderers.md:298
+msgid ""
+"**enable:** Enables or disables search indexing for the given chapters. "
+"Defaults to `true`. This does not override the overall `output.html.search."
+"enable` setting; that must be `true` for any search functionality to be "
+"enabled. Be cautious when disabling indexing for chapters because that can "
+"potentially lead to user confusion when they search for terms and expect "
+"them to be found. This should only be used in exceptional circumstances "
+"where keeping the chapter in the index will cause issues with the quality of "
+"the search results."
+msgstr ""
+
+#: src/format/configuration/renderers.md:300
+msgid "`[output.html.redirect]`"
+msgstr ""
+
+#: src/format/configuration/renderers.md:302
+msgid ""
+"The `[output.html.redirect]` table provides a way to add redirects. This is "
+"useful when you move, rename, or remove a page to ensure that links to the "
+"old URL will go to the new location."
+msgstr ""
+
+#: src/format/configuration/renderers.md:305
+msgid ""
+"```toml\n"
+"[output.html.redirect]\n"
+"\"/appendices/bibliography.html\" = \"https://rustc-dev-guide.rust-lang.org/"
+"appendix/bibliography.html\"\n"
+"\"/other-installation-methods.html\" = \"../infra/other-installation-methods."
+"html\"\n"
+"\n"
+"# Fragment redirects also work.\n"
+"\"/some-existing-page.html#old-fragment\" = \"some-existing-page.html#new-"
+"fragment\"\n"
+"\n"
+"# Fragment redirects also work for deleted pages.\n"
+"\"/old-page.html\" = \"new-page.html\"\n"
+"\"/old-page.html#old-fragment\" = \"new-page.html#new-fragment\"\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/renderers.md:318
+msgid ""
+"The table contains key-value pairs where the key is where the redirect file "
+"needs to be created, as an absolute path from the build directory, (e.g. `/"
+"appendices/bibliography.html`). The value can be any valid URI the browser "
+"should navigate to (e.g. `https://rust-lang.org/`, `/overview.html`, or `../"
+"bibliography.html`)."
+msgstr ""
+
+#: src/format/configuration/renderers.md:321
+msgid ""
+"This will generate an HTML page which will automatically redirect to the "
+"given location."
+msgstr ""
+
+#: src/format/configuration/renderers.md:323
+msgid ""
+"When fragment redirects are specified, the page must use JavaScript to "
+"redirect to the correct location. This is useful if you rename or move a "
+"section header. Fragment redirects work with existing pages and deleted "
+"pages."
+msgstr ""
+
+#: src/format/configuration/renderers.md:325
+msgid "Markdown renderer"
+msgstr "Markdown 算繪器"
+
+#: src/format/configuration/renderers.md:327
+msgid ""
+"The Markdown renderer will run preprocessors and then output the resulting "
+"Markdown. This is mostly useful for debugging preprocessors, especially in "
+"conjunction with `mdbook test` to see the Markdown that `mdbook` is passing "
+"to `rustdoc`."
+msgstr ""
+
+#: src/format/configuration/renderers.md:332
+msgid ""
+"The Markdown renderer is included with `mdbook` but disabled by default. "
+"Enable it by adding an empty table to your `book.toml` as follows:"
+msgstr ""
+
+#: src/format/configuration/renderers.md:339
+msgid ""
+"There are no configuration options for the Markdown renderer at this time; "
+"only whether it is enabled or disabled."
+msgstr ""
+
+#: src/format/configuration/renderers.md:342
+msgid ""
+"See [the preprocessors documentation](preprocessors.md) for how to specify "
+"which preprocessors should run before the Markdown renderer."
+msgstr ""
