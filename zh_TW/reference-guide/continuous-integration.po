@@ -1,0 +1,253 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:48:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/continuous-integration.md:1
+msgid "Running `mdbook` in continuous integration"
+msgstr "在持續整合中執行 `mdbook`"
+
+#: src/continuous-integration.md:3
+msgid ""
+"There are a variety of services such as [GitHub Actions](https://docs.github."
+"com/en/actions) or [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) which can "
+"be used to test and deploy your book automatically."
+msgstr ""
+
+#: src/continuous-integration.md:5
+msgid ""
+"The following provides some general guidelines on how to configure your "
+"service to run mdBook. Specific recipes can be found at the [Automated "
+"Deployment](https://github.com/rust-lang/mdBook/wiki/Automated-Deployment) "
+"wiki page."
+msgstr ""
+
+#: src/continuous-integration.md:12
+msgid "Installing mdBook"
+msgstr "安裝 mdBook"
+
+#: src/continuous-integration.md:14
+msgid ""
+"There are several different strategies for installing mdBook. The particular "
+"method depends on your needs and preferences."
+msgstr ""
+
+#: src/continuous-integration.md:17
+msgid "Pre-compiled binaries"
+msgstr ""
+
+#: src/continuous-integration.md:19
+msgid ""
+"Perhaps the easiest method is to use the pre-compiled binaries found on the "
+"[GitHub Releases page](https://github.com/rust-lang/mdBook/releases). A "
+"simple approach would be to use the popular `curl` CLI tool to download the "
+"executable:"
+msgstr ""
+
+#: src/continuous-integration.md:28
+msgid "Some considerations for this approach:"
+msgstr ""
+
+#: src/continuous-integration.md:30
+msgid ""
+"This is relatively fast, and does not necessarily require dealing with "
+"caching."
+msgstr ""
+
+#: src/continuous-integration.md:31
+msgid "This does not require installing Rust."
+msgstr ""
+
+#: src/continuous-integration.md:32
+msgid ""
+"Specifying a specific URL means you have to manually update your script to "
+"get a new version. This may be a benefit if you want to lock to a specific "
+"version. However, some users prefer to automatically get a newer version "
+"when they are published."
+msgstr ""
+
+#: src/continuous-integration.md:35
+msgid "You are reliant on the GitHub CDN being available."
+msgstr ""
+
+#: src/continuous-integration.md:39
+msgid "Building from source"
+msgstr "從來源碼建置"
+
+#: src/continuous-integration.md:41
+msgid ""
+"Building from source will require having Rust installed. Some services have "
+"Rust pre-installed, but if your service does not, you will need to add a "
+"step to install it."
+msgstr ""
+
+#: src/continuous-integration.md:44
+msgid ""
+"After Rust is installed, `cargo install` can be used to build and install "
+"mdBook. We recommend using a SemVer version specifier so that you get the "
+"latest **non-breaking** version of mdBook. For example:"
+msgstr ""
+
+#: src/continuous-integration.md:49
+msgid "\"^0.4\""
+msgstr ""
+
+#: src/continuous-integration.md:52
+msgid "This includes several recommended options:"
+msgstr ""
+
+#: src/continuous-integration.md:54
+msgid ""
+"`--no-default-features` --- Disables features like the HTTP server used by "
+"`mdbook serve` that is likely not needed on CI. This will speed up the build "
+"time significantly."
+msgstr ""
+
+#: src/continuous-integration.md:56
+msgid ""
+"`--features search` --- Disabling default features means you should then "
+"manually enable features that you want, such as the built-in [search](guide/"
+"reading.md#search) capability."
+msgstr ""
+
+#: src/continuous-integration.md:57
+msgid ""
+"`--vers \"^0.4\"` --- This will install the most recent version of the `0.4` "
+"series. However, versions after like `0.5.0` won't be installed, as they may "
+"break your build. Cargo will automatically upgrade mdBook if you have an "
+"older version already installed."
+msgstr ""
+
+#: src/continuous-integration.md:60
+msgid ""
+"`--locked` --- This will use the dependencies that were used when mdBook was "
+"released. Without `--locked`, it will use the latest version of all "
+"dependencies, which may include some fixes since the last release, but may "
+"also (rarely) cause build problems."
+msgstr ""
+
+#: src/continuous-integration.md:63
+msgid ""
+"You will likely want to investigate caching options, as building mdBook can "
+"be somewhat slow."
+msgstr ""
+
+#: src/continuous-integration.md:67
+msgid "Running tests"
+msgstr "執行測試"
+
+#: src/continuous-integration.md:69
+msgid ""
+"You may want to run tests using [`mdbook test`](cli/test.md) every time you "
+"push a change or create a pull request. This can be used to validate Rust "
+"code examples in the book."
+msgstr ""
+
+#: src/continuous-integration.md:72
+msgid ""
+"This will require having Rust installed. Some services have Rust pre-"
+"installed, but if your service does not, you will need to add a step to "
+"install it."
+msgstr ""
+
+#: src/continuous-integration.md:75
+msgid ""
+"Other than making sure the appropriate version of Rust is installed, there's "
+"not much more than just running `mdbook test` from the book directory."
+msgstr ""
+
+#: src/continuous-integration.md:77
+msgid ""
+"You may also want to consider running other kinds of tests, like [mdbook-"
+"linkcheck](https://github.com/Michael-F-Bryan/mdbook-linkcheck#continuous-"
+"integration) which will check for broken links. Or if you have your own "
+"style checks, spell checker, or any other tests it might be good to run them "
+"in CI."
+msgstr ""
+
+#: src/continuous-integration.md:83
+msgid "Deploying"
+msgstr ""
+
+#: src/continuous-integration.md:85
+msgid ""
+"You may want to automatically deploy your book. Some may want to do this "
+"every time a change is pushed, and others may want to only deploy when a "
+"specific release is tagged."
+msgstr ""
+
+#: src/continuous-integration.md:88
+msgid ""
+"You'll also need to understand the specifics on how to push a change to your "
+"web service. For example, [GitHub Pages](https://docs.github.com/en/pages) "
+"just requires committing the output onto a specific git branch. Other "
+"services may require using something like SSH to connect to a remote server."
+msgstr ""
+
+#: src/continuous-integration.md:92
+msgid ""
+"The basic outline is that you need to run `mdbook build` to generate the "
+"output, and then transfer the files (which are in the `book` directory) to "
+"the correct location."
+msgstr ""
+
+#: src/continuous-integration.md:94
+msgid ""
+"You may then want to consider if you need to invalidate any caches on your "
+"web service."
+msgstr ""
+
+#: src/continuous-integration.md:96
+msgid ""
+"See the [Automated Deployment](https://github.com/rust-lang/mdBook/wiki/"
+"Automated-Deployment) wiki page for examples of various different services."
+msgstr ""
+
+#: src/continuous-integration.md:100
+msgid "404 handling"
+msgstr ""
+
+#: src/continuous-integration.md:102
+msgid ""
+"mdBook automatically generates a 404 page to be used for broken links. The "
+"default output is a file named `404.html` at the root of the book. Some "
+"services like [GitHub Pages](https://docs.github.com/en/pages) will "
+"automatically use this page for broken links. For other services, you may "
+"want to consider configuring the web server to use this page as it will "
+"provide the reader navigation to get back to the book."
+msgstr ""
+
+#: src/continuous-integration.md:107
+msgid ""
+"If your book is not deployed at the root of the domain, then you should set "
+"the [`output.html.site-url`](format/configuration/renderers.md#html-renderer-"
+"options) setting so that the 404 page works correctly. It needs to know "
+"where the book is deployed in order to load the static files (like CSS) "
+"correctly. For example, this guide is deployed at <https://rust-lang.github."
+"io/mdBook/>, and the `site-url` setting is configured like this:"
+msgstr ""
+
+#: src/continuous-integration.md:111
+msgid ""
+"```toml\n"
+"# book.toml\n"
+"[output.html]\n"
+"site-url = \"/mdBook/\"\n"
+"```"
+msgstr ""
+
+#: src/continuous-integration.md:117
+msgid ""
+"You can customize the look of the 404 page by creating a file named `src/404."
+"md` in your book. If you want to use a different filename, you can set "
+"[`output.html.input-404`](format/configuration/renderers.md#html-renderer-"
+"options) to a different filename."
+msgstr ""
