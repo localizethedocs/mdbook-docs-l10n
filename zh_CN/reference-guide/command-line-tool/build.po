@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:49:34Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/cli/build.md:1
+msgid "The build command"
+msgstr "构建命令"
+
+#: src/cli/build.md:3
+msgid "The build command is used to render your book:"
+msgstr "构建命令用于渲染您的书籍："
+
+#: src/cli/build.md:9
+msgid ""
+"It will try to parse your `SUMMARY.md` file to understand the structure of "
+"your book and fetch the corresponding files. Note that this will also create "
+"files mentioned in `SUMMARY.md` which are not yet present."
+msgstr ""
+"它会尝试解析你的 `SUMMARY.md` 文件，以了解你的书籍的结构，并获取相应的文件。"
+"请注意，这也会创建在 `SUMMARY.md` 中提到的、但目前还不存在的文件。"
+
+#: src/cli/build.md:13
+msgid ""
+"The rendered output will maintain the same directory structure as the source "
+"for convenience. Large books will therefore remain structured when rendered."
+msgstr ""
+"为了方便起见，渲染后的输出将保持与源文件相同的目录结构。因此，大型书籍在渲染"
+"后仍然会保持原有的结构。"
+
+#: src/cli/build.md:16
+msgid "Specify a directory"
+msgstr "指定一个目录"
+
+#: src/cli/build.md:18
+msgid ""
+"The `build` command can take a directory as an argument to use as the book's "
+"root instead of the current working directory."
+msgstr ""
+"`build`命令可以接受一个目录作为参数，用作书籍的根目录，而不是当前的工作目录。"
+
+#: src/cli/build.md:25
+msgid "`--open`"
+msgstr "`--open`"
+
+#: src/cli/build.md:27
+msgid ""
+"When you use the `--open` (`-o`) flag, mdbook will open the rendered book in "
+"your default web browser after building it."
+msgstr ""
+"当您使用 `--open` (`-o`) 标志时，在构建后，mdbook 会将在渲染后的书籍打开到您"
+"的默认网页浏览器中。"
+
+#: src/cli/build.md:30
+msgid "`--dest-dir`"
+msgstr "`--dest-dir`"
+
+#: src/cli/build.md:32
+msgid ""
+"The `--dest-dir` (`-d`) option allows you to change the output directory for "
+"the book. Relative paths are interpreted relative to the book's root "
+"directory. If not specified it will default to the value of the `build.build-"
+"dir` key in `book.toml`, or to `./book`."
+msgstr ""
+
+#: src/cli/build.md:39
+msgid ""
+"_**Note:**_ _The build command copies all files (excluding files with `.md` "
+"extension) from the source directory into the build directory._"
+msgstr ""
+"***注意：*** 构建命令会将所有文件（不包括带有 `.md` 扩展名的文件）从源目录复"
+"制到构建目录中。"

@@ -1,0 +1,438 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:49:34Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/format/mdbook.md:1
+msgid "mdBook-specific features"
+msgstr "mdBook 特定功能"
+
+#: src/format/mdbook.md:3
+msgid "Hiding code lines"
+msgstr ""
+
+#: src/format/mdbook.md:5
+msgid ""
+"There is a feature in mdBook that lets you hide code lines by prepending "
+"them with a specific prefix."
+msgstr ""
+
+#: src/format/mdbook.md:7
+msgid ""
+"For the Rust language, you can prefix lines with `# ` (`#` followed by a "
+"space) to hide them [like you would with Rustdoc](https://doc.rust-lang.org/"
+"stable/rustdoc/write-documentation/documentation-tests.html#hiding-portions-"
+"of-the-example). This prefix can be escaped with `##` to prevent the hiding "
+"of a line that should begin with the literal string `# ` (see [Rustdoc's "
+"docs](https://doc.rust-lang.org/stable/rustdoc/write-documentation/"
+"documentation-tests.html#hiding-portions-of-the-example) for more details)"
+msgstr ""
+
+#: src/format/mdbook.md:13
+msgid "# fn main() {\n"
+msgstr "# fn main() {\n"
+
+#: src/format/mdbook.md:17 src/format/mdbook.md:28
+msgid "\"{}\""
+msgstr "\"{}\""
+
+#: src/format/mdbook.md:17
+msgid "# }\n"
+msgstr "# }\n"
+
+#: src/format/mdbook.md:21
+msgid "Will render as"
+msgstr ""
+
+#: src/format/mdbook.md:32
+msgid ""
+"When you tap or hover the mouse over the code block, there will be an "
+"eyeball icon (<i class=\"fa fa-eye\"></i>) which will toggle the visibility "
+"of the hidden lines."
+msgstr ""
+
+#: src/format/mdbook.md:34
+msgid ""
+"By default, this only works for code examples that are annotated with "
+"`rust`. However, you can define custom prefixes for other languages by "
+"adding a new line-hiding prefix in your `book.toml` with the language name "
+"and prefix character(s):"
+msgstr ""
+
+#: src/format/mdbook.md:37
+msgid ""
+"```toml\n"
+"[output.html.code.hidelines]\n"
+"python = \"~\"\n"
+"```"
+msgstr ""
+"```toml\n"
+"[output.html.code.hidelines]\n"
+"python = \"~\"\n"
+"```"
+
+#: src/format/mdbook.md:42
+msgid ""
+"The prefix will hide any lines that begin with the given prefix. With the "
+"python prefix shown above, this:"
+msgstr ""
+
+#: src/format/mdbook.md:52
+msgid "will render as"
+msgstr ""
+
+#: src/format/mdbook.md:62
+msgid ""
+"This behavior can be overridden locally with a different prefix. This has "
+"the same effect as above:"
+msgstr ""
+
+#: src/format/mdbook.md:74
+msgid "Rust Playground"
+msgstr ""
+
+#: src/format/mdbook.md:76
+msgid ""
+"Rust language code blocks will automatically get a play button (<i "
+"class=\"fa fa-play\"></i>) which will execute the code and display the "
+"output just below the code block. This works by sending the code to the "
+"[Rust Playground](https://play.rust-lang.org/)."
+msgstr ""
+
+#: src/format/mdbook.md:80
+msgid "\"Hello, World!\""
+msgstr ""
+
+#: src/format/mdbook.md:83
+msgid ""
+"If there is no `main` function, then the code is automatically wrapped "
+"inside one."
+msgstr ""
+
+#: src/format/mdbook.md:85
+msgid ""
+"If you wish to disable the play button for a code block, you can include the "
+"`noplayground` option on the code block like this:"
+msgstr ""
+
+#: src/format/mdbook.md:95
+msgid ""
+"Or, if you wish to disable the play button for all code blocks in your book, "
+"you can write the config to the `book.toml` like this."
+msgstr ""
+
+#: src/format/mdbook.md:102
+msgid "Rust code block attributes"
+msgstr ""
+
+#: src/format/mdbook.md:104
+msgid ""
+"Additional attributes can be included in Rust code blocks with comma, space, "
+"or tab-separated terms just after the language term. For example:"
+msgstr ""
+
+#: src/format/mdbook.md:113
+msgid ""
+"These are particularly important when using [`mdbook test`](../cli/test.md) "
+"to test Rust examples. These use the same attributes as [rustdoc attributes]"
+"(https://doc.rust-lang.org/rustdoc/documentation-tests.html#attributes), "
+"with a few additions:"
+msgstr ""
+
+#: src/format/mdbook.md:116
+msgid "`editable` --- Enables the [editor](theme/editor.md)."
+msgstr "`editable` --- 啟用[編輯器](theme/editor.md)。"
+
+#: src/format/mdbook.md:117
+msgid "`noplayground` --- Removes the play button, but will still be tested."
+msgstr "`noplayground` --- 移除播放按鈕，但仍會進行測試。"
+
+#: src/format/mdbook.md:118
+msgid ""
+"`mdbook-runnable` --- Forces the play button to be displayed. This is "
+"intended to be combined with the `ignore` attribute for examples that should "
+"not be tested, but you want to allow the reader to run."
+msgstr ""
+
+#: src/format/mdbook.md:120
+msgid ""
+"`ignore` --- Will not be tested and no play button is shown, but it is still "
+"highlighted as Rust syntax."
+msgstr "`ignore` --- 不會進行測試且不顯示播放按鈕，但仍會以 Rust 語法標明。"
+
+#: src/format/mdbook.md:121
+msgid "`should_panic` --- When executed, it should produce a panic."
+msgstr ""
+
+#: src/format/mdbook.md:122
+msgid ""
+"`no_run` --- The code is compiled when tested, but it is not run. The play "
+"button is also not shown."
+msgstr ""
+
+#: src/format/mdbook.md:124
+msgid "`compile_fail` --- The code should fail to compile."
+msgstr ""
+
+#: src/format/mdbook.md:125
+msgid ""
+"`edition2015`, `edition2018`, `edition2021`, `edition2024` --- Forces the "
+"use of a specific Rust edition. See [`rust.edition`](configuration/general."
+"md#rust-options) to set this globally."
+msgstr ""
+
+#: src/format/mdbook.md:133
+msgid "Including files"
+msgstr ""
+
+#: src/format/mdbook.md:135
+msgid "With the following syntax, you can include files into your book:"
+msgstr ""
+
+#: src/format/mdbook.md:141
+msgid "The path to the file has to be relative from the current source file."
+msgstr ""
+
+#: src/format/mdbook.md:143
+msgid ""
+"mdBook will interpret included files as Markdown. Since the include command "
+"is usually used for inserting code snippets and examples, you will often "
+"wrap the command with ```` ``` ```` to display the file contents without "
+"interpreting them."
+msgstr ""
+
+#: src/format/mdbook.md:154
+msgid "Including portions of a file"
+msgstr ""
+
+#: src/format/mdbook.md:155
+msgid ""
+"Often you only need a specific part of the file, e.g. relevant lines for an "
+"example. We support four different modes of partial includes:"
+msgstr ""
+
+#: src/format/mdbook.md:165
+msgid ""
+"The first command only includes the second line from file `file.rs`. The "
+"second command includes all lines up to line 10, i.e. the lines from 11 till "
+"the end of the file are omitted. The third command includes all lines from "
+"line 2, i.e. the first line is omitted. The last command includes the "
+"excerpt of `file.rs` consisting of lines 2 to 10."
+msgstr ""
+
+#: src/format/mdbook.md:171
+msgid ""
+"To avoid breaking your book when modifying included files, you can also "
+"include a specific section using anchors instead of line numbers. An anchor "
+"is a pair of matching lines. The line beginning an anchor must match the "
+"regex `ANCHOR:\\s*[\\w_-]+` and similarly the ending line must match the "
+"regex `ANCHOR_END:\\s*[\\w_-]+`. This allows you to put anchors in any kind "
+"of commented line."
+msgstr ""
+
+#: src/format/mdbook.md:178
+msgid "Consider the following file to include:"
+msgstr ""
+
+#: src/format/mdbook.md:180
+msgid "/* ANCHOR: all */"
+msgstr ""
+
+#: src/format/mdbook.md:181
+msgid "// ANCHOR: component\n"
+msgstr ""
+
+#: src/format/mdbook.md:185
+msgid "// ANCHOR_END: component\n"
+msgstr ""
+
+#: src/format/mdbook.md:187
+msgid "////////// ANCHOR: system\n"
+msgstr ""
+
+#: src/format/mdbook.md:189
+msgid "////////// ANCHOR_END: system\n"
+msgstr ""
+
+#: src/format/mdbook.md:191
+msgid "/* ANCHOR_END: all */"
+msgstr ""
+
+#: src/format/mdbook.md:195
+msgid "Then in the book, all you have to do is:"
+msgstr ""
+
+#: src/format/mdbook.md:213
+msgid ""
+"Lines containing anchor patterns inside the included anchor are ignored."
+msgstr ""
+
+#: src/format/mdbook.md:215
+msgid "Including a file but initially hiding all except specified lines"
+msgstr ""
+
+#: src/format/mdbook.md:217
+msgid ""
+"The `rustdoc_include` helper is for including code from external Rust files "
+"that contain complete examples, but only initially showing particular lines "
+"specified with line numbers or anchors in the same way as with `include`."
+msgstr ""
+
+#: src/format/mdbook.md:221
+msgid ""
+"The lines not in the line number range or between the anchors will still be "
+"included, but they will be prefaced with `#`. This way, a reader can expand "
+"the snippet to see the complete example, and Rustdoc will use the complete "
+"example when you run `mdbook test`."
+msgstr ""
+
+#: src/format/mdbook.md:225
+msgid ""
+"For example, consider a file named `file.rs` that contains this Rust program:"
+msgstr ""
+
+#: src/format/mdbook.md:238
+msgid ""
+"We can include a snippet that initially shows only line 2 by using this "
+"syntax:"
+msgstr ""
+
+#: src/format/mdbook.md:248
+msgid ""
+"This would have the same effect as if we had manually inserted the code and "
+"hidden all but line 2 using `#`:"
+msgstr ""
+
+#: src/format/mdbook.md:266
+msgid ""
+"That is, it looks like this (click the \"expand\" icon to see the rest of "
+"the file):"
+msgstr ""
+
+#: src/format/mdbook.md:279
+msgid "Inserting runnable Rust files"
+msgstr "插入可執行的 Rust 檔案"
+
+#: src/format/mdbook.md:281
+msgid ""
+"With the following syntax, you can insert runnable Rust files into your book:"
+msgstr ""
+
+#: src/format/mdbook.md:287
+msgid ""
+"The path to the Rust file has to be relative from the current source file."
+msgstr ""
+
+#: src/format/mdbook.md:289
+msgid ""
+"When play is clicked, the code snippet will be sent to the [Rust Playground]"
+"(https://play.rust-lang.org/) to be compiled and run. The result is sent "
+"back and displayed directly underneath the code."
+msgstr ""
+
+#: src/format/mdbook.md:293
+msgid "Here is what a rendered code snippet looks like:"
+msgstr ""
+
+#: src/format/mdbook.md:297
+msgid "\"Hello World!\""
+msgstr ""
+
+#: src/format/mdbook.md:299
+msgid "// You can even hide lines! :D\n"
+msgstr ""
+
+#: src/format/mdbook.md:300
+msgid "\"I am hidden! Expand the code snippet to see me\""
+msgstr ""
+
+#: src/format/mdbook.md:305
+msgid ""
+"Any additional values passed after the filename will be included as "
+"attributes of the code block. For example `{{#playground example.rs "
+"editable}}` will create the code block like the following:"
+msgstr ""
+
+#: src/format/mdbook.md:314
+msgid ""
+"And the `editable` attribute will enable the [editor](theme/editor.md) as "
+"described at [Rust code block attributes](#rust-code-block-attributes)."
+msgstr ""
+
+#: src/format/mdbook.md:318
+msgid "Controlling page \\<title\\>"
+msgstr ""
+
+#: src/format/mdbook.md:320
+msgid ""
+"A chapter can set a \\<title\\> that is different from its entry in the "
+"table of contents (sidebar) by including a `{{#title ...}}` near the top of "
+"the page."
+msgstr ""
+
+#: src/format/mdbook.md:327
+msgid "HTML classes provided by mdBook"
+msgstr ""
+
+#: src/format/mdbook.md:331
+msgid "`class=\"left\"` and `\"right\"`"
+msgstr ""
+
+#: src/format/mdbook.md:333
+msgid "These classes are provided by default, for inline HTML to float images."
+msgstr ""
+
+#: src/format/mdbook.md:336
+msgid "\"right\""
+msgstr ""
+
+#: src/format/mdbook.md:336
+msgid "\"images/rust-logo-blk.svg\""
+msgstr ""
+
+#: src/format/mdbook.md:336
+msgid "\"The Rust logo\""
+msgstr ""
+
+#: src/format/mdbook.md:339
+msgid "`class=\"hidden\"`"
+msgstr ""
+
+#: src/format/mdbook.md:341
+msgid "HTML tags with class `hidden` will not be shown."
+msgstr ""
+
+#: src/format/mdbook.md:344
+msgid "\"hidden\""
+msgstr ""
+
+#: src/format/mdbook.md:349
+msgid "`class=\"warning\"`"
+msgstr ""
+
+#: src/format/mdbook.md:351
+msgid "To make a warning or similar note stand out, wrap it in a warning div."
+msgstr ""
+
+#: src/format/mdbook.md:354
+msgid "\"warning\""
+msgstr ""
+
+#: src/format/mdbook.md:367
+msgid "This is a bad thing that you should pay attention to."
+msgstr ""
+
+#: src/format/mdbook.md:369
+msgid ""
+"Warning blocks should be used sparingly in documentation, to avoid \"warning "
+"fatigue,\" where people are trained to ignore them because they usually "
+"don't matter for what they're doing."
+msgstr ""
