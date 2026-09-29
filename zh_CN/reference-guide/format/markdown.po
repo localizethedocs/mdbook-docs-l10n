@@ -1,0 +1,517 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/format/markdown.md:1
+msgid "Markdown"
+msgstr "Markdown指南"
+
+#: src/format/markdown.md:3
+msgid ""
+"mdBook's [parser](https://github.com/raphlinus/pulldown-cmark) adheres to "
+"the [CommonMark](https://commonmark.org/) specification with some extensions "
+"described below. You can take a quick [tutorial](https://commonmark.org/help/"
+"tutorial/), or [try out](https://spec.commonmark.org/dingus/) CommonMark in "
+"real time. A complete Markdown overview is out of scope for this "
+"documentation, but below is a high level overview of some of the basics. For "
+"a more in-depth experience, check out the [Markdown Guide](https://www."
+"markdownguide.org)."
+msgstr ""
+"mdBook的[解析器](https://github.com/raphlinus/pulldown-cmark)遵循[CommonMark]"
+"(https://commonmark.org/)规范，并有一些扩展功能，具体说明如下。您可以快速参考"
+"[教程](https://commonmark.org/help/tutorial/)，或者实时尝试使用[CommonMark]"
+"(https://spec.commonmark.org/dingus/)。关于Markdown的完整概述不在本文档的范围"
+"内，但以下是对一些基本功能的概述。如需更深入的体验，请查阅[Markdown指南]"
+"(https://www.markdownguide.org)。"
+
+#: src/format/markdown.md:9
+msgid "Text and paragraphs"
+msgstr "文本与段落"
+
+#: src/format/markdown.md:11
+msgid "Text is rendered relatively predictably:"
+msgstr "文本的呈现相对具有可预测性："
+
+#: src/format/markdown.md:19
+msgid "Will look like you might expect:"
+msgstr "看起来会像你预期的那样："
+
+#: src/format/markdown.md:21
+msgid "Here is a line of text."
+msgstr "这是一行文本。"
+
+#: src/format/markdown.md:23
+msgid "This is a new line."
+msgstr "这是一行新的内容。"
+
+#: src/format/markdown.md:25
+msgid "Headings"
+msgstr "标题"
+
+#: src/format/markdown.md:27
+msgid ""
+"Headings use the `#` marker and should be on a line by themselves. More `#` "
+"mean smaller headings:"
+msgstr "标题使用`#`标记，应该自己在线。更多`#`意味着小标题："
+
+#: src/format/markdown.md:39
+msgid "A heading"
+msgstr "一个标题"
+
+#: src/format/markdown.md:41
+msgid "Some text."
+msgstr "一些文字."
+
+#: src/format/markdown.md:43
+msgid "A smaller heading"
+msgstr "一个小的标题"
+
+#: src/format/markdown.md:45
+msgid "More text."
+msgstr "更多文本。"
+
+#: src/format/markdown.md:47
+msgid "Lists"
+msgstr "列表"
+
+#: src/format/markdown.md:49
+msgid ""
+"Lists can be unordered or ordered. Ordered lists will order automatically:"
+msgstr "列表可以是无序的，也可以是有序的。有序列表会自动进行排序："
+
+#: src/format/markdown.md:61
+msgid "milk"
+msgstr "milk"
+
+#: src/format/markdown.md:62
+msgid "eggs"
+msgstr "eggs"
+
+#: src/format/markdown.md:63
+msgid "butter"
+msgstr "butter"
+
+#: src/format/markdown.md:65
+msgid "carrots"
+msgstr "carrots"
+
+#: src/format/markdown.md:66
+msgid "celery"
+msgstr "celery"
+
+#: src/format/markdown.md:67
+msgid "radishes"
+msgstr "radishes"
+
+#: src/format/markdown.md:69
+msgid "Links"
+msgstr "链接"
+
+#: src/format/markdown.md:71
+msgid "Linking to a URL or local file is easy:"
+msgstr "链接到URL或本地文件非常简单："
+
+#: src/format/markdown.md:85
+msgid "Use [mdBook](https://github.com/rust-lang/mdBook)."
+msgstr "使用 [mdBook](https://github.com/rust-lang/mdBook)。"
+
+#: src/format/markdown.md:87
+msgid "Read about [mdBook](mdbook.md)."
+msgstr "阅读关于 [mdBook](mdbook.md)。"
+
+#: src/format/markdown.md:89
+msgid ""
+"And now [an mdBook link](https://github.com/rust-lang/mdBook) that is not "
+"inline, unlike the above."
+msgstr "现在有一个[mdBook链接]，它并不是内联的，与上述情况不同。"
+
+#: src/format/markdown.md:91
+msgid "A bare url: <https://www.rust-lang.org>."
+msgstr "一个简单的网址： <https://www.rust-lang.org>。"
+
+#: src/format/markdown.md:96
+msgid ""
+"Relative links that end with `.md` will be converted to the `.html` "
+"extension. It is recommended to use `.md` links when possible. This is "
+"useful when viewing the Markdown file outside of mdBook, for example on "
+"GitHub or GitLab which render Markdown automatically."
+msgstr ""
+"以 `.md` 结尾的相对链接将被转换为 `.html` 扩展形式。建议尽可能使用 `.md` 链"
+"接。这在在 mdBook 外部查看 Markdown 文件时非常有用，例如在 GitHub 或 GitLab "
+"上，这些平台会自动渲染 Markdown 格式。"
+
+#: src/format/markdown.md:100
+msgid ""
+"Links to `README.md` will be converted to `index.html`. This is done since "
+"some services like GitHub render README files automatically, but web servers "
+"typically expect the root file to be called `index.html`."
+msgstr ""
+"链接从 `README.md` 转换为 `index.html`。这是因为一些服务如 GitHub 会自动渲染 "
+"README 文件，但Web服务器通常期望根文件的名称为 `index.html`。"
+
+#: src/format/markdown.md:103
+msgid ""
+"You can link to individual headings with `#` fragments. For example, `mdbook."
+"md#text-and-paragraphs` would link to the [Text and Paragraphs](#text-and-"
+"paragraphs) section above. The ID is created by transforming the heading "
+"such as converting to lowercase and replacing spaces with dashes. You can "
+"click on any heading and look at the URL in your browser to see what the "
+"fragment looks like."
+msgstr ""
+"您可以链接到单个标题与 #` 片段。例如，`mdbook.md#text-and-paragraphs会链接到"
+"上面的 [文本和段落](#文本和段落) 部分。 ID是通过转换标题创建的，如转换为小写"
+"和用破折号替换空格。 您可以点击任何标题并查看浏览器中的URL来查看片段的外观。"
+
+#: src/format/markdown.md:108
+msgid "Images"
+msgstr "图片"
+
+#: src/format/markdown.md:110
+msgid ""
+"Including images is simply a matter of including a link to them, much like "
+"in the _Links_ section above. The following markdown includes the Rust logo "
+"SVG image found in the `images` directory at the same level as this file:"
+msgstr ""
+"包含图片只需提供图片的链接即可，就像在上面的“链接”部分一样。以下Markdown代码"
+"包含了位于与当前文件同一级别的 `images` 目录中的Rust徽标SVG图片："
+
+#: src/format/markdown.md:117
+msgid "Produces the following HTML when built with mdBook:"
+msgstr "使用 mdBook 构建时会产生以下 HTML："
+
+#: src/format/markdown.md:120
+msgid "\"images/rust-logo-blk.svg\""
+msgstr "\"images/rust-logo-blk.svg\""
+
+#: src/format/markdown.md:120
+msgid "\"The Rust Logo\""
+msgstr "\"Rust Logo\""
+
+#: src/format/markdown.md:123
+msgid "Which, of course displays the image like so:"
+msgstr "当然，这样就会显示图片："
+
+#: src/format/markdown.md:125
+msgid "![The Rust Logo](images/rust-logo-blk.svg)"
+msgstr "![The Rust Logo](images/rust-logo-blk.svg)"
+
+#: src/format/markdown.md:127
+msgid "Extensions"
+msgstr "扩展功能"
+
+#: src/format/markdown.md:129
+msgid ""
+"mdBook has several extensions beyond the standard CommonMark specification."
+msgstr "mdBook 除了标准的 CommonMark 规范之外，还提供了多种扩展功能。"
+
+#: src/format/markdown.md:131
+msgid "Strikethrough"
+msgstr "删除线"
+
+#: src/format/markdown.md:133
+msgid ""
+"Text may be rendered with a horizontal line through the center by wrapping "
+"the text with one or two tilde characters on each side:"
+msgstr ""
+"通过将文本两侧各加上一个或两个波浪号字符，可以在文本中间添加一条水平线："
+
+#: src/format/markdown.md:140 src/format/markdown.md:161
+msgid "This example will render as:"
+msgstr ""
+
+#: src/format/markdown.md:142
+msgid "An example of ~~strikethrough text~~."
+msgstr ""
+
+#: src/format/markdown.md:144
+msgid ""
+"This follows the [GitHub Strikethrough extension](https://github.github.com/"
+"gfm/#strikethrough-extension-)."
+msgstr ""
+
+#: src/format/markdown.md:146
+msgid "Footnotes"
+msgstr ""
+
+#: src/format/markdown.md:148
+msgid ""
+"A footnote generates a small numbered link in the text which when clicked "
+"takes the reader to the footnote text at the bottom of the item. The "
+"footnote label is written similarly to a link reference with a caret at the "
+"front. The footnote text is written like a link reference definition, with "
+"the text following the label. Example:"
+msgstr ""
+
+#: src/format/markdown.md:163
+msgid "This is an example of a footnote[^note]."
+msgstr ""
+
+#: src/format/markdown.md:165
+msgid ""
+"This text is the contents of the footnote, which will be rendered towards "
+"the bottom."
+msgstr ""
+
+#: src/format/markdown.md:168
+msgid ""
+"The footnotes are automatically numbered based on the order the footnotes "
+"are written."
+msgstr ""
+
+#: src/format/markdown.md:171
+msgid "Tables"
+msgstr ""
+
+#: src/format/markdown.md:173
+msgid ""
+"Tables can be written using pipes and dashes to draw the rows and columns of "
+"the table. These will be translated to HTML table matching the shape. "
+"Example:"
+msgstr ""
+
+#: src/format/markdown.md:182
+msgid "This example will render similarly to this:"
+msgstr ""
+
+#: src/format/markdown.md:184
+msgid "Header1"
+msgstr ""
+
+#: src/format/markdown.md:184
+msgid "Header2"
+msgstr ""
+
+#: src/format/markdown.md:186
+msgid "abc"
+msgstr ""
+
+#: src/format/markdown.md:186
+msgid "def"
+msgstr ""
+
+#: src/format/markdown.md:188
+msgid ""
+"See the specification for the [GitHub Tables extension](https://github."
+"github.com/gfm/#tables-extension-) for more details on the exact syntax "
+"supported."
+msgstr ""
+
+#: src/format/markdown.md:191
+msgid "Task lists"
+msgstr ""
+
+#: src/format/markdown.md:193
+msgid ""
+"Task lists can be used as a checklist of items that have been completed. "
+"Example:"
+msgstr ""
+
+#: src/format/markdown.md:201 src/format/markdown.md:260
+msgid "This will render as:"
+msgstr ""
+
+#: src/format/markdown.md:203
+msgid "Complete task"
+msgstr ""
+
+#: src/format/markdown.md:204
+msgid "Incomplete task"
+msgstr ""
+
+#: src/format/markdown.md:206
+msgid ""
+"See the specification for the [task list extension](https://github.github."
+"com/gfm/#task-list-items-extension-) for more details."
+msgstr ""
+
+#: src/format/markdown.md:208
+msgid "Smart punctuation"
+msgstr ""
+
+#: src/format/markdown.md:210
+msgid ""
+"Some ASCII punctuation sequences will be automatically turned into fancy "
+"Unicode characters:"
+msgstr ""
+
+#: src/format/markdown.md:213
+msgid "ASCII sequence"
+msgstr ""
+
+#: src/format/markdown.md:213
+msgid "Unicode"
+msgstr ""
+
+#: src/format/markdown.md:215
+msgid "`--`"
+msgstr ""
+
+#: src/format/markdown.md:215
+msgid "–"
+msgstr ""
+
+#: src/format/markdown.md:216
+msgid "`---`"
+msgstr ""
+
+#: src/format/markdown.md:216
+msgid "—"
+msgstr ""
+
+#: src/format/markdown.md:217
+msgid "`...`"
+msgstr ""
+
+#: src/format/markdown.md:217
+msgid "…"
+msgstr ""
+
+#: src/format/markdown.md:218
+msgid "`\"`"
+msgstr ""
+
+#: src/format/markdown.md:218
+msgid "“ or ”, depending on context"
+msgstr ""
+
+#: src/format/markdown.md:219
+msgid "`'`"
+msgstr ""
+
+#: src/format/markdown.md:219
+msgid "‘ or ’, depending on context"
+msgstr ""
+
+#: src/format/markdown.md:221
+msgid "So, no need to manually enter those Unicode characters!"
+msgstr ""
+
+#: src/format/markdown.md:223
+msgid ""
+"This feature is enabled by default. To disable it, see the [`output.html."
+"smart-punctuation`](configuration/renderers.md#html-renderer-options) config "
+"option."
+msgstr ""
+
+#: src/format/markdown.md:231
+msgid "Heading attributes"
+msgstr ""
+
+#: src/format/markdown.md:233
+msgid ""
+"Headings can have a custom HTML ID and classes. This lets you maintain the "
+"same ID even if you change the heading's text, it also lets you add multiple "
+"classes in the heading."
+msgstr ""
+
+#: src/format/markdown.md:235 src/format/markdown.md:248
+msgid "Example:"
+msgstr ""
+
+#: src/format/markdown.md:240
+msgid ""
+"This makes the level 1 heading with the content `Example heading`, ID "
+"`first`, and classes `class1` and `class2`. Note that the attributes should "
+"be space-separated."
+msgstr ""
+
+#: src/format/markdown.md:242
+msgid ""
+"More information can be found in the [heading attrs spec page](https://"
+"github.com/raphlinus/pulldown-cmark/blob/master/pulldown-cmark/specs/"
+"heading_attrs.txt)."
+msgstr ""
+
+#: src/format/markdown.md:244
+msgid "Definition lists"
+msgstr ""
+
+#: src/format/markdown.md:246
+msgid ""
+"Definition lists can be used for things like glossary entries. The term is "
+"listed on a line by itself, followed by one or more definitions. Each "
+"definition must begin with a `:` (after 0-2 spaces)."
+msgstr ""
+
+#: src/format/markdown.md:262
+msgid "term A : This is a definition of term A. Text can span multiple lines."
+msgstr ""
+
+#: src/format/markdown.md:266
+msgid ""
+"term B : This is a definition of term B. : This has more than one definition."
+msgstr ""
+
+#: src/format/markdown.md:270
+msgid ""
+"Terms are clickable just like headers, which will set the browser's URL to "
+"point directly to that term."
+msgstr ""
+
+#: src/format/markdown.md:272
+msgid ""
+"See the [definition lists spec](https://github.com/pulldown-cmark/pulldown-"
+"cmark/blob/HEAD/pulldown-cmark/specs/definition_lists.txt) for more "
+"information on the specifics of the syntax. See the [Wikipedia guidelines "
+"for glossaries](https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/"
+"Glossaries#General_guidelines_for_writing_glossaries) for some guidelines on "
+"how to write a glossary."
+msgstr ""
+
+#: src/format/markdown.md:274
+msgid ""
+"This feature is enabled by default. To disable it, see the [`output.html."
+"definition-lists`](configuration/renderers.md#html-renderer-options) config "
+"option."
+msgstr ""
+
+#: src/format/markdown.md:279
+msgid "Admonitions"
+msgstr ""
+
+#: src/format/markdown.md:281
+msgid ""
+"An admonition is a special type of callout or notice block used to highlight "
+"important information. It is written as a blockquote with a special tag on "
+"the first line."
+msgstr ""
+
+#: src/format/markdown.md:300
+msgid "These will render as:"
+msgstr ""
+
+#: src/format/markdown.md:302
+msgid "\\[!NOTE\\] General information or additional context."
+msgstr ""
+
+#: src/format/markdown.md:305
+msgid "\\[!TIP\\] A helpful suggestion or best practice."
+msgstr ""
+
+#: src/format/markdown.md:308
+msgid "\\[!IMPORTANT\\] Key information that shouldn't be missed."
+msgstr ""
+
+#: src/format/markdown.md:311
+msgid "\\[!WARNING\\] Critical information that highlights a potential risk."
+msgstr ""
+
+#: src/format/markdown.md:314
+msgid "\\[!CAUTION\\] Information about potential issues that require caution."
+msgstr ""
+
+#: src/format/markdown.md:317
+msgid ""
+"This feature is enabled by default. To disable it, see the [`output.html."
+"admonitions`](configuration/renderers.md#html-renderer-options) config "
+"option."
+msgstr ""
