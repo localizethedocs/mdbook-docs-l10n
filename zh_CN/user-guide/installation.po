@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/guide/installation.md:1
+msgid "Installation"
+msgstr ""
+
+#: src/guide/installation.md:3
+msgid ""
+"There are multiple ways to install the mdBook CLI tool. Choose any one of "
+"the methods below that best suit your needs. If you are installing mdBook "
+"for automatic deployment, check out the [continuous integration](../"
+"continuous-integration.md) chapter for more examples on how to install."
+msgstr ""
+
+#: src/guide/installation.md:9
+msgid "Pre-compiled binaries"
+msgstr ""
+
+#: src/guide/installation.md:11
+msgid ""
+"Executable binaries are available for download on the [GitHub Releases page]"
+"(https://github.com/rust-lang/mdBook/releases). Download the binary for your "
+"platform (Windows, macOS, or Linux) and extract the archive. The archive "
+"contains an `mdbook` executable which you can run to build your books."
+msgstr ""
+
+#: src/guide/installation.md:15
+msgid "To make it easier to run, put the path to the binary into your `PATH`."
+msgstr ""
+
+#: src/guide/installation.md:19
+msgid "Build from source using Rust"
+msgstr ""
+
+#: src/guide/installation.md:21
+msgid ""
+"To build the `mdbook` executable from source, you will first need to install "
+"Rust and Cargo. Follow the instructions on the [Rust installation page]"
+"(https://www.rust-lang.org/tools/install). mdBook currently requires at "
+"least Rust version 1.88."
+msgstr ""
+
+#: src/guide/installation.md:25
+msgid ""
+"Once you have installed Rust, the following command can be used to build and "
+"install mdBook:"
+msgstr ""
+
+#: src/guide/installation.md:31
+msgid ""
+"This will automatically download mdBook from [crates.io](https://crates."
+"io/), build it, and install it in Cargo's global binary directory (`~/.cargo/"
+"bin/` by default)."
+msgstr ""
+
+#: src/guide/installation.md:33
+msgid ""
+"You can run `cargo install mdbook` again whenever you want to update to a "
+"new version. That command will check if there is a newer version, and re-"
+"install mdBook if a newer version is found."
+msgstr ""
+
+#: src/guide/installation.md:36
+msgid "To uninstall, run the command `cargo uninstall mdbook`."
+msgstr ""
+
+#: src/guide/installation.md:41
+msgid "Installing the latest master version"
+msgstr ""
+
+#: src/guide/installation.md:43
+msgid ""
+"The version published to crates.io will ever so slightly be behind the "
+"version hosted on GitHub. If you need the latest version you can build the "
+"git version of mdBook yourself. Cargo makes this _**super easy**_!"
+msgstr ""
+
+#: src/guide/installation.md:51
+msgid "Again, make sure to add the Cargo bin directory to your `PATH`."
+msgstr ""
+
+#: src/guide/installation.md:53
+msgid "Modifying and contributing"
+msgstr ""
+
+#: src/guide/installation.md:55
+msgid ""
+"If you are interested in making modifications to mdBook itself, check out "
+"the [Contributing Guide](https://github.com/rust-lang/mdBook/blob/master/"
+"CONTRIBUTING.md) for more information."
+msgstr ""
