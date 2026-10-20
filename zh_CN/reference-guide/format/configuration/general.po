@@ -1,0 +1,234 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:48:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/format/configuration/general.md:1
+msgid "General configuration"
+msgstr ""
+
+#: src/format/configuration/general.md:3
+msgid ""
+"You can configure the parameters for your book in the _**book.toml**_ file."
+msgstr ""
+
+#: src/format/configuration/general.md:5
+msgid "Here is an example of what a _**book.toml**_ file might look like:"
+msgstr ""
+
+#: src/format/configuration/general.md:7
+msgid ""
+"```toml\n"
+"[book]\n"
+"title = \"Example book\"\n"
+"authors = [\"John Doe\"]\n"
+"description = \"The example book covers examples.\"\n"
+"\n"
+"[rust]\n"
+"edition = \"2018\"\n"
+"\n"
+"[build]\n"
+"build-dir = \"my-example-book\"\n"
+"create-missing = false\n"
+"\n"
+"[preprocessor.index]\n"
+"\n"
+"[preprocessor.links]\n"
+"\n"
+"[output.html]\n"
+"additional-css = [\"custom.css\"]\n"
+"\n"
+"[output.html.search]\n"
+"limit-results = 15\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/general.md:31
+msgid "Supported configuration options"
+msgstr ""
+
+#: src/format/configuration/general.md:33
+msgid ""
+"It is important to note that **any** relative path specified in the "
+"configuration will always be taken relative from the root of the book where "
+"the configuration file is located."
+msgstr ""
+
+#: src/format/configuration/general.md:37
+msgid "General metadata"
+msgstr ""
+
+#: src/format/configuration/general.md:39
+msgid "This is general information about your book."
+msgstr ""
+
+#: src/format/configuration/general.md:41
+msgid "**title:** The title of the book"
+msgstr ""
+
+#: src/format/configuration/general.md:42
+msgid "**authors:** The author(s) of the book"
+msgstr ""
+
+#: src/format/configuration/general.md:43
+msgid ""
+"**description:** A description for the book, which is added as meta "
+"information in the html `<head>` of each page"
+msgstr ""
+
+#: src/format/configuration/general.md:45
+msgid ""
+"**src:** By default, the source directory is found in the directory named "
+"`src` directly under the root folder. But this is configurable with the "
+"`src` key in the configuration file."
+msgstr ""
+
+#: src/format/configuration/general.md:48
+msgid ""
+"**language:** The main language of the book, which is used as a language "
+"attribute `<html lang=\"en\">` for example. This is also used to derive the "
+"direction of text (RTL, LTR) within the book."
+msgstr ""
+
+#: src/format/configuration/general.md:50
+msgid ""
+"**text-direction**: The direction of text in the book: Left-to-right (LTR) "
+"or Right-to-left (RTL). Possible values: `ltr`, `rtl`. When not specified, "
+"the text direction is derived from the book's `language` attribute."
+msgstr ""
+
+#: src/format/configuration/general.md:53
+msgid "**book.toml**"
+msgstr ""
+
+#: src/format/configuration/general.md:54
+msgid ""
+"```toml\n"
+"[book]\n"
+"title = \"Example book\"\n"
+"authors = [\"John Doe\", \"Jane Doe\"]\n"
+"description = \"The example book covers examples.\"\n"
+"src = \"my-src\"  # the source files will be found in `root/my-src` instead "
+"of `root/src`\n"
+"language = \"en\"\n"
+"text-direction = \"ltr\"\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/general.md:64
+msgid "Rust options"
+msgstr ""
+
+#: src/format/configuration/general.md:66
+msgid ""
+"Options for the Rust language, relevant to running tests and playground "
+"integration."
+msgstr ""
+
+#: src/format/configuration/general.md:69
+msgid ""
+"```toml\n"
+"[rust]\n"
+"edition = \"2015\"   # the default edition for code blocks\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/general.md:74
+msgid ""
+"**edition**: Rust edition to use by default for the code snippets. Default "
+"is `\"2015\"`. Individual code blocks can be controlled with the "
+"`edition2015`, `edition2018`, `edition2021` or `edition2024` annotations, "
+"such as:"
+msgstr ""
+
+#: src/format/configuration/general.md:78
+msgid ""
+"````text\n"
+"```rust,edition2015\n"
+"// This only works in 2015.\n"
+"let try = true;\n"
+"```\n"
+"````"
+msgstr ""
+
+#: src/format/configuration/general.md:85
+msgid "Build options"
+msgstr ""
+
+#: src/format/configuration/general.md:87
+msgid "This controls the build process of your book."
+msgstr ""
+
+#: src/format/configuration/general.md:89
+msgid ""
+"```toml\n"
+"[build]\n"
+"build-dir = \"book\"                # the directory where the output is "
+"placed\n"
+"create-missing = true             # whether or not to create missing pages\n"
+"use-default-preprocessors = true  # use the default preprocessors\n"
+"extra-watch-dirs = []             # directories to watch for triggering "
+"builds\n"
+"```"
+msgstr ""
+
+#: src/format/configuration/general.md:97
+msgid ""
+"**build-dir:** The directory to put the rendered book in. By default this is "
+"`book/` in the book's root directory. This can overridden with the `--dest-"
+"dir` CLI option."
+msgstr ""
+
+#: src/format/configuration/general.md:100
+msgid ""
+"**create-missing:** By default, any missing files specified in `SUMMARY.md` "
+"will be created when the book is built (i.e. `create-missing = true`). If "
+"this is `false` then the build process will instead exit with an error if "
+"any files do not exist."
+msgstr ""
+
+#: src/format/configuration/general.md:104
+msgid ""
+"**use-default-preprocessors:** Disable the default preprocessors (of `links` "
+"& `index`) by setting this option to `false`."
+msgstr ""
+
+#: src/format/configuration/general.md:107
+msgid ""
+"If you have the same, and/or other preprocessors declared via their table of "
+"configuration, they will run instead."
+msgstr ""
+
+#: src/format/configuration/general.md:110
+msgid ""
+"For clarity, with no preprocessor configuration, the default `links` and "
+"`index` will run."
+msgstr ""
+
+#: src/format/configuration/general.md:112
+msgid ""
+"Setting `use-default-preprocessors = false` will disable these default "
+"preprocessors from running."
+msgstr ""
+
+#: src/format/configuration/general.md:114
+msgid ""
+"Adding `[preprocessor.links]`, for example, will ensure, regardless of `use-"
+"default-preprocessors` that `links` it will run."
+msgstr ""
+
+#: src/format/configuration/general.md:116
+msgid ""
+"**extra-watch-dirs**: A list of paths to directories that will be watched in "
+"the `watch` and `serve` commands. Changes to files under these directories "
+"will trigger rebuilds. Useful if your book depends on files outside its "
+"`src` directory."
+msgstr ""
