@@ -59,9 +59,9 @@ msgstr ""
 
 #: src/guide/installation.md:31
 msgid ""
-"This will automatically download mdBook from [crates.io](https://crates."
-"io/), build it, and install it in Cargo's global binary directory (`~/.cargo/"
-"bin/` by default)."
+"This will automatically download mdBook from [crates.io](https://"
+"crates.io/), build it, and install it in Cargo's global binary directory "
+"(`~/.cargo/bin/` by default)."
 msgstr ""
 
 #: src/guide/installation.md:33

@@ -17,9 +17,9 @@ msgstr "在持續整合中執行 `mdbook`"
 
 #: src/continuous-integration.md:3
 msgid ""
-"There are a variety of services such as [GitHub Actions](https://docs.github."
-"com/en/actions) or [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) which can "
-"be used to test and deploy your book automatically."
+"There are a variety of services such as [GitHub Actions](https://"
+"docs.github.com/en/actions) or [GitLab CI/CD](https://docs.gitlab.com/ee/"
+"ci/) which can be used to test and deploy your book automatically."
 msgstr ""
 
 #: src/continuous-integration.md:5
@@ -231,8 +231,8 @@ msgid ""
 "the [`output.html.site-url`](format/configuration/renderers.md#html-renderer-"
 "options) setting so that the 404 page works correctly. It needs to know "
 "where the book is deployed in order to load the static files (like CSS) "
-"correctly. For example, this guide is deployed at <https://rust-lang.github."
-"io/mdBook/>, and the `site-url` setting is configured like this:"
+"correctly. For example, this guide is deployed at <https://rust-"
+"lang.github.io/mdBook/>, and the `site-url` setting is configured like this:"
 msgstr ""
 
 #: src/continuous-integration.md:111
@@ -246,8 +246,8 @@ msgstr ""
 
 #: src/continuous-integration.md:117
 msgid ""
-"You can customize the look of the 404 page by creating a file named `src/404."
-"md` in your book. If you want to use a different filename, you can set "
+"You can customize the look of the 404 page by creating a file named `src/"
+"404.md` in your book. If you want to use a different filename, you can set "
 "[`output.html.input-404`](format/configuration/renderers.md#html-renderer-"
 "options) to a different filename."
 msgstr ""
