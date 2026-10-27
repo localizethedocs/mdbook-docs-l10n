@@ -97,6 +97,6 @@ msgstr ""
 
 #: src/cli/watch.md:46
 msgid ""
-"_Note: Only `.gitignore` from book root directory is used. Global `$HOME/."
-"gitignore` or `.gitignore` files in parent directories are not used._"
+"_Note: Only `.gitignore` from book root directory is used. Global "
+"`$HOME/.gitignore` or `.gitignore` files in parent directories are not used._"
 msgstr ""

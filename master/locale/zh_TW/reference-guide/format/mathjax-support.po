@@ -17,14 +17,14 @@ msgstr "MathJax 支援"
 
 #: src/format/mathjax.md:3
 msgid ""
-"mdBook has optional support for math equations through [MathJax](https://www."
-"mathjax.org/)."
+"mdBook has optional support for math equations through [MathJax](https://"
+"www.mathjax.org/)."
 msgstr ""
 
 #: src/format/mathjax.md:6
 msgid ""
-"To enable MathJax, you need to add the `mathjax-support` key to your `book."
-"toml` under the `output.html` section."
+"To enable MathJax, you need to add the `mathjax-support` key to your "
+"`book.toml` under the `output.html` section."
 msgstr ""
 
 #: src/format/mathjax.md:14

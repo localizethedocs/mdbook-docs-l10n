@@ -129,9 +129,9 @@ msgstr ""
 #: src/for_developers/backends.md:105
 msgid ""
 "When it loads a book into memory, `mdbook` will inspect your `book.toml` "
-"file to try and figure out which backends to use by looking for all `output."
-"*` tables. If none are provided it'll fall back to using the default HTML "
-"renderer."
+"file to try and figure out which backends to use by looking for all "
+"`output.*` tables. If none are provided it'll fall back to using the default "
+"HTML renderer."
 msgstr ""
 
 #: src/for_developers/backends.md:109
