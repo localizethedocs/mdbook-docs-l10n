@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
+"POT-Creation-Date: 2026-09-01T13:27:23Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -33,7 +33,7 @@ msgid ""
 "of-the-example). This prefix can be escaped with `##` to prevent the hiding "
 "of a line that should begin with the literal string `# ` (see [Rustdoc's "
 "docs](https://doc.rust-lang.org/stable/rustdoc/write-documentation/"
-"documentation-tests.html#hiding-portions-of-the-example) for more details)"
+"documentation-tests.html#hiding-portions-of-the-example) for more details)."
 msgstr ""
 
 #: src/format/mdbook.md:13
@@ -350,71 +350,71 @@ msgstr ""
 msgid "\"I am hidden! Expand the code snippet to see me\""
 msgstr ""
 
-#: src/format/mdbook.md:305
+#: src/format/mdbook.md:304
 msgid ""
 "Any additional values passed after the filename will be included as "
 "attributes of the code block. For example `{{#playground example.rs "
 "editable}}` will create the code block like the following:"
 msgstr ""
 
-#: src/format/mdbook.md:314
+#: src/format/mdbook.md:313
 msgid ""
 "And the `editable` attribute will enable the [editor](theme/editor.md) as "
 "described at [Rust code block attributes](#rust-code-block-attributes)."
 msgstr ""
 
-#: src/format/mdbook.md:318
+#: src/format/mdbook.md:317
 msgid "Controlling page \\<title\\>"
 msgstr ""
 
-#: src/format/mdbook.md:320
+#: src/format/mdbook.md:319
 msgid ""
 "A chapter can set a \\<title\\> that is different from its entry in the "
 "table of contents (sidebar) by including a `{{#title ...}}` near the top of "
 "the page."
 msgstr ""
 
-#: src/format/mdbook.md:327
+#: src/format/mdbook.md:326
 msgid "HTML classes provided by mdBook"
 msgstr ""
 
-#: src/format/mdbook.md:331
+#: src/format/mdbook.md:330
 msgid "`class=\"left\"` and `\"right\"`"
 msgstr ""
 
-#: src/format/mdbook.md:333
+#: src/format/mdbook.md:332
 msgid "These classes are provided by default, for inline HTML to float images."
 msgstr ""
 
-#: src/format/mdbook.md:336
+#: src/format/mdbook.md:335
 msgid "\"right\""
 msgstr ""
 
-#: src/format/mdbook.md:336
+#: src/format/mdbook.md:335
 msgid "\"images/rust-logo-blk.svg\""
 msgstr ""
 
-#: src/format/mdbook.md:336
+#: src/format/mdbook.md:335
 msgid "\"The Rust logo\""
 msgstr ""
 
-#: src/format/mdbook.md:339
+#: src/format/mdbook.md:338
 msgid "`class=\"hidden\"`"
 msgstr ""
 
-#: src/format/mdbook.md:341
+#: src/format/mdbook.md:340
 msgid "HTML tags with class `hidden` will not be shown."
 msgstr ""
 
-#: src/format/mdbook.md:344
+#: src/format/mdbook.md:343
 msgid "\"hidden\""
 msgstr ""
 
-#: src/format/mdbook.md:349
+#: src/format/mdbook.md:348
 msgid "Font-Awesome icons"
 msgstr ""
 
-#: src/format/mdbook.md:351
+#: src/format/mdbook.md:350
 msgid ""
 "mdBook includes a copy of version 6 of [Font Awesome Free's](https://"
 "fontawesome.com) MIT-licensed SVG files. It emulates the `<i>` syntax, but "
@@ -422,22 +422,22 @@ msgid ""
 "icons are included; paid features like the light icons are not."
 msgstr ""
 
-#: src/format/mdbook.md:356
+#: src/format/mdbook.md:355
 msgid "For example, given this HTML syntax:"
 msgstr ""
 
-#: src/format/mdbook.md:358
+#: src/format/mdbook.md:357
 msgid ""
 "```hbs\n"
 "The result looks like this: <i class=\"fa-solid fa-print\"></i>\n"
 "```"
 msgstr ""
 
-#: src/format/mdbook.md:362
+#: src/format/mdbook.md:361
 msgid "The result looks like this: <i class=\"fa-solid fa-print\"></i>"
 msgstr ""
 
-#: src/format/mdbook.md:364
+#: src/format/mdbook.md:363
 msgid ""
 "See the [free icon set](https://fontawesome.com/v6/search) for the available "
 "icons."

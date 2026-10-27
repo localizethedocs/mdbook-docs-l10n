@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mdBook Documentation\n"
-"POT-Creation-Date: 2025-11-28T05:49:02Z\n"
+"POT-Creation-Date: 2026-09-01T13:27:23Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -32,7 +32,7 @@ msgstr ""
 
 #: src/for_developers/index.md:12
 msgid ""
-"The two main ways a developer can hook into the book's build process is via,"
+"The two main ways a developer can hook into the book's build process are:"
 msgstr ""
 
 #: src/for_developers/index.md:14
