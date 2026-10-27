@@ -23,8 +23,8 @@ msgid ""
 "tutorial/), or [try out](https://spec.commonmark.org/dingus/) CommonMark in "
 "real time. A complete Markdown overview is out of scope for this "
 "documentation, but below is a high level overview of some of the basics. For "
-"a more in-depth experience, check out the [Markdown Guide](https://www."
-"markdownguide.org)."
+"a more in-depth experience, check out the [Markdown Guide](https://"
+"www.markdownguide.org)."
 msgstr ""
 "mdBook的[解析器](https://github.com/raphlinus/pulldown-cmark)遵循[CommonMark]"
 "(https://commonmark.org/)规范，并有一些扩展功能，具体说明如下。您可以快速参考"
@@ -160,12 +160,12 @@ msgstr ""
 
 #: src/format/markdown.md:103
 msgid ""
-"You can link to individual headings with `#` fragments. For example, `mdbook."
-"md#text-and-paragraphs` would link to the [Text and Paragraphs](#text-and-"
-"paragraphs) section above. The ID is created by transforming the heading "
-"such as converting to lowercase and replacing spaces with dashes. You can "
-"click on any heading and look at the URL in your browser to see what the "
-"fragment looks like."
+"You can link to individual headings with `#` fragments. For example, "
+"`mdbook.md#text-and-paragraphs` would link to the [Text and Paragraphs]"
+"(#text-and-paragraphs) section above. The ID is created by transforming the "
+"heading such as converting to lowercase and replacing spaces with dashes. "
+"You can click on any heading and look at the URL in your browser to see what "
+"the fragment looks like."
 msgstr ""
 "您可以链接到单个标题与 #` 片段。例如，`mdbook.md#text-and-paragraphs会链接到"
 "上面的 [文本和段落](#文本和段落) 部分。 ID是通过转换标题创建的，如转换为小写"
@@ -300,9 +300,9 @@ msgstr ""
 
 #: src/format/markdown.md:188
 msgid ""
-"See the specification for the [GitHub Tables extension](https://github."
-"github.com/gfm/#tables-extension-) for more details on the exact syntax "
-"supported."
+"See the specification for the [GitHub Tables extension](https://"
+"github.github.com/gfm/#tables-extension-) for more details on the exact "
+"syntax supported."
 msgstr ""
 
 #: src/format/markdown.md:191
@@ -329,8 +329,8 @@ msgstr ""
 
 #: src/format/markdown.md:206
 msgid ""
-"See the specification for the [task list extension](https://github.github."
-"com/gfm/#task-list-items-extension-) for more details."
+"See the specification for the [task list extension](https://"
+"github.github.com/gfm/#task-list-items-extension-) for more details."
 msgstr ""
 
 #: src/format/markdown.md:208
@@ -397,9 +397,9 @@ msgstr ""
 
 #: src/format/markdown.md:223
 msgid ""
-"This feature is disabled by default. To enable it, see the [`output.html."
-"smart-punctuation`](configuration/renderers.md#html-renderer-options) config "
-"option."
+"This feature is disabled by default. To enable it, see the "
+"[`output.html.smart-punctuation`](configuration/renderers.md#html-renderer-"
+"options) config option."
 msgstr ""
 
 #: src/format/markdown.md:231

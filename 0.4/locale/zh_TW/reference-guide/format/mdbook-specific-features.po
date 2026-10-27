@@ -185,8 +185,8 @@ msgstr ""
 #: src/format/mdbook.md:125
 msgid ""
 "`edition2015`, `edition2018`, `edition2021`, `edition2024` --- Forces the "
-"use of a specific Rust edition. See [`rust.edition`](configuration/general."
-"md#rust-options) to set this globally."
+"use of a specific Rust edition. See [`rust.edition`](configuration/"
+"general.md#rust-options) to set this globally."
 msgstr ""
 
 #: src/format/mdbook.md:133

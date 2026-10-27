@@ -17,8 +17,8 @@ msgstr "組態"
 
 #: src/format/configuration/index.md:3
 msgid ""
-"This section details the configuration options available in the _**book."
-"toml**_:"
+"This section details the configuration options available in the "
+"_**book.toml**_:"
 msgstr ""
 
 #: src/format/configuration/index.md:4

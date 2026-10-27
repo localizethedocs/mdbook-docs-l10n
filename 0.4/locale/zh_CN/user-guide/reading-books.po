@@ -192,8 +192,8 @@ msgstr ""
 #: src/guide/reading.md:62
 msgid ""
 "For Rust code examples, this will execute the sample code and display the "
-"compiler output just below the example (see [playground](../format/mdbook."
-"md#rust-playground))."
+"compiler output just below the example (see [playground](../format/"
+"mdbook.md#rust-playground))."
 msgstr ""
 
 #: src/guide/reading.md:63

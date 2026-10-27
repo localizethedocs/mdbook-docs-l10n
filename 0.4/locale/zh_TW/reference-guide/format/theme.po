@@ -121,7 +121,7 @@ msgstr ""
 
 #: src/format/theme/index.md:47
 msgid ""
-"If you completely replace all built-in themes, be sure to also set [`output."
-"html.preferred-dark-theme`](../configuration/renderers.md#html-renderer-"
-"options) in the config, which defaults to the built-in `navy` theme."
+"If you completely replace all built-in themes, be sure to also set "
+"[`output.html.preferred-dark-theme`](../configuration/renderers.md#html-"
+"renderer-options) in the config, which defaults to the built-in `navy` theme."
 msgstr ""

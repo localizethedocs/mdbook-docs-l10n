@@ -57,11 +57,11 @@ msgstr ""
 #: src/for_developers/backends.md:28
 msgid ""
 "When our `mdbook-wordcount` plugin is invoked, `mdbook` will send it a JSON "
-"version of [`RenderContext`](https://docs.rs/mdbook/*/mdbook/renderer/struct."
-"RenderContext.html) via our plugin's `stdin`. For convenience, there's a "
-"[`RenderContext::from_json()`](https://docs.rs/mdbook/*/mdbook/renderer/"
-"struct.RenderContext.html#method.from_json) constructor which will load a "
-"`RenderContext`."
+"version of [`RenderContext`](https://docs.rs/mdbook/*/mdbook/renderer/"
+"struct.RenderContext.html) via our plugin's `stdin`. For convenience, "
+"there's a [`RenderContext::from_json()`](https://docs.rs/mdbook/*/mdbook/"
+"renderer/struct.RenderContext.html#method.from_json) constructor which will "
+"load a `RenderContext`."
 msgstr ""
 
 #: src/for_developers/backends.md:32
@@ -100,10 +100,10 @@ msgstr ""
 #: src/for_developers/backends.md:61
 msgid ""
 "Because the `RenderContext` contains a [`Book`](https://docs.rs/mdbook/*/"
-"mdbook/book/struct.Book.html) field (`book`), and a `Book` has the [`Book::"
-"iter()`](https://docs.rs/mdbook/*/mdbook/book/struct.Book.html#method.iter) "
-"method for iterating over all items in a `Book`, this step turns out to be "
-"just as easy as the first."
+"mdbook/book/struct.Book.html) field (`book`), and a `Book` has the "
+"[`Book::iter()`](https://docs.rs/mdbook/*/mdbook/book/"
+"struct.Book.html#method.iter) method for iterating over all items in a "
+"`Book`, this step turns out to be just as easy as the first."
 msgstr ""
 
 #: src/for_developers/backends.md:74
@@ -129,9 +129,9 @@ msgstr ""
 #: src/for_developers/backends.md:108
 msgid ""
 "When it loads a book into memory, `mdbook` will inspect your `book.toml` "
-"file to try and figure out which backends to use by looking for all `output."
-"*` tables. If none are provided it'll fall back to using the default HTML "
-"renderer."
+"file to try and figure out which backends to use by looking for all "
+"`output.*` tables. If none are provided it'll fall back to using the default "
+"HTML renderer."
 msgstr ""
 
 #: src/for_developers/backends.md:112

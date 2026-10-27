@@ -101,9 +101,9 @@ msgstr ""
 
 #: src/guide/creating.md:52
 msgid ""
-"The next major part of a book is the summary file located at `src/SUMMARY."
-"md`. This file contains a list of all the chapters in the book. Before a "
-"chapter can be viewed, it must be added to this list."
+"The next major part of a book is the summary file located at `src/"
+"SUMMARY.md`. This file contains a list of all the chapters in the book. "
+"Before a chapter can be viewed, it must be added to this list."
 msgstr ""
 
 #: src/guide/creating.md:56

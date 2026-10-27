@@ -44,8 +44,8 @@ msgstr ""
 
 #: src/format/theme/index-hbs.md:20
 msgid ""
-"_**language**_ Language of the book in the form `en`, as specified in `book."
-"toml` (if not specified, defaults to `en`). To use in <code\n"
+"_**language**_ Language of the book in the form `en`, as specified in "
+"`book.toml` (if not specified, defaults to `en`). To use in <code\n"
 "class=\"language-html\">\\<html lang=\"{{ language }}\"></code> for example."
 msgstr ""
 
