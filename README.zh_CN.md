@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-<h1 id="localization-of-the-mdbook-documentation">Localization of The mdBook Documentation</h1>
+<h1 id="localization-of-the-mdbook-documentation">mdBook 文档的本地化</h1>
 </div>
 
 <details><summary><strong>切换语言</strong></summary>
@@ -69,7 +69,7 @@
 The goal of this project is to translate The mdBook Documentation into multiple languages. 翻译是通过 Crowdin 平台进行贡献，并自动与 GitHub 仓库进行同步，且可以在 GitHub Pages 进行预览。
 
 > [!NOTE]
-> The translation is <strong>unofficial</strong> and <strong>community-driven</strong>. If you find any inaccuracies, always refer to the <a href="https://rust-lang.github.io/mdBook">official documentation</a> or the <a href="https://github.com/rust-lang/mdBook">source repository</a> of the upstream project for the most reliable information.
+> 翻译为<strong>非官方</strong>且<strong>由社区驱动的</strong>。 If you find any inaccuracies, always refer to the <a href="https://rust-lang.github.io/mdBook">official documentation</a> or the <a href="https://github.com/rust-lang/mdBook">source repository</a> of the upstream project for the most reliable information.
 
 <div align="center">
 <table>
