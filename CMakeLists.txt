@@ -32,11 +32,11 @@ set(LANGUAGE_SOURCE "en_US"
     CACHE STRING "The source language of the documentation")
     # Possible values are "en_US".
 
-set(VERSION "master"
+set(VERSION "main"
     CACHE STRING "The current version of the documentation.")
     # Possible values are versions listed in versions.json.
 
-set(VERSION_COMPENDIUM "master"
+set(VERSION_COMPENDIUM "main"
     CACHE STRING "The version of compendium from which the current version will merge translations.")
     # Possible values are NULL and versions listed in versions.json.
 
@@ -156,18 +156,18 @@ get_members_of_json_object(
 
 #[============================================================[
 # Validate the VERSION cache variable.
-# - For "master":
+# - For "main":
 #   - Set VERSION_TYPE    to "branch"
-#   - Set BRANCH_NAME     to "master"
+#   - Set BRANCH_NAME     to "main"
 # - For "[MAJOR].[MINOR]":
 #   - Set VERSION_TYPE    to "tag"
 #   - Set TAG_PATTERN     to "^v([MAJOR])\\.([MINOR])\\.([0-9]+)(-rc[1-9][0-9]*)?$"
 #   - Set TAG_SUFFIX      to "-rc"
 #]============================================================]
 
-if     (VERSION MATCHES "^(master)$")
+if     (VERSION MATCHES "^(main)$")
     set(VERSION_TYPE    "branch")
-    set(BRANCH_NAME     "master")
+    set(BRANCH_NAME     "main")
 elseif (VERSION MATCHES "^([0-9]+)\\.([0-9]+)$")
     set(MAJOR           "${CMAKE_MATCH_1}")
     set(MINOR           "${CMAKE_MATCH_2}")
@@ -230,7 +230,7 @@ endif()
 # Set VERSION_OF_XXX to $CACHE{VERSION_OF_XXX} if it's not "[default]".
 #]============================================================]
 
-if     (VERSION MATCHES "^(master)$")
+if     (VERSION MATCHES "^(main)$")
     set(VERSION_OF_RUST                 "1.90")
     set(VERSION_OF_DASEL                "2")
     set(VERSION_OF_MDBOOK_I18N_HELPERS  "^0.4")

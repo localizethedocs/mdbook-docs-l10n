@@ -382,7 +382,7 @@ The goal of this project is to translate The mdBook Documentation into multiple 
 # Please make sure the following prerequisites are installed:
 # CMake (3.25~), Git, Conda, Gettext
 LANGUAGE=en_US
-VERSION=master
+VERSION=main
 git clone --recurse-submodule https://github.com/localizethedocs/mdbook-docs-l10n.git
 cd mdbook-docs-l10n
 cmake --preset ${LANGUAGE} -DVERSION=${VERSION}
