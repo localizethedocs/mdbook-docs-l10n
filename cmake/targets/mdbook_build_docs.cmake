@@ -214,7 +214,7 @@ unset(_LANGUAGE)
 
 
 set(REDIRECT_LANGTAG    "en-us")
-set(REDIRECT_VERSION    "master")
+set(REDIRECT_VERSION    "main")
 
 
 message(STATUS "Configuring 'index.html' file to the root of the renderer directory...")
