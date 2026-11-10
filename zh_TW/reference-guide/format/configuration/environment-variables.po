@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mdBook Documentation\n"
+"POT-Creation-Date: 2025-11-28T05:48:51Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/format/configuration/environment-variables.md:1
+msgid "Environment variables"
+msgstr "環境變數"
+
+#: src/format/configuration/environment-variables.md:3
+msgid ""
+"All configuration values can be overridden from the command line by setting "
+"the corresponding environment variable. Because many operating systems "
+"restrict environment variables to be alphanumeric characters or `_`, the "
+"configuration key needs to be formatted slightly differently to the normal "
+"`foo.bar.baz` form."
+msgstr ""
+"所有組態值都可以從命令行透過設定對應的環境變數來覆蓋。由於許多作業系統限制環"
+"境變數僅能包含英數字元或底線（`_`），因此需將組態鍵稍微格式化為不同於普通的 "
+"`foo.bar.baz` 形式。"
+
+#: src/format/configuration/environment-variables.md:8
+msgid ""
+"Variables starting with `MDBOOK_` are used for configuration. The key is "
+"created by removing the `MDBOOK_` prefix and turning the resulting string "
+"into `kebab-case`. Double underscores (`__`) separate nested keys, while a "
+"single underscore (`_`) is replaced with a dash (`-`)."
+msgstr ""
+"使用以 `MDBOOK_` 開頭的變數進行組態。鍵（key）的建立方式是移除 `MDBOOK_` 前"
+"綴，並將剩餘的字串轉換為 `kebab-case`。雙底線（`__`）用於分隔嵌套的鍵，而單底"
+"線（`_`）則會被替換為短橫線 (`-`)。"
+
+#: src/format/configuration/environment-variables.md:13
+msgid "For example:"
+msgstr "例如："
+
+#: src/format/configuration/environment-variables.md:15
+msgid "`MDBOOK_book` -> `book`"
+msgstr "`MDBOOK_book` -> `book`"
+
+#: src/format/configuration/environment-variables.md:16
+msgid "`MDBOOK_BOOK` -> `book`"
+msgstr "`MDBOOK_BOOK` -> `book`"
+
+#: src/format/configuration/environment-variables.md:17
+msgid "`MDBOOK_BOOK__TITLE` -> `book.title`"
+msgstr "`MDBOOK_BOOK__TITLE` -> `book.title`"
+
+#: src/format/configuration/environment-variables.md:18
+msgid "`MDBOOK_BOOK__TEXT_DIRECTION` -> `book.text-direction`"
+msgstr "`MDBOOK_BOOK__TEXT_DIRECTION` -> `book.text-direction`"
+
+#: src/format/configuration/environment-variables.md:20
+msgid ""
+"So by setting the `MDBOOK_BOOK__TITLE` environment variable you can override "
+"the book's title without needing to touch your `book.toml`."
+msgstr ""
+"因此，透過設定 `MDBOOK_BOOK__TITLE` 環境變數而無需修改您的 `book.toml`，就可"
+"以覆蓋手冊的題名。"
+
+#: src/format/configuration/environment-variables.md:23
+msgid ""
+"**Note:** To facilitate setting more complex config items, the value of an "
+"environment variable is first parsed as JSON, falling back to a string if "
+"the parse fails."
+msgstr ""
+
+#: src/format/configuration/environment-variables.md:27
+msgid ""
+"This means, if you so desired, you could override all book metadata when "
+"building the book with something like"
+msgstr ""
+"這代表如果您有需要，可以在建置手冊時透過類似以下的方式覆蓋所有手冊的元資料"
+
+#: src/format/configuration/environment-variables.md:30
+msgid ""
+"```shell\n"
+"$ export MDBOOK_BOOK='{\"title\": \"My Awesome Book\", \"authors\": "
+"[\"Michael-F-Bryan\"]}'\n"
+"$ mdbook build\n"
+"```"
+msgstr ""
+"```shell\n"
+"$ export MDBOOK_BOOK='{\"title\": \"My Awesome Book\", \"authors\": "
+"[\"Michael-F-Bryan\"]}'\n"
+"$ mdbook build\n"
+"```"
+
+#: src/format/configuration/environment-variables.md:35
+msgid ""
+"The latter case may be useful in situations where `mdbook` is invoked from a "
+"script or CI, where it sometimes isn't possible to update the `book.toml` "
+"before building."
+msgstr ""
